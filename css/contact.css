@@ -1,0 +1,80 @@
+.no-deco {
+    text-decoration: none !important;
+  }
+  
+  .form-control {
+    border-radius: 0px;
+  }
+  
+  .form-control:focus {
+    border-color: black;
+    box-shadow: none;
+  }
+  
+  .section-gap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .heading {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+  
+  .profile-picture-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .review-card-container {
+    padding: 10px !important;
+  }
+  
+  .contact-detail-item{
+      padding:20px;
+  }
+  
+  .contact-image{
+      background-image: url("https://www.avenrahotels.com/images/Gardens-items/Carousel_1.jpg");
+      height: 450px !important;
+      width: 100%;
+      background-size: cover;
+  }
+  
+  .review-card{
+      -webkit-animation-name: move1;
+      animation-name: move1;
+      animation-duration: 2s;
+      animation-fill-mode:forwards ;
+  }
+  
+  .review-card-before{
+    visibility: hidden;
+    opacity: 0;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  @keyframes move1{
+    0%{
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+    100%{
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
