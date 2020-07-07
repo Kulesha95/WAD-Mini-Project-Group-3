@@ -23,6 +23,7 @@
 
     <!-- Contact CSS -->
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/pasindu.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
 
