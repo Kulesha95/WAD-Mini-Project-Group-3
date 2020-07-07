@@ -21,6 +21,11 @@
     <!-- Fontawesome Icons Link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
+    <!-- Contact CSS -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <!-- Contact JS -->
+    <script src="js/contact.js"></script>
+    
 </head>
 
 <body>
