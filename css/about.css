@@ -1,0 +1,36 @@
+.about-image{
+      background-image: url(../img/about-cover2.jpg);
+      height: 320px !important;
+      width: 100%;
+      background-size: cover;
+  }
+
+.column {
+  float:left ;
+  width: 50%;
+  padding:30px;
+  height: 300px; 
+}
+
+
+.row:after {
+	
+  content: "";
+  display: table;
+  clear: both;
+  align-items: center; 
+}
+    
+
+.icon-background {
+    color: red;
+}
+
+.label{
+	text-align: center;
+}
+
+h3{
+	color: #F4A460;
+	font-family: "Lucida Console", Courier, monospace;
+}
