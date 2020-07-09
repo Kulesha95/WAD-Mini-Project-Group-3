@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     
+    
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,12 +22,19 @@
 
     <!-- Fontawesome Icons Link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    
 
     <!-- Contact CSS -->
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 	<link rel="stylesheet" type="text/css" href="css/pasindu.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
+
+    
+    
+
+
 
 </head>
 
