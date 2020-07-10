@@ -11,3 +11,16 @@ $(window).scroll(function() {
         }
     }
 });
+
+
+function rate(rating){
+    for (let index = 1; index <= 5; index++) {
+        $("#star"+index).removeClass("fas");        
+        $("#star"+index).addClass("far");        
+    }
+    for (let index = 1; index <= rating; index++) {
+        $("#star"+index).removeClass("far");        
+        $("#star"+index).addClass("fas");        
+    }
+    $("#ratings").val(rating);
+}
