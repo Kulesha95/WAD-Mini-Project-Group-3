@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 	<link rel="stylesheet" type="text/css" href="css/pasindu.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
     <!-- Accomodation CSS-->
