@@ -30,6 +30,10 @@
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
+    <!-- Accomodation CSS-->
+    <link rel="stylesheet" type="text/css" href="css/accomodation.css">
+    <!--Accomodation JS-->
+    <script src="js/accomodation.js"></script>
 
     
     
