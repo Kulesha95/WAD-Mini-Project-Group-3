@@ -33,7 +33,10 @@
     <link rel="stylesheet" type="text/css" href="css/accomodation.css">
     <!--Accomodation JS-->
     <script src="js/accomodation.js"></script>
-
+    <!-- Customize-room CSS-->
+    <link rel="stylesheet" type="text/css" href="css/customize-room.css">
+    <!--Customize-room JS-->
+    <script src="js/customize-room.js"></script>
     
     
 

@@ -1,0 +1,140 @@
+.accomodation{
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F8F8;
+}
+.main-banner{
+	background-color: white;
+    padding: 30px 15px;
+    height: auto;
+}
+#descriptHead{
+  color: purple;
+  font-size: 45px;
+  font-family: serif;
+}
+.tagline{
+  font-style: oblique;
+  font-family: serif;
+  font-size: 20px;
+  color: #87686F;
+}
+.view{
+	font-family: helvetica;
+  	color: #9C8E91;
+}
+.descriptionRoom{
+	font-family: helvetica;
+  	color: gray;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.head4{
+	font-family: serif;
+  	font-size: 1.3rem;
+  	color: black;
+}
+.pHighlight{
+	font-family: serif;
+	color: #808080;
+	font-size: 1.2rem;
+}
+.main-accordion1{
+	background-color: white;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+.main-accordion2{
+	background-color: white;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.head3{
+	font-family: serif;
+  	font-size: 1.6rem;
+  	color: #595759;
+  	font-style: oblique;
+}
+.custom{
+  list-style: none;
+  font-family: serif;
+  font-size: 1.1rem;
+}
+
+.custom li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -2em;
+}
+.colFeatures{
+	margin-right: 50px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: white;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
