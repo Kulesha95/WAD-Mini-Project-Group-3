@@ -42,8 +42,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View Deluxe Ocean View" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book Deluxe Ocean View">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book Deluxe Ocean View">Book Now</a>
                     	</div>
                		</div>
            		</div>
@@ -71,8 +71,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View Deluxe Ocean View Horizon" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book Deluxe Ocean View Horizon">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View Horizon" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book Deluxe Ocean View Horizon">Book Now</a>
                     	</div>
                		</div>
             	</div>
@@ -99,8 +99,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View Grand Deluxe Ocean View" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book Grand Deluxe Ocean View">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View Grand Deluxe Ocean View" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book Grand Deluxe Ocean View">Book Now</a>
                     	</div>
                		</div>
             	</div>
@@ -127,8 +127,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View Junior Suite Ocean View" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book Junior Suite Ocean View">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View Junior Suite Ocean View" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book Junior Suite Ocean View">Book Now</a>
                     	</div>
                		</div>
             	</div>
@@ -155,8 +155,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View One Bedroom Suite" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book One Bedroom Suite">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View One Bedroom Suite" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book One Bedroom Suite">Book Now</a>
                     	</div>
                		</div>
             	</div>
@@ -183,8 +183,8 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn" href="#" title="View Presidential Suite" style="background-color: #C81168">View</a>
-                        	<a class="btn" href="#" title="Book Presidential Suite">Book Now</a>
+                        	<a class="btn btnRoom" href="#" title="View Presidential Suite" style="background-color: #C81168">View</a>
+                        	<a class="btn btnRoom" href="#" title="Book Presidential Suite">Book Now</a>
                     	</div>
                		</div>
             	</div>
