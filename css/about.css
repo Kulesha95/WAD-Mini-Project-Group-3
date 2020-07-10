@@ -1,3 +1,9 @@
+
+#about_body{
+
+	background-color: #F8F8F8;
+	}
+
 .about-image{
       background-image: url(../img/about-cover2.jpg);
       height: 320px !important;
@@ -5,11 +11,15 @@
       background-size: cover;
   }
 
+  #about1,#about2,#about_vision,#about_mission {
+  	text-align: justify;
+  }
+
 .column {
   float:left ;
-  width: 50%;
-  padding:30px;
-  height: 300px; 
+  width: 25%;
+  padding:35px;
+  height: 250px; 
 }
 
 
@@ -21,16 +31,34 @@
   align-items: center; 
 }
     
-
+.heading{
+	color: purple;
+	font-family: serif;
+}
 .icon-background {
-    color: red;
+    color: #4400A9;
 }
 
 .label{
 	text-align: center;
 }
 
-h3{
-	color: #F4A460;
+#about_list{
+	color: #4400A9;
 	font-family: "Lucida Console", Courier, monospace;
+}
+
+#management_list{
+	font-size: 20px;
+}
+
+.about_image_2{
+      background-image: url(../img/about-cover3.jpg);
+      height: 400px !important;
+      width: 100%;
+      background-size: cover;
+  }
+
+.text-color-purple{
+	color: purple;
 }
