@@ -21,19 +21,19 @@ include_once "navigation.php";
    		  <input type="radio" name="r" id="r5">
        
        <div class="slide s1">
-       	<img src="photos\gallery\inside1.jpg" alt="">
+       	<img src="img\gallery\inside1.jpg" alt="">
        </div>
        <div class="slide ">
-       	<img src="photos\gallery\inside2.jpg" alt="">
+       	<img src="img\gallery\inside2.jpg" alt="">
        </div>
        <div class="slide ">
-       	<img src="photos\gallery\inside3.jpg" alt="">
+       	<img src="img\gallery\inside3.jpg" alt="">
        </div>
        <div class="slide ">
-       	<img src="photos\gallery\inside4.jpg" alt="">
+       	<img src="img\gallery\inside4.jpg" alt="">
        </div>
        <div class="slide ">
-       	<img src="photos\gallery\inside5.jpg" alt="">
+       	<img src="img\gallery\inside5.jpg" alt="">
        </div>
 
    	</div>
