@@ -4,7 +4,7 @@ include_once "navigation.php";
 ?>
 <div class="container bg-white">
 
-<section class="gallery_details section-gap">
+<section class="gallery_details section-gap container">
 <div class="row justify-content-center">
             <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
             <h2 class="headingGallery">GALLERY</h2>
