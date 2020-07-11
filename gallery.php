@@ -11,7 +11,7 @@ include_once "navigation.php";
             <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
         </div>
     </section>
-        
+      
 <div class="slidershow middle">
    	<div class="slides">
    		<input type="radio" name="r" id="r1" checked>
@@ -47,7 +47,6 @@ include_once "navigation.php";
     </div>
 
    </div>
-
 
 </div>
 
