@@ -60,6 +60,20 @@ include_once "navigation.php";
     </div>
 
    </div>
+
+<div class="row verTex2">
+     <h3> B <br>
+             E <br>
+             A &nbsp&nbsp&nbsp I<br>
+             U &nbsp&nbsp&nbsp N<br>
+             T &nbsp&nbsp&nbsp S<br>
+             Y &nbsp&nbsp&nbsp  I<br>
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp D <br>
+             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E <br>
+        </h3>
+    <img name="slideauto" >  
+</div>
+
 </div>
 
 

@@ -38,7 +38,8 @@
     <link rel="stylesheet" type="text/css" href="css/customize-room.css">
     <!--Customize-room JS-->
     <script src="js/customize-room.js"></script>
-    
+    <!--gallery js -->
+    <script src="js/gallery.js"></script>
     
 
 
