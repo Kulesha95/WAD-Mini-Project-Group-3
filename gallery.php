@@ -11,91 +11,42 @@ include_once "navigation.php";
             <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
         </div>
     </section>
-        <section id="gallerycover">
-		<div><img src="img/gallery/hotel-full.jpg" style="width:100%;height:300px;object-fit:cover"></div>
-	</section>
+        
+<div class="slidershow middle">
+   	<div class="slides">
+   		<input type="radio" name="r" id="r1" checked>
+   		  <input type="radio" name="r" id="r2">
+   		  <input type="radio" name="r" id="r3">
+   		  <input type="radio" name="r" id="r4">
+   		  <input type="radio" name="r" id="r5">
+       
+       <div class="slide s1">
+       	<img src="photos\gallery\inside1.jpg" alt="">
+       </div>
+       <div class="slide ">
+       	<img src="photos\gallery\inside2.jpg" alt="">
+       </div>
+       <div class="slide ">
+       	<img src="photos\gallery\inside3.jpg" alt="">
+       </div>
+       <div class="slide ">
+       	<img src="photos\gallery\inside4.jpg" alt="">
+       </div>
+       <div class="slide ">
+       	<img src="photos\gallery\inside5.jpg" alt="">
+       </div>
 
-	<section class="inside-hotel section-gap">
-		<div class="row justify-content">
-		<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">_____________</span>
-            <h2 class="headingGallery">Inside Our Hotel</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">_____________</span>
-		</div>
-		<div class="gallery">
-	<div class="image-box active">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside2.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside3.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside4.jpg">
-	</div><div class="image-box">
-		<img src="img/gallery/inside5.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	</div>
-</section>
+   	</div>
 
-<section class="outside-hotel">
-		<div class="row justify-content">
-		<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">_____________</span>
-            <h2 class="headingGallery">Beauty Outside Our Hotel</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">_____________</span>
-		</div>
-		<div class="gallery">
-	<div class="image-box active">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside2.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside3.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside2.jpg">
-	</div><div class="image-box">
-		<img src="img/gallery/inside5.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	</div>
-</section>
+    <div class="navigation">
+    	<label for="r1" class="bar"></label>
+    	<label for="r2" class="bar"></label>
+    	<label for="r3" class="bar"></label>
+    	<label for="r4" class="bar"></label>
+    	<label for="r5" class="bar"></label>
+    </div>
 
-<section class="places-hotel section-gap">
-		<div class="row justify-content">
-		<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">_____________</span>
-            <h2 class="headingGallery">Attractive Nearby Places To Visit</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">_____________</span>
-		</div>
-		<div class="gallery">
-	<div class="image-box active">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside2.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside3.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/outside2.jpg">
-	</div><div class="image-box">
-		<img src="img/gallery/inside5.jpg">
-	</div>
-	<div class="image-box">
-		<img src="img/gallery/inside1.jpg">
-	</div>
-	</div>
-</section>
-
+   </div>
 
 
 </div>
