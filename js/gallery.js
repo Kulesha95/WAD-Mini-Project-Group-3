@@ -3,11 +3,11 @@ var images = [];
 var time = 3000;
 
 //image list
-images[0] = 'photos/gallery/inside1.jpg';
-images[1] = 'photos/gallery/inside2.jpg';
-images[2] = 'photos/gallery/inside3.jpg';
-images[3] = 'photos/gallery/inside4.jpg';
-images[4] = 'photos/gallery/inside5.jpg';
+images[0] = 'img/gallery/inside1.jpg';
+images[1] = 'img/gallery/inside2.jpg';
+images[2] = 'img/gallery/inside3.jpg';
+images[3] = 'img/gallery/inside4.jpg';
+images[4] = 'img/gallery/inside5.jpg';
 
 
 //change image

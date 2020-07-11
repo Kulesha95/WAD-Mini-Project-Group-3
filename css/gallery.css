@@ -19,16 +19,20 @@ letter-spacing: 4px;
 }
 .verTex2{
 	margin-left: 40px;
-margin-top: 50px;
+margin-top: 70px;
+padding-top: 30px;
 letter-spacing: 4px;
   text-transform: uppercase;
   color: purple;
   font-family: "Ti mes New Roman", Times, serif;
+  
 }
 
 
 .slidershow{
-	width: 700px;
+	margin-left: 50px;
+	padding-left: 70px;
+	width: 900px;
 	height: 400px;
 	overflow: hidden;
 }
@@ -95,3 +99,13 @@ input[name= "r"]{
 #r5:checked ~ .s1{
 	margin-left: -80%;
 }
+.slideauto{
+	
+   
+}
+.picbox{
+	padding-left: 80px;
+	width:900px;
+	 height: 400px;
+}
+
