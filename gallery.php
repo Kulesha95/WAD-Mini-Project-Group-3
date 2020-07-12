@@ -15,7 +15,7 @@ include_once "navigation.php";
 
 
    <div class="row verTex">
-        <h3> B <br>
+        <h3 class="clorblue"> B <br>
              E <br>
              A &nbsp&nbsp&nbsp I<br>
              U &nbsp&nbsp&nbsp N<br>
@@ -63,7 +63,7 @@ include_once "navigation.php";
  </div>
 
 <div class=" row verTex2">
-     <h3> B <br>
+     <h3 class="clorblue"> B <br>
              E <br>
              A &nbsp&nbsp&nbsp A<br>
              U &nbsp&nbsp&nbsp R<br>
@@ -76,11 +76,27 @@ include_once "navigation.php";
 
 </div>
 
-<div class="row">
+<div class="row ">
+   <div class="verTex3">
+        <h3 class="clorblue"> A <br>
+             T <br>
+             T &nbsp&nbsp&nbsp P<br>
+             R &nbsp&nbsp&nbsp L<br>
+             A &nbsp&nbsp&nbsp A &nbsp&nbsp N<br>
+             C &nbsp&nbsp&nbsp&nbspC &nbsp&nbsp E<br>
+             T &nbsp&nbsp&nbsp&nbspE &nbsp&nbsp&nbspA<br>
+             I &nbsp&nbsp&nbsp&nbsp&nbspS &nbsp&nbsp&nbspR<br>
+             V &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB<br>
+             E &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspY<br>
+             
+        </h3>
+    </div>    
+
+
   <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -92,7 +108,7 @@ include_once "navigation.php";
     
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -104,7 +120,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -116,7 +132,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>

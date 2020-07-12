@@ -1,4 +1,4 @@
-.section-gap {
+.gallery_details .section-gap {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -17,10 +17,29 @@ letter-spacing: 4px;
   color: purple;
   font-family: "Ti mes New Roman", Times, serif;
 }
+.verTex .clorblue{
+	color: blue;
+}
+.verTex2 .clorblue{
+	color: blue;
+}
+.verTex3 .clorblue{
+	color: blue;
+}
 .verTex2{
 	margin-left: 40px;
 margin-top: 70px;
 padding-top: 30px;
+letter-spacing: 4px;
+  text-transform: uppercase;
+  color: purple;
+  font-family: "Ti mes New Roman", Times, serif;
+  
+}
+
+.verTex3{
+margin-top: 150px;
+margin-left: 50px;
 letter-spacing: 4px;
   text-transform: uppercase;
   color: purple;
@@ -115,7 +134,7 @@ input[name= "r"]{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-left: 100px;
+	padding-left: 60px;
 }
 
 .contaner1  .box{
