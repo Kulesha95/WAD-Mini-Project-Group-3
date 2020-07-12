@@ -4,10 +4,10 @@ include_once "navigation.php";
 ?>
 <div class="container bg-white">
 
-<section class="gallery_details section-gap1 ">
+<section class="gallery_details section-gap1 headingGallery ">
 <div class="row justify-content-center">
             <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
-            <h2 class="headingGallery">GALLERY</h2>
+            <h2>GALLERY</h2>
             <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
         </div>
     </section>
@@ -23,7 +23,7 @@ include_once "navigation.php";
        <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -32,10 +32,10 @@ include_once "navigation.php";
     
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -44,10 +44,10 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -56,10 +56,10 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -68,10 +68,10 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -80,10 +80,10 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -98,10 +98,10 @@ include_once "navigation.php";
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/outside2.jpg">
+       <img src="img/gallery/outside2.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/outside2.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/outside2.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -110,10 +110,10 @@ include_once "navigation.php";
     
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           </div>
        </div>
      </div>
@@ -121,10 +121,10 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -133,10 +133,10 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -145,10 +145,10 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -157,10 +157,10 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
-          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
           
           </div>
        </div>
@@ -175,7 +175,7 @@ include_once "navigation.php";
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -187,7 +187,7 @@ include_once "navigation.php";
     
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -199,7 +199,7 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -211,7 +211,7 @@ include_once "navigation.php";
 
     <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -223,7 +223,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -235,7 +235,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="photos/gallery/inside1.jpg">
+       <img src="img/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>

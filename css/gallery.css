@@ -1,4 +1,4 @@
-.gallery_details .section-gap {
+.gallery_details .section-gap1 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -7,6 +7,8 @@
   text-transform: uppercase;
   color: purple;
   font-family: "Ti mes New Roman", Times, serif;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .insideText{
@@ -14,6 +16,7 @@
 	color: blue;
 	margin-top: 40px;
 	margin-bottom: -50px;
+	margin-left: 50px;
 }
 #magnifier{
 	width: 122px;
