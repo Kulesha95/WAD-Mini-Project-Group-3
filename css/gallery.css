@@ -11,7 +11,8 @@
 }
 
 .insideText{
-	font:Lucida Console;
+	letter-spacing: 4px;
+	font:serif;
 	color: blue;
 	margin-top: 40px;
 	margin-bottom: -50px;
@@ -24,9 +25,6 @@
 	opacity: 0.5;
 }
 .contaner1{
-    border-left: 6px solid purple;
-  background-color: lightgrey;
-
 	width: 1280px;
 	margin: 70px auto 0;
 	display: flex;
@@ -34,6 +32,7 @@
 	flex-wrap: wrap;
 	padding-left: 100px;
 }
+
 
 .contaner1  .box{
 	position: relative;
