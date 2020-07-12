@@ -14,89 +14,168 @@ include_once "navigation.php";
       
 
 
-   <div class="row verTex">
-        <h3 class="clorblue"> B <br>
-             E <br>
-             A &nbsp&nbsp&nbsp I<br>
-             U &nbsp&nbsp&nbsp N<br>
-             T &nbsp&nbsp&nbsp S<br>
-             Y &nbsp&nbsp&nbsp  I<br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp D <br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E <br>
-        </h3>
-
- <div class="slidershow middle">
-    <div class="slides">
-      <input type="radio" name="r" id="r1" checked>
-        <input type="radio" name="r" id="r2">
-        <input type="radio" name="r" id="r3">
-        <input type="radio" name="r" id="r4">
-        <input type="radio" name="r" id="r5">
-       
-       <div class="slide s1">
-        <img src="img\gallery\inside1.jpg" alt="">
-       </div>
-       <div class="slide ">
-        <img src="img\gallery\inside2.jpg" alt="">
-       </div>
-       <div class="slide ">
-        <img src="img\gallery\inside3.jpg" alt="">
-       </div>
-       <div class="slide ">
-        <img src="img\gallery\inside4.jpg" alt="">
-       </div>
-       <div class="slide ">
-        <img src="img\gallery\inside5.jpg" alt="">
-       </div>
-
-    </div>
-
-    <div class="navigation">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
-      <label for="r4" class="bar"></label>
-      <label for="r5" class="bar"></label>
-    </div>
-
-   </div>
- </div>
-
-<div class=" row verTex2">
-     <h3 class="clorblue"> B <br>
-             E <br>
-             A &nbsp&nbsp&nbsp A<br>
-             U &nbsp&nbsp&nbsp R<br>
-             T &nbsp&nbsp&nbsp O<br>
-             Y &nbsp&nbsp&nbsp U<br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp N <br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp D <br>
-        </h3>
-     <img name="slideauto" class="picbox" >
-
-</div>
-
-<div class="row ">
-   <div class="verTex3">
-        <h3 class="clorblue"> A <br>
-             T <br>
-             T &nbsp&nbsp&nbsp P &nbsp&nbsp N<br>
-             R &nbsp&nbsp&nbsp L &nbsp&nbsp E<br>
-             A &nbsp&nbsp&nbsp A &nbsp&nbsp A<br>
-             C &nbsp&nbsp&nbsp&nbspC &nbsp&nbsp R<br>
-             T &nbsp&nbsp&nbsp&nbspE &nbsp&nbsp&nbspB<br>
-             I &nbsp&nbsp&nbsp&nbsp&nbspS &nbsp&nbsp&nbspY<br>
-             V <br>
-             E <br>
-             
-        </h3>
-    </div>    
-
-
-  <div class="contaner1">   
+   <!-- section 1 inside hotel -->     
+  <div class="row well well-lg"> 
+   <h2 class="insideText"> Inside Our Hotel </h2>   
+   <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+  </div>
+    
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  </div>
+
+  <!-- section2 outside hotel -->
+  <div class="row"> 
+   <h2 class="insideText"> Outside Our Hotel </h2>   
+   <div class="contaner1">   
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/outside2.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/outside2.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+  </div>
+    
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <a href="photos/gallery/inside1.jpg" target="_blank"><img src="photos/gallery/magnify.png" id="magnifier";></a>
+          
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  </div>
+
+  <!--section3 places to visit -->
+  <div class="row"> 
+   <h2 class="insideText"> Inside Our Hotel </h2>   
+   <div class="contaner1">   
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -108,7 +187,31 @@ include_once "navigation.php";
     
     <div class="box">
      <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -120,7 +223,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
+       <img src="photos/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -132,7 +235,7 @@ include_once "navigation.php";
   
   <div class="box">
      <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
+       <img src="photos/gallery/inside1.jpg">
        <div class="details">
          <div class="content">
           <h2>Location name</h2>
@@ -141,9 +244,6 @@ include_once "navigation.php";
        </div>
      </div>
     </div>
-  
-  
-</div>
  
 
 </div>
