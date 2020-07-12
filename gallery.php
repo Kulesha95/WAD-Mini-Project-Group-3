@@ -75,6 +75,59 @@ include_once "navigation.php";
      <img name="slideauto" class="picbox" >
 
 </div>
+
+<div class="row">
+  <div class="contaner1">   
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+  </div>
+    
+    <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  <div class="box">
+     <div class="imgbox">
+       <img src="photos/gallery/inside1.jpg">
+       <div class="details">
+         <div class="content">
+          <h2>Location name</h2>
+          <p>Here,place a discription about the location</p>
+          </div>
+       </div>
+     </div>
+    </div>
+  
+  
+</div>
  
 
 </div>

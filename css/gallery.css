@@ -109,3 +109,70 @@ input[name= "r"]{
 	 height: 400px;
 }
 
+.contaner1{
+	width: 800px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 100px;
+}
+
+.contaner1  .box{
+	position: relative;
+	width: 300px;
+	height: 220px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.contaner1 .box .imgbox{
+	position: relative;
+	overflow: hidden;
+}
+
+.contaner1 .box .imgbox img{
+	
+	max-width: 100%;
+	transition: transform 2s;
+	}
+.contaner1 .box:hover .imgbox img{
+	transform: scale(1.2);
+}
+
+.contaner1 .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.contaner1 .box:hover .details{
+	transform: scaleY(1);
+}
+
+.contaner1 .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff ;
+}
+.contaner1 .box .details .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #ff0;
+}
+
+.contaner1 .box .details .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	
+}
