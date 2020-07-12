@@ -24,6 +24,7 @@
 	opacity: 0.5;
 }
 .contaner1{
+
 	width: 1280px;
 	margin: 70px auto 0;
 	display: flex;
@@ -31,7 +32,9 @@
 	flex-wrap: wrap;
 	padding-left: 100px;
 }
-
+.contaner1 .inset{
+	border-style: inset;
+}
 .contaner1  .box{
 	position: relative;
 	width: 300px;
