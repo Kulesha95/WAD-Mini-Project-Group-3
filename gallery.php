@@ -80,14 +80,14 @@ include_once "navigation.php";
    <div class="verTex3">
         <h3 class="clorblue"> A <br>
              T <br>
-             T &nbsp&nbsp&nbsp P<br>
-             R &nbsp&nbsp&nbsp L<br>
-             A &nbsp&nbsp&nbsp A &nbsp&nbsp N<br>
-             C &nbsp&nbsp&nbsp&nbspC &nbsp&nbsp E<br>
-             T &nbsp&nbsp&nbsp&nbspE &nbsp&nbsp&nbspA<br>
-             I &nbsp&nbsp&nbsp&nbsp&nbspS &nbsp&nbsp&nbspR<br>
-             V &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB<br>
-             E &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspY<br>
+             T &nbsp&nbsp&nbsp P &nbsp&nbsp N<br>
+             R &nbsp&nbsp&nbsp L &nbsp&nbsp E<br>
+             A &nbsp&nbsp&nbsp A &nbsp&nbsp A<br>
+             C &nbsp&nbsp&nbsp&nbspC &nbsp&nbsp R<br>
+             T &nbsp&nbsp&nbsp&nbspE &nbsp&nbsp&nbspB<br>
+             I &nbsp&nbsp&nbsp&nbsp&nbspS &nbsp&nbsp&nbspY<br>
+             V <br>
+             E <br>
              
         </h3>
     </div>    
