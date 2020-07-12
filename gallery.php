@@ -16,7 +16,7 @@ include_once "navigation.php";
 
    <!-- section 1 inside hotel -->     
   <div class="row"> 
-   <h2 class="insideText"> Inside Our Hotel </h2>   
+   <h2 class="insideText"> &nbsp&nbspInside Our Hotel </h2>   
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
@@ -94,7 +94,7 @@ include_once "navigation.php";
 
   <!-- section2 outside hotel -->
   <div class="row"> 
-   <h2 class="insideText"> Outside Our Hotel </h2>   
+   <h2 class="insideText">  &nbsp&nbspOutside Our Hotel </h2>   
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
@@ -171,7 +171,7 @@ include_once "navigation.php";
 
   <!--section3 places to visit -->
   <div class="row"> 
-   <h2 class="insideText"> Attractive Places Nearby </h2>   
+   <h2 class="insideText">  &nbsp&nbsp Attractive Places Nearby </h2>   
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
