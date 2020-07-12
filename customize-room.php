@@ -17,27 +17,36 @@ include_once "navigation.php";
                     </article>
 				</div>
 				<div class="col-12 col-lg-6 order-1 order-lg-2">
-					<div class="slideshow-container">
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_king-bed.jpg" style="width:100%;height:400px;object-fit:cover">
+					<div id="customImg" class="carousel slide " data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/deluxe-ocean-view_king-bed.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
+							<div class="carousel-item">
+								<img  src="img/deluxe-ocean-view_king-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
+							<div class="carousel-item ">
+								<img src="img/deluxe-ocean-view_living-area.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
+							<div class="carousel-item ">
+								<img  src="img/deluxe-ocean-view_twin-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
+							<div class="carousel-item">
+								<img src="img/deluxe-ocean-view_bathroom-1.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
+							<div class="carousel-item">
+								<img src="img/deluxe-ocean-view_bathroom-2.jpg" style="width:100%;height:400px;object-fit:cover">
+							</div>
 						</div>
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_king-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
-						</div>
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_living-area.jpg" style="width:100%;height:400px;object-fit:cover">
-						</div>
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_twin-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
-						</div>
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_bathroom-1.jpg" style="width:100%;height:400px;object-fit:cover">
-						</div>
-						<div class="mySlides fade">
-  							<img src="img/deluxe-ocean-view_bathroom-2.jpg" style="width:100%;height:400px;object-fit:cover">
-						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -146,24 +155,6 @@ include_once "navigation.php";
 		</section>
 
 	</div>
-
-	<!-- image slideshow javascript -->
-	<script >
-		var slideIndex = 0;
-		showSlides();
-
-		function showSlides() {
-  			var i;
-  			var slides = document.getElementsByClassName("mySlides");
-  			for (i = 0; i < slides.length; i++) {
-    			slides[i].style.display = "none";
-  			}
-  			slideIndex++;
-  			if (slideIndex > slides.length) {slideIndex = 1}
-  			slides[slideIndex-1].style.display = "block";
-  			setTimeout(showSlides, 2000);
-		}
-	</script>
 
 
 
