@@ -15,7 +15,7 @@ include_once "navigation.php";
 
 
    <!-- section 1 inside hotel -->     
-  <div class="row well well-lg"> 
+  <div class="row"> 
    <h2 class="insideText"> Inside Our Hotel </h2>   
    <div class="contaner1">   
   <div class="box">
