@@ -4,10 +4,10 @@ include_once "navigation.php";
 ?>
 <div class="container bg-white">
 
-<section class="gallery_details section-gap1 headingGallery ">
+<section class="gallery_details section-gap1 ">
 <div class="row justify-content-center">
             <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
-            <h2>GALLERY</h2>
+            <h2 class="headingGallery ">GALLERY</h2>
             <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
         </div>
     </section>
@@ -171,7 +171,7 @@ include_once "navigation.php";
 
   <!--section3 places to visit -->
   <div class="row"> 
-   <h2 class="insideText"> Inside Our Hotel </h2>   
+   <h2 class="insideText"> Attractive Places Nearby </h2>   
    <div class="contaner1">   
   <div class="box">
      <div class="imgbox">
