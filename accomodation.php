@@ -5,14 +5,13 @@ include_once "navigation.php";
 ?>
 <div class="container">
 	<section id="roomDesc">
-		<div><img src="img/main-room.jpg" style="width:100%;height:300px;object-fit:cover"></div>
+		<div class="row justify-content-center">
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+            <h2 class="heading text-color-purple">Rooms and Suites</h2>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+        </div>
+		<div style="padding-top:20px"><img src="img/main-room.jpg" style="width:100%;height:300px;object-fit:cover"></div>
 		<article class="roomArticle">
-        	<div class="col-12 col-md-6 mb-3">
-                <header class="head">
-                    <h2 class="tagline">In Living Colour</h2>
-                    <h1 id="descriptHead">Rooms and Suites</h1>
-                </header>
-            </div>
             <div class="col-12 column-count-2">
                 <p>Whether you book one of our Deluxe Rooms or our choice of Suites, feel free to make yourself at home.      <br/><br/>All of our rooms and suites feature ample space to live, work and play in, with a private terrace to take in the most mesmerising sunrises and sunsets. Subtle accents to the décor showcase modern Sri Lankan architecture, with its colonial influences, contemporary clean lines and a calming colour palette in light blue that pays homage to the seascape. 
                 The floor-to-ceiling windows let in an abundance of natural daylight and look out onto incredible views of the bay. </p>
@@ -29,7 +28,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
-            			<div class="title">Rooms</div>
                 		<div class="name">
                 			<h3><a href="#" title="Deluxe Ocean View" class="stayType" onclick="window.location='customize-room.php'">Deluxe Ocean View</a></h3></div><hr>
                 		<div class="description">
@@ -57,7 +55,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1" >
             		<div class="content">
-            			<div class="title">Rooms</div>
                 		<div class="name">
                 			<h3><a href="#" title="Deluxe Ocean View Horizon" class="stayType" onclick="window.location='customize-room.php'">Deluxe Ocean View Horizon</a></h3>
                 		</div><hr>
@@ -85,7 +82,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
-            			<div class="title">Rooms</div>
                 		<div class="name">
                 			<h3><a href="#" title="Grand Deluxe Ocean View" class="stayType" onclick="window.location='customize-room.php'">Grand Deluxe Ocean View</a></h3>
                 		</div><hr>
@@ -113,7 +109,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1">
             		<div class="content">
-            			<div class="title">Suites</div>
                 		<div class="name">
                 			<h3><a href="#" title="Junior Suite Ocean View" class="stayType" onclick="window.location='customize-room.php'">Junior Suite Ocean View</a></h3>
                 		</div><hr>
@@ -141,7 +136,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
-            			<div class="title">Suites</div>
                 		<div class="name">
                 			<h3><a href="#" title="One Bedroom Suite" class="stayType" onclick="window.location='customize-room.php'">One Bedroom Suite</a></h3>
                 		</div><hr>
@@ -169,7 +163,6 @@ include_once "navigation.php";
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1">
             		<div class="content">
-            			<div class="title">Suites</div>
                 		<div class="name">
                 			<h3><a href="#" title="Presidential Suite" class="stayType" onclick="window.location='customize-room.php'">Presidential Suite</a></h3>
                 		</div><hr>

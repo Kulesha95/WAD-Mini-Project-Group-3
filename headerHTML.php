@@ -34,10 +34,10 @@
     <link rel="stylesheet" type="text/css" href="css/accomodation.css">
     <!--Accomodation JS-->
     <script src="js/accomodation.js"></script>
-    <!-- Customize-room CSS-->
-    <link rel="stylesheet" type="text/css" href="css/customize-room.css">
-    <!--Customize-room JS-->
-    <script src="js/customize-room.js"></script>
+    <!-- Room-view CSS-->
+    <link rel="stylesheet" type="text/css" href="css/room-view.css">
+    <!--Room-view JS-->
+    <script src="js/room-view.js"></script>
     <!--gallery js -->
     <script src="js/gallery.js"></script>
     

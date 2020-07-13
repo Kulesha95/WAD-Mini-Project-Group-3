@@ -54,22 +54,22 @@ include_once "navigation.php";
 			<div class="hotel-highlight center">
 				<div class="row">
 					<div class="col-6 col-md-3">
-						<div class="icon size"><img src="img/room-size.png"></div>
+						<div class="icon size"><i class="fas fa-ruler" style="font-size:50px;color:#4400A9"></i></div>
                         <h4 class="head4">Room Size</h4>
                         <p class="pHighlight">39 sqm.</p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon bed"><img src="img/bed-type.png"></div>
+						<div class="icon bed"><i class="fas fa-bed" style="font-size:50px;color:#4400A9"></i></div>
                         <h4 class="head4">Bed Type(s)</h4>
                         <p class="pHighlight">King or twin beds</p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon adultskid"><img src="img/ideal-for.png"></div>
+						<div class="icon adultskid"><i class="fas fa-user-friends" style="font-size:50px;color:#4400A9"></i></div>
                         <h4 class="head4">Ideal For</h4>
                         <p class="pHighlight">2 adults and 1 child or 3 adults</p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon view"><img src="img/view.png"></div>
+						<div class="icon view"><i class="fas fa-water" style="font-size:50px;color:#4400A9"></i></div>
                         <h4 class="head4">View</h4>
                         <p class="pHighlight">Ocean view</p>
 					</div>
