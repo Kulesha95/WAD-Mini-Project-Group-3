@@ -3,54 +3,53 @@ include_once "headerHTML.php";
 include_once "navigation.php";
 ?>
 <div class="container" id="customContainer">
-		<section class="main-banner">
-			<div class="row">
-				<div class="col-12 col-lg-6 order-2 order-lg-1">
-					<article class="content">
-                		<header class="head">
-                          	<h2 class="tagline">Rooms</h2>
-                          	<h1 id="descriptHead">Deluxe Ocean View</h1>
-                          	<p class="view">King or twin beds <span> | </span> 39 sqm. <span> | </span> Ocean view</p>
-                        </header>
-                        <p class="descriptionRoom">Enter an oasis of tranquillity, leave the cares of the world behind. Our Deluxe Ocean View featuring a private balcony, 40-inch LED TV and free Wi-Fi have been designed for you to ease the mind.
-                        </p>
-                    </article>
-				</div>
-				<div class="col-12 col-lg-6 order-1 order-lg-2">
-					<div id="customImg" class="carousel slide " data-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/deluxe-ocean-view_king-bed.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-							<div class="carousel-item">
-								<img  src="img/deluxe-ocean-view_king-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/deluxe-ocean-view_living-area.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-							<div class="carousel-item ">
-								<img  src="img/deluxe-ocean-view_twin-bed-view.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-							<div class="carousel-item">
-								<img src="img/deluxe-ocean-view_bathroom-1.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-							<div class="carousel-item">
-								<img src="img/deluxe-ocean-view_bathroom-2.jpg" style="width:100%;height:400px;object-fit:cover">
-							</div>
-						</div>
-    
-						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+	<section class="main-banner">
+		<div class="row justify-content-center">
+			<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+			<h2 class="heading text-color-purple">Deluxe Ocean View</h2>
+			<span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+		</div>
+		<div class="row"  style="padding-top:20px">
+			<div id="customImg" class="carousel slide " data-ride="carousel">
+				<div class="carousel-inner" style="height:500px">
+					<div class="carousel-item active">
+						<img src="img/deluxe-ocean-view_king-bed.jpg" style="width:100%;height:500px;object-fit:cover">
+					</div>
+					<div class="carousel-item">
+						<img  src="img/deluxe-ocean-view_king-bed-view.jpg" style="width:100%;height:500px;object-fit:cover">
+					</div>
+					<div class="carousel-item ">
+						<img src="img/deluxe-ocean-view_living-area.jpg" style="width:100%;height:500px;object-fit:cover">
+					</div>
+					<div class="carousel-item ">
+						<img  src="img/deluxe-ocean-view_twin-bed-view.jpg" style="width:100%;height:500px;object-fit:cover">
+					</div>
+					<div class="carousel-item">
+						<img src="img/deluxe-ocean-view_bathroom-1.jpg" style="width:100%;height:500px;object-fit:cover">
+					</div>
+					<div class="carousel-item">
+						<img src="img/deluxe-ocean-view_bathroom-2.jpg" style="width:100%;height:500px;object-fit:cover">
 					</div>
 				</div>
+    
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<br><br>
+		</div>
+		<div class="row contentRow">
+			<article class="content">
+                <p class="view">King or twin beds <span> | </span> 39 sqm. <span> | </span> Ocean view</p>
+                <p class="descriptionRoom">Enter an oasis of tranquillity, leave the cares of the world behind. Our Deluxe Ocean View featuring a private balcony, 40-inch LED TV and free Wi-Fi have been designed for you to ease the mind.</p>
+            </article>
+		</div>
+				
+		<br><br>
 			<div class="hotel-highlight center">
 				<div class="row">
 					<div class="col-6 col-md-3">
@@ -154,7 +153,7 @@ include_once "navigation.php";
 			</div>		
 		</section>
 
-	</div>
+</div>
 
 
 
