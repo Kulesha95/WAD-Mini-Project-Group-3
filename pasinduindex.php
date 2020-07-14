@@ -455,7 +455,7 @@ include_once "navigation.php";
 		</div><!-- blogspot -->
 
 		<div class="blogspot">
-				<h5 id="footerhead">Post Title</h5>
+				<h4 id="footerhead">Post Title</h4>
 				<div class="postinfo">
 				<a href="#">Admin</a>
 				abc.com <br> Tuesday 17th March 2020
@@ -473,14 +473,17 @@ include_once "navigation.php";
 
 
 <div class="col-md-4">
-			<h4 id="footerhead">CONTACT US</h4>
-			<form action="index.html" class="contact">
-				<input type="text" name="name" placeholder="name" id="txt">
-				<input type="email" name="email" placeholder="email" id="txt">
-				<input type="text" name="subject" placeholder="subject" id="txt">
-				<textarea name="message" id="txt" cols="30" rows="10" placeholder="message"></textarea><br>
-				<button>submit</button>
-			</form>
+			<h4 id="footerhead" class="clsql6">QUICK LINKS</h4>
+			<h6 id="ql6">Quick Links</h6>
+			<ul class="quicklinks" >
+				<!-- <li><a href="#">Home</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Rooms</a></li> -->
+				
+			</ul><!-- quicklinks -->
+			
 		</div><!-- footercol --> 
 		</div>
 
@@ -494,7 +497,7 @@ include_once "navigation.php";
 		</div><!-- right -->
 		
 	</div><!-- copyrights -->	
-
+</div>
 </footer>	
 
 	
