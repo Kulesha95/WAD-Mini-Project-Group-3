@@ -15,85 +15,66 @@ include_once "navigation.php";
 
 
    <!-- section 1 inside hotel -->     
-  <div class="row">   
-   <div class="contaner1">   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-  </div>
-    
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-    </div>
-
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-    </div>
-
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-    </div>
+  <div class="row"> 
   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-    </div>
   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>     
+    </div>
     </div>
   </div>
+
+
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+
+<div class="imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/inside1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+
 </div>
 
 
   <!-- section2 outside hotel -->
-   <section class="gallery_details section-gap1 ">
+ <section class="gallery_details section-gap1 ">
 <div class="row justify-content-center">
             <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
             <h2 class="headingGallery ">HOTEL EXTERIOR</h2>
@@ -101,79 +82,60 @@ include_once "navigation.php";
         </div>
     </section>
   <div class="row"> 
-  
-        
-   <div class="contaner1">   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
+   <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
   </div>
-    
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          </div>
-       </div>
-     </div>
-    </div>
 
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-    </div>
 
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
     </div>
-  
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
     </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+
+<div class="imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/outside1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+     <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+    </div>
+    </div>
+  </div>
+       
   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <a href="img/gallery/inside1.jpg" target="_blank"><img src="img/gallery/magnify.png" id="magnifier";></a>
-          
-          </div>
-       </div>
-     </div>
-  </div></div></div>
+    </div>
   
   <!--section3 places to visit -->
   <section class="gallery_details section-gap1 ">
@@ -184,79 +146,65 @@ include_once "navigation.php";
         </div>
     </section>
   <div class="row"> 
-   
-       
-   <div class="contaner1">   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
+   <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
+    </div>
+    </div>
   </div>
-    
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
-    </div>
 
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
-    </div>
 
-    <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
     </div>
-  
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
     </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
+    </div>
+    </div>
+  </div>
+
+<div class="imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust">
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
+    </div>
+    </div>
+  </div>
+  <div class=" imgBox col-12 col-md-4 p-3">
+    <img src="img/gallery/places1.jpg" class="img-fluid adjust" >
+    <div class="details">
+      <div class="content">
+      <h2 id="tit">Place name</h2>
+      <p>Here, you can add a description about the image/place</p>
+    </div>
+    </div>
+  </div>
+       
   
-  <div class="box">
-     <div class="imgbox">
-       <img src="img/gallery/inside1.jpg">
-       <div class="details">
-         <div class="content">
-          <h2>Location name</h2>
-          <p>Here,place a discription about the location</p>
-          </div>
-       </div>
-     </div>
     </div>
  
 
