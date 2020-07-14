@@ -6,19 +6,15 @@
 }
 .main-banner{
 	background-color: white;
-    padding: 30px 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
     height: auto;
+    padding-top: 80px;
 }
-#descriptHead{
-  color: purple;
-  font-size: 45px;
-  font-family: serif;
-}
-.tagline{
-  font-style: oblique;
-  font-family: serif;
-  font-size: 20px;
-  color: #87686F;
+.contentRow{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .view{
 	font-family: helvetica;

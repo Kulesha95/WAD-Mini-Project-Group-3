@@ -13,7 +13,8 @@
 }
 #roomDesc{
   background-color: white;
-  height: auto
+  height: auto;
+  padding-top: 80px;
 
 }
 .roomArticle{
@@ -84,7 +85,7 @@
   color: #87686F;
 
 }
-.title,.name,.button{
+.name,.button{
   padding-left: 40px;
 }
 #descriptHead{
