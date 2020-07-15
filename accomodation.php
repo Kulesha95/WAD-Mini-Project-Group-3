@@ -24,12 +24,12 @@ include_once "navigation.php";
 <!--room1-->
         	<div class="row rowRoom">
             	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="Deluxe Ocean View" onclick="window.location='customize-room.php'"><img src="img/thumb-deluxe-ocean-view.jpg" class="img"></a>
+            		<a href="#" title="Deluxe Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-deluxe-ocean-view.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Deluxe Ocean View" class="stayType" onclick="window.location='customize-room.php'">Deluxe Ocean View</a></h3></div><hr>
+                			<h3><a href="#" title="Deluxe Ocean View" class="stayType" onclick="window.location='room-view.php'">Deluxe Ocean View</a></h3></div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
                         		<li><b>Room Size:</b>  39 sqm.</li>
@@ -40,7 +40,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book Deluxe Ocean View">Book Now</a>
                     	</div>
                		</div>
@@ -51,12 +51,12 @@ include_once "navigation.php";
 <!--room2-->
         	<div class="row rowRoom">
 				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Deluxe Ocean View Horizon" onclick="window.location='customize-room.php'"><img src="img/thumb-deluxe-ocean-horizon.jpg" class="img"></a>
+            		<a href="#" title="Deluxe Ocean View Horizon" onclick="window.location='room-view.php'"><img src="img/thumb-deluxe-ocean-horizon.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1" >
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Deluxe Ocean View Horizon" class="stayType" onclick="window.location='customize-room.php'">Deluxe Ocean View Horizon</a></h3>
+                			<h3><a href="#" title="Deluxe Ocean View Horizon" class="stayType" onclick="window.location='room-view.php'">Deluxe Ocean View Horizon</a></h3>
                 		</div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
@@ -68,7 +68,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View Horizon" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View Horizon" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book Deluxe Ocean View Horizon">Book Now</a>
                     	</div>
                		</div>
@@ -78,12 +78,12 @@ include_once "navigation.php";
 <!--room3-->
         	<div class="row rowRoom">
             	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="Grand Deluxe Ocean View" onclick="window.location='customize-room.php'"><img src="img/thumb-grand-deluxe-ocean-view.jpg" class="img"></a>
+            		<a href="#" title="Grand Deluxe Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-grand-deluxe-ocean-view.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Grand Deluxe Ocean View" class="stayType" onclick="window.location='customize-room.php'">Grand Deluxe Ocean View</a></h3>
+                			<h3><a href="#" title="Grand Deluxe Ocean View" class="stayType" onclick="window.location='room-view.php'">Grand Deluxe Ocean View</a></h3>
                 		</div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
@@ -95,7 +95,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Grand Deluxe Ocean View" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View Grand Deluxe Ocean View" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book Grand Deluxe Ocean View">Book Now</a>
                     	</div>
                		</div>
@@ -105,12 +105,12 @@ include_once "navigation.php";
 <!--suite1-->
         	<div class="row rowRoom">
 				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Junior Suite Ocean View" onclick="window.location='customize-room.php'"><img src="img/thumb-junior-suite-ocean-view.jpg" class="img"></a>
+            		<a href="#" title="Junior Suite Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-junior-suite-ocean-view.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Junior Suite Ocean View" class="stayType" onclick="window.location='customize-room.php'">Junior Suite Ocean View</a></h3>
+                			<h3><a href="#" title="Junior Suite Ocean View" class="stayType" onclick="window.location='room-view.php'">Junior Suite Ocean View</a></h3>
                 		</div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
@@ -122,7 +122,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Junior Suite Ocean View" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View Junior Suite Ocean View" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book Junior Suite Ocean View">Book Now</a>
                     	</div>
                		</div>
@@ -132,12 +132,12 @@ include_once "navigation.php";
 <!--suite2-->
         	<div class="row rowRoom">
             	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="One Bedroom Suite" onclick="window.location='customize-room.php'"><img src="img/thumb-one-bedroom-suite.jpg" class="img"></a>
+            		<a href="#" title="One Bedroom Suite" onclick="window.location='room-view.php'"><img src="img/thumb-one-bedroom-suite.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-2">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="One Bedroom Suite" class="stayType" onclick="window.location='customize-room.php'">One Bedroom Suite</a></h3>
+                			<h3><a href="#" title="One Bedroom Suite" class="stayType" onclick="window.location='room-view.php'">One Bedroom Suite</a></h3>
                 		</div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
@@ -149,7 +149,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View One Bedroom Suite" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View One Bedroom Suite" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book One Bedroom Suite">Book Now</a>
                     	</div>
                		</div>
@@ -159,12 +159,12 @@ include_once "navigation.php";
 <!--suite3-->
         	<div class="row rowRoom">
 				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Presidential Suite" onclick="window.location='customize-room.php'"><img src="img/thumb-presidential-suite.jpg" class="img"></a>
+            		<a href="#" title="Presidential Suite" onclick="window.location='room-view.php'"><img src="img/thumb-presidential-suite.jpg" class="img"></a>
             	</div>
             	<div class="col-12 col-lg-6 order-2 order-lg-1">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Presidential Suite" class="stayType" onclick="window.location='customize-room.php'">Presidential Suite</a></h3>
+                			<h3><a href="#" title="Presidential Suite" class="stayType" onclick="window.location='room-view.php'">Presidential Suite</a></h3>
                 		</div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
@@ -176,7 +176,7 @@ include_once "navigation.php";
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Presidential Suite" style="background-color: #C81168" onclick="window.location='customize-room.php'">View</a>
+                        	<a class="btn btnRoom" href="#" title="View Presidential Suite" style="background-color: #C81168" onclick="window.location='room-view.php'">View</a>
                         	<a class="btn btnRoom" href="#" title="Book Presidential Suite">Book Now</a>
                     	</div>
                		</div>
