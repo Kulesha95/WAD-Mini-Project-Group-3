@@ -1,0 +1,64 @@
+.admin{
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F8F8;
+}
+.text-color-white{
+	color: white;
+}
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.upPanel{
+	background-color: purple;
+	height: auto;
+}
+.btnSide{
+	border: none;
+	background-color: transparent;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: purple;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  background-color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.downPanel{
+	 background-color: #FFB4FF;
+	 height: 560px;
+}
