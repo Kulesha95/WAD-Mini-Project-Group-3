@@ -22,7 +22,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>     
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>     
     </div>
     </div>
   </div>
@@ -32,7 +32,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust" >
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -49,7 +49,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -57,7 +57,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -65,7 +65,7 @@ include_once "navigation.php";
     <img src="img/gallery/inside1.jpg" class="img-fluid adjust" >
     <div class="details">
       <div class="content">
-      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/inside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -86,7 +86,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -96,7 +96,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -104,7 +104,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust" >
     <div class="details">
       <div class="content">
-      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -113,7 +113,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -121,7 +121,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust">
     <div class="details">
       <div class="content">
-      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+      <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
@@ -129,7 +129,7 @@ include_once "navigation.php";
     <img src="img/gallery/outside1.jpg" class="img-fluid adjust" >
     <div class="details">
       <div class="content">
-     <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus"></i></a>
+     <a href="img/gallery/outside1.jpg" target="_blank"><i class="fas fa-search-plus magni"></i></a>
     </div>
     </div>
   </div>
