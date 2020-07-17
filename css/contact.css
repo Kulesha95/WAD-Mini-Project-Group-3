@@ -78,12 +78,12 @@
   }
 }
 
-.bg-color-pink{
+.bg-color-pink,.bg-color-pink:hover{
   background-color: #C81168;
   color: white;
 }
 
-.bg-color-purple{
+.bg-color-purple,.bg-color-purple:hover{
   background-color: #4400A9;
   color: white;
 }
