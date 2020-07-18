@@ -46,6 +46,23 @@ include_once "navigation.php";
 			<article class="content">
                 <p class="view">King or twin beds <span> | </span> 39 sqm. <span> | </span> Ocean view</p>
                 <p class="descriptionRoom">Enter an oasis of tranquillity, leave the cares of the world behind. Our Deluxe Ocean View featuring a private balcony, 40-inch LED TV and free Wi-Fi have been designed for you to ease the mind.</p>
+				<form id="bookForm">
+					<div class="row">
+						<div class="col-md-3">
+							 <label for="name" style="font-size:23px;">From:</label>
+                    		<input type="text" id="from" name="from" placeholder="From">			
+						</div>
+						<div class="col-md-3">
+							<label for="name" style="font-size:23px;">To:</label>
+                    		<input type="text" id="to" name="to" placeholder="To">
+						</div>
+						<div class="col-md-3">
+							<div class="button">
+                        		<a class="btn btnBook" href="#">Book Now</a>
+                    		</div>
+						</div>
+					</div>
+				</form>
             </article>
 		</div>
 				
