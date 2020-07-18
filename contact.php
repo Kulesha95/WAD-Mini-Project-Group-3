@@ -113,7 +113,8 @@ include_once "navigation.php";
             <i class="far fa-star fa-3x m-3" onclick="rate('4')" id="star4"></i>
             <i class="far fa-star fa-3x m-3" onclick="rate('5')" id="star5"></i>
         </div>
-        <form action="">
+        <form action="admin/Review/addController.php" method= "POST">
+            <input type="hidden" name=" user_id" id=" user_id" value="<?php echo $user_id; ?>"> 
             <div class="row m-3">
                 <textarea name="review" id="review" cols="30" rows="10" placeholder="Your Review"
                     class="form-control form-control-lg"></textarea>
@@ -122,7 +123,7 @@ include_once "navigation.php";
                 <button type="submit" class="btn bg-color-pink form-control form-control-lg"><i
                         class="fas fa-award"></i> Review</button>
             </div>
-            <input type="hidden" name="ratings" id="ratings" value="0">
+            <input type="hidden" name="rate" id="ratings" value="0">
         </form>
     </section>
 </div>
