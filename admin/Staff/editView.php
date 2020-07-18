@@ -47,8 +47,12 @@ $staffData=mysqli_fetch_assoc($staffResult);
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="direct" name="direct" placeholder="Direct" value="<?php echo $staffData['direct'];?>">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Type</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="type" name="type" placeholder="Type" value="<?php echo $staffData['type'];?>">
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Type</label>
+                    <select class="form-control form-control-sm  col-8 col-md-9 col-xl-10" id="type" name="type" value="<?php echo $staffData['type'];?>">
+                        <option value="Chairman">Chairman</option>
+                        <option value="Director">Director</option> 
+                        <option value="Management Team">Management Team</option>                   
+                    </select>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-edit mr-2"></i>Edit</button>

@@ -18,32 +18,37 @@ include_once '../config.php';
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="title" name="title" placeholder="Title">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">First Name</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">First Name</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="first_name" name="first_name" placeholder="First Name">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Last Name</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Last Name</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="last_name" name="last_name" placeholder="Last Name">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Designation</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Designation</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="designation" name="designation" placeholder="Designation">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">E-mail</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">E-mail</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="email" name="email" placeholder="E-mail">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Mobile</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Mobile</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="mobile" name="mobile" placeholder="Mobile">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Direct</label>
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Direct</label>
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="direct" name="direct" placeholder="Direct">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-4 col-md-3 col-xl-2">Type</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="type" name="type" placeholder="Type">
+                    <label for="name" class="col-4 col-md-3 col-xl-2">Type</label>
+                    <select class="form-control form-control-sm  col-8 col-md-9 col-xl-10" id="type" name="type">
+                        <option value="" selected disabled>Select Type</option>
+                        <option value="Chairman">Chairman</option>
+                        <option value="Director">Director</option> 
+                        <option value="Management">Management Team</option>                   
+                    </select>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-save mr-2"></i>Save</button>
