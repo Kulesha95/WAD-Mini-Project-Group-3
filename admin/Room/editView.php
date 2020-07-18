@@ -24,7 +24,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Description</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description" name="description" placeholder="Description" value="<?php echo $roomData['description'];?>">
+                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description" name="description" placeholder="Description" value="<?php echo $roomData['description'];?>"></textarea>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Room Size</label>
@@ -44,7 +44,10 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Inter Connections</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="inter_connections" name="inter_connections" placeholder="Inter Connections" value="<?php echo $roomData['inter_connections'];?>">
+                    <select class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="inter_connections" name="inter_connections" value="<?php echo $roomData['inter_connections'];?>">
+                        <option value="Available">Available</option>
+                        <option value="Not Available">Not Available</option>
+                    </select>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-edit mr-2"></i>Edit</button>

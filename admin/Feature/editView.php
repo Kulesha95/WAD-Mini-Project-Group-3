@@ -24,7 +24,11 @@ $featureData=mysqli_fetch_assoc($featureResult);
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Type</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" placeholder="Type" value="<?php echo $featureData['type'];?>">
+                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" value="<?php echo $featureData['type'];?>">
+                        <option value="Overview">Overview</option>
+                        <option value="Bedroom">Bedroom</option>
+                        <option value="Bathroom">Bathroom</option>
+                    </select>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Icon</label>

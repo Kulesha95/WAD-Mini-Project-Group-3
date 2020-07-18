@@ -39,7 +39,11 @@ include_once '../config.php';
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Inter Connections</label>
-                    <input type="text" class="form-control form-control-sm col-6 col-8 col-md-9 col-xl-10" id="inter_connections" name="inter_connections" placeholder="Inter Connections">
+                    <select class="form-control form-control-sm col-6 col-8 col-md-9 col-xl-10" id="inter_connections" name="inter_connections">
+                        <option value="" selected disabled>Select Availability</option>
+                        <option value="Available">Available</option>
+                        <option value="Not Available">Not Available</option>
+                    </select>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-save mr-2"></i>Save</button>

@@ -19,7 +19,12 @@ include_once '../config.php';
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Type</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" placeholder="Type">
+                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type">
+                        <option value="" selected disabled>Select Type</option>
+                        <option value="Connectivity">Connectivity</option>
+                        <option value="Services">Services</option>
+                        <option value="Extras">Extras</option>
+                    </select>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Icon</label>
