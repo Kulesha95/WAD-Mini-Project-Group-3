@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once "admin/config.php";
 $user_id = 0;
 if(isset($_SESSION['user_id'])){
     $user_id= $_SESSION[$user_id];
@@ -42,12 +43,33 @@ include_once "navigation.php";
                     <div class="col-2 text-color-purple"><i class="fas fa-award fa-2x"></i></div>
                     <div class="col-10 text-warning">
                         <h5 class="mb-2 text-dark">Ratings</h5>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                        <span class="text-dark">(10 Reviews)</span>
+                        <?php
+                        $ratingSql="SELECT COUNT(`id`) as rateCount,SUM(`rate`) as totalRates FROM `review`";
+                        $ratingResult=mysqli_query($connection,$ratingSql);
+                        $ratingData=mysqli_fetch_assoc($ratingResult);
+                        $ratingValue=$ratingData['totalRates']/$ratingData['rateCount'];
+                        echo number_format($ratingValue,2);
+                        
+                        for($i=1;$i<=5;$i++){
+                            if($ratingValue-$i>=0){
+                                ?>
+                                <i class="fas fa-star"></i>
+
+                                <?php
+                            }else if(fmod($ratingValue,1)){
+                                ?>
+                                <i class="fas fa-star-half-alt"></i>
+                                <?php
+                            }else{
+                                ?>
+                                <i class="far fa-star"></i>
+
+                                <?php
+                            }
+                        }
+                        ?>
+                        
+                        <span class="text-dark">(<?php echo $ratingData['rateCount']?> Reviews)</span>
                     </div>
                 </div>
             </div>
