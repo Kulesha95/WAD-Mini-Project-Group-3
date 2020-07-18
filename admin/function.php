@@ -14,6 +14,13 @@ function amenity($id){
     return $amenityData['name'];
 }
 
+function room($id){
+    $roomSql="select * from room where id= '$id'";
+    $roomResult=mysqli_query($GLOBALS['connection'],$roomSql);
+    $roomData=mysqli_fetch_assoc($roomResult);
+    return $roomData['name'];
+}
+
 function user($id){
     $userSql="select * from user where id= '$id'";
     $userResult=mysqli_query($GLOBALS['connection'],$userSql);

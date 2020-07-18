@@ -100,7 +100,7 @@ include_once "headerHTML.php";
     <!-- Web Content Start -->
     <div class="container-fluid m-0 p-0">
 
-        <iframe src="" frameborder="0" id="iframeDisplay" name="iframeDisplay" scrolling="no" width="100%" height="800px"></iframe>
+        <iframe src="" frameborder="0" id="iframeDisplay" name="iframeDisplay" scrolling="no" width="100%" height="700px"></iframe>
     </div>
     <!-- Web Content End -->
 

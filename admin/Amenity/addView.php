@@ -18,11 +18,11 @@ include_once '../config.php';
                     <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="amenity" name="amenity" placeholder="Amenity">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-3 col-md-2 col-xl-1">Type</label>
+                    <label for="name" class="col-3 col-md-2 col-xl-1">Type</label>
                     <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" placeholder="Type">
                 </div>
                 <div class="form-group row">
-                    <label for="code" class="col-3 col-md-2 col-xl-1">Icon</label>
+                    <label for="name" class="col-3 col-md-2 col-xl-1">Icon</label>
                     <input type="text" class="form-control form-control-sm col-6 col-md-8 col-xl-10" id="icon" name="icon" placeholder="Icon">
                     <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Search</a>
                 </div>

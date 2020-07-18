@@ -1,11 +1,11 @@
-jQuery(document).ready(function () {
-    var height = ($(window).height()) - ($("#topnav").height() + 25);
-    $('#iframeDisplay').css('height', height);
-});
-$(window).on('resize', function () {
-    var height = ($(window).height()) - ($("#topnav").height() + 25);
-    $('#iframeDisplay').css('height', height);
-});
+// jQuery(document).ready(function () {
+//     var height = ($(window).height()) - ($("#topnav").height() + 25);
+//     $('#iframeDisplay').css('height', height);
+// });
+// $(window).on('resize', function () {
+//     var height = ($(window).height()) - ($("#topnav").height() + 25);
+//     $('#iframeDisplay').css('height', height);
+// });
 
 $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({
