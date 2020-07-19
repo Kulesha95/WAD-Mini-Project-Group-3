@@ -24,7 +24,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Description</label>
-                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description" name="description" placeholder="Description" value="<?php echo $roomData['description'];?>"></textarea>
+                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description" name="description" placeholder="Description"><?php echo $roomData['description'];?></textarea>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Room Size</label>
@@ -45,8 +45,9 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Inter Connections</label>
                     <select class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="inter_connections" name="inter_connections" value="<?php echo $roomData['inter_connections'];?>">
-                        <option value="Available">Available</option>
-                        <option value="Not Available">Not Available</option>
+                        <option value="" Selected Disabled>Select Availability</option>
+                        <option value="Available" <?php if($roomData['inter_connections']=="Available"){echo "selected";}?>>Available</option>
+                        <option value="Not Available" <?php if($roomData['inter_connections']=="Not Available"){echo "selected";}?>>Not Available</option>
                     </select>
                 </div>
                 <div class="form-group row d-flex">

@@ -22,9 +22,6 @@ include_once "headerHTML.php";
             </li>
             <!--Booking-->
             <li class="nav-item">
-                <a  class="nav-link" href="Booking/addView.php" target="iframeDisplay"><i class="fas fa-hotel" style="padding-right: 10px;"></i>Add Booking</a>
-            </li>
-            <li class="nav-item">
                 <a  class="nav-link" href="Booking/listView.php" target="iframeDisplay"><i class="fas fa-hotel" style="padding-right: 10px;"></i>View Booking List</a>
             </li>
             <!--Feature-->
