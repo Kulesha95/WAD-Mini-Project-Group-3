@@ -41,10 +41,11 @@
                             <td><?php echo room($listRow['room_id']);?></td>
                             <td><?php 
                             if($listRow['status']=='1'){
-                                echo "Confirmed"
-                                }else{
-                                    echo "Not Confirmed"
-                                }?></td>
+                                echo "Confirmed";
+                            }else{
+                                echo "Not Confirmed";
+                            }
+                            ?></td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-primary btn-sm" href="editView.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to edit this record?')"><i class="fas fa-edit mr-2"></i>Edit</a>

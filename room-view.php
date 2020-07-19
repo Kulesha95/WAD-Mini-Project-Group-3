@@ -51,11 +51,11 @@ include_once "navigation.php";
 					<div class="row">
 						<div class="col-md-3">
 							 <label for="name" style="font-size:23px;">From:</label>
-                    		<input type="text" id="from" name="from" placeholder="From">			
+                    		<input type="date" id="from" name="from" placeholder="From">			
 						</div>
 						<div class="col-md-3">
 							<label for="name" style="font-size:23px;">To:</label>
-                    		<input type="text" id="to" name="to" placeholder="To">
+                    		<input type="date" id="to" name="to" placeholder="To">
 						</div>
 						<div class="col-md-3">
 							<div class="button">
