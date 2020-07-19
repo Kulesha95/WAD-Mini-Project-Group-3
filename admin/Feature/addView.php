@@ -29,7 +29,7 @@ include_once '../config.php';
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Icon</label>
                     <input type="text" class="form-control form-control-sm col-6 col-md-8 col-xl-10" id="icon" name="icon" placeholder="Icon">
-                    <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Search</a>
+                    <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Cheat Sheet</a>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-save mr-2"></i>Save</button>

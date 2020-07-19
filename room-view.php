@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "headerHTML.php";
 include_once "navigation.php";
 ?>
@@ -46,7 +47,7 @@ include_once "navigation.php";
 			<article class="content">
                 <p class="view">King or twin beds <span> | </span> 39 sqm. <span> | </span> Ocean view</p>
                 <p class="descriptionRoom">Enter an oasis of tranquillity, leave the cares of the world behind. Our Deluxe Ocean View featuring a private balcony, 40-inch LED TV and free Wi-Fi have been designed for you to ease the mind.</p>
-				<form id="bookForm">
+				<form id="bookForm" action="admin/booking/addController.php" method="POST">
 					<div class="row">
 						<div class="col-md-3">
 							 <label for="name" style="font-size:23px;">From:</label>
@@ -62,6 +63,8 @@ include_once "navigation.php";
                     		</div>
 						</div>
 					</div>
+					<input type="hidden" name="room_id" value="<?php echo $_GET['id']?>">
+					<input type="hidden" name="user_id" value="<?php echo $_SESSION['id']?>">
 				</form>
             </article>
 		</div>

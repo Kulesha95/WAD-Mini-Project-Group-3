@@ -25,15 +25,16 @@ $featureData=mysqli_fetch_assoc($featureResult);
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Type</label>
                     <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" value="<?php echo $featureData['type'];?>">
-                        <option value="Overview">Overview</option>
-                        <option value="Bedroom">Bedroom</option>
-                        <option value="Bathroom">Bathroom</option>
+                        <option value="" Selected Disabled>Select Type</option>
+                        <option value="Overview" <?php if($featureData['type']=="Overview"){echo "selected";}?>>Overview</option>
+                        <option value="Bedroom" <?php if($featureData['type']=="Bedroom"){echo "selected";}?>>Bedroom</option>
+                        <option value="Bathroom" <?php if($featureData['type']=="Bathroom"){echo "selected";}?>>Bathroom</option>
                     </select>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Icon</label>
                     <input type="text" class="form-control form-control-sm col-6 col-md-8 col-xl-10" id="icon" name="icon" placeholder="Icon" value="<?php echo $featureData['icon'];?>">
-                    <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Search</a>
+                    <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Cheat Sheet</a>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-edit mr-2"></i>Edit</button>
