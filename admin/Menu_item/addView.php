@@ -36,9 +36,9 @@ include_once '../config.php';
                     <label for="name" class="col-4 col-md-3 col-xl-2">Type</label>
                     <select class="form-control form-control-sm col-6 col-8 col-md-9 col-xl-10" id="type" name="type">
                         <option value="" selected disabled>Select </option>
-                        <option value="Available">Breakfast</option>
-                        <option value="Not Available">Lunch</option>
-                        <option value="Not Available">Dinner</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
                     </select>
                 </div>
                 <div class="form-group row d-flex">
