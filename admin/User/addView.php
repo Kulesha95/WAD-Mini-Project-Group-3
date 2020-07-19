@@ -53,3 +53,6 @@ include_once '../config.php';
 
     </div>
 </div>        
+<?php
+    include_once '../footerHTML.php';
+?>
