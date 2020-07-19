@@ -7,7 +7,7 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-envelope-circle mx-2 my-auto fa-2x"></i>
+                <i class="fas fa-envelope mx-2 my-auto fa-2x"></i>
                 <h4 class="ml-2 my-auto">Messages List</h4>
             </div>
         </div>
