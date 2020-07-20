@@ -23,7 +23,7 @@ include_once '../config.php';
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Price</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price" name="size" placeholder="Price">
+                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price" name="price" placeholder="Price">
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Image</label>
