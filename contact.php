@@ -3,7 +3,7 @@ session_start();
 include_once "admin/config.php";
 $user_id = 0;
 if(isset($_SESSION['user_id'])){
-    $user_id= $_SESSION[$user_id];
+    $user_id= $_SESSION['user_id'];
 }
 include_once "headerHTML.php";
 include_once "navigation.php";
@@ -95,7 +95,7 @@ include_once "navigation.php";
             </div>
             <div class="col-md-6">
                 <form action="admin/Message/addController.php" method= "POST">
-                    <input type="hidden" name=" user_id" id=" user_id" value="<?php echo $user_id; ?>">
+                    <input type="hidden" name="user_id" id="user_id" value="<?php echo $user_id; ?>">
                     <div class="row mx-3 mt-0 mb-3">
                         <input type="text" name="name" id="name" class="form-control form-control-lg"
                             placeholder="Your Name" required>
