@@ -32,4 +32,17 @@ function user($id){
     }
     return $userData['name'];
 }
+
+function uploadFile($path, $inputName)
+{
+    $path = "../../" . $path . "/";
+    $fileName = pathinfo(basename($_FILES[$inputName]["name"]));
+    $newName = str_replace(" ", "", $path . $fileName['filename'] . "" . date("Ymd") . date("his") . "." . $fileName['extension']);
+
+    if (!file_exists($path)) {
+        mkdir($path, 0777, true);
+    }
+    move_uploaded_file($_FILES[$inputName]["tmp_name"], $newName);
+    return str_replace("../../", "", $newName);
+}
 ?>
