@@ -45,4 +45,36 @@ function uploadFile($path, $inputName)
     move_uploaded_file($_FILES[$inputName]["tmp_name"], $newName);
     return str_replace("../../", "", $newName);
 }
+function cmsGetSingle($key, $page)
+{
+    $cmsSql = "SELECT * FROM `cms` WHERE `page`='$page' AND `key`='$key'";
+    $cmsQuery = mysqli_query($GLOBALS['connection'], $cmsSql);
+    if ($cmsData = mysqli_fetch_assoc($cmsQuery)) {
+        return $cmsData['value'];
+    } else {
+        return "";
+    }
+}
+
+function cmsGroupCodes($key, $page)
+{
+    $groupCodes = array();
+    $cmsSql = "SELECT distinct `group_code` FROM `cms` WHERE `page`='$page' AND `key`='$key'";
+    $cmsQuery = mysqli_query($GLOBALS['connection'], $cmsSql);
+    while ($cmsData = mysqli_fetch_assoc($cmsQuery)) {
+        array_push($groupCodes, $cmsData['group_code']);
+    }
+    return $groupCodes;
+}
+
+function cmsGetMultiple($key, $page, $groupCode)
+{
+    $cmsSql = "SELECT * FROM `cms` WHERE `page`='$page' AND `key`='$key' AND `group_code`='$groupCode'";
+    $cmsQuery = mysqli_query($GLOBALS['connection'], $cmsSql);
+    if ($cmsData = mysqli_fetch_assoc($cmsQuery)) {
+        return $cmsData['value'];
+    } else {
+        return "";
+    }
+}
 ?>
