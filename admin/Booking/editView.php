@@ -41,7 +41,7 @@ $bookingData=mysqli_fetch_assoc($bookingResult);
                         ?>
                     </select>
                 </div>
-                
+            
                 <div class="form-group row d-flex">
                     <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-edit mr-2"></i>Edit</button>
                 </div>

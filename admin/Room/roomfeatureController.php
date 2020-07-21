@@ -21,6 +21,6 @@
             }
         }
     }
-    header("location:listView.php?id=".$_POST['id']);
+    header("location:roomImageView.php?id=".$_POST['id']);
 
 ?>
