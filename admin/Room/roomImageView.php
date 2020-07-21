@@ -15,9 +15,11 @@ include_once '../config.php';
                 <input type="hidden" id="id" name="id" value="<?php if(isset($_GET['id'])){ echo $_GET['id'];}?>">
                 
                 <div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-1">Room Image</label>
-                    <input type="file" class="form-control form-control-sm col-6 col-md-8 col-xl-10" id="image" name="image" placeholder="Room Image">
-                    
+                    <label for="name" class="col-4 col-md-4 col-xl-2">Room Image</label>
+                    <div class="custom-file mb-3 col-8 col-md-8 col-xl-10">
+                        <input type="file" class="custom-file-input" id="image" name="image">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
                 </div>
                 <div class="form-group row d-flex">
                     <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-save mr-2"></i>Save</button>
