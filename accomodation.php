@@ -1,4 +1,6 @@
 <?php
+include_once "admin/config.php";
+include_once "admin/function.php";
 include_once "headerHTML.php";
 include_once "navigation.php";
 
@@ -10,11 +12,10 @@ include_once "navigation.php";
             <h2 class="heading text-color-purple">Rooms and Suites</h2>
             <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
         </div>
-		<div style="padding-top:20px"><img src="img/main-room.jpg" style="width:100%;height:300px;object-fit:cover"></div>
+		<div style="padding-top:20px"><img src="<?php echo cmsGetSingle("accomodationImage", "accomodation"); ?>" style="width:100%;height:300px;object-fit:cover"></div>
 		<article class="roomArticle">
             <div class="col-12 column-count-2">
-                <p>Whether you book one of our Deluxe Rooms or our choice of Suites, feel free to make yourself at home.      <br/><br/>All of our rooms and suites feature ample space to live, work and play in, with a private terrace to take in the most mesmerising sunrises and sunsets. Subtle accents to the décor showcase modern Sri Lankan architecture, with its colonial influences, contemporary clean lines and a calming colour palette in light blue that pays homage to the seascape. 
-                The floor-to-ceiling windows let in an abundance of natural daylight and look out onto incredible views of the bay. </p>
+                <p><?php echo nl2br(cmsGetSingle("description", "accomodation")); ?> </p>
             </div>
         </article>
 	</section>
