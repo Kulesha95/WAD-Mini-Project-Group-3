@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once "admin/config.php";
+include_once "admin/function.php";
 $user_id = 0;
 if(isset($_SESSION['user_id'])){
     $user_id= $_SESSION['user_id'];
@@ -12,32 +13,32 @@ include_once "navigation.php";
 <div class="container bg-white">
     <section class="contact-details section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
             <h2 class="heading text-color-purple">contact us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
         </div>
         <div class="row mt-5">
             <div class="col-12 col-md-6 mb-3">
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-phone-alt fa-2x"></i></div>
-                    <div class="col-10"><a class="no-deco text-dark" href="tel:+94312228000">+94312228000</a></div>
+                    <div class="col-10"><a class="no-deco text-dark" href="<?php echo cmsGetSingle("contactNumber","contact");?>"><?php echo cmsGetSingle("contactNumber","contact");?></a></div>
                 </div>
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-map-marker-alt fa-2x"></i></div>
                     <div class="col-10">
-                        <h5 class="mb-2">Avenra Garden Hotel</h5>
-                        <span>No 22, Negombo - Giriulla Rd, Negombo</span>
+                        <h5 class="mb-2"><?php echo cmsGetSingle("addressLine1","contact");?></h5>
+                        <span><?php echo cmsGetSingle("addressLine2","contact");?></span>
                     </div>
                 </div>
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-globe-asia fa-2x"></i></div>
                     <div class="col-10"><a class="no-deco text-dark"
-                            href="http://www.avenragardenhotel.com">http://www.avenragardenhotel.com</a></div>
+                            href="<?php echo cmsGetSingle("website","contact");?>"><?php echo cmsGetSingle("website","contact");?></a></div>
                 </div>
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-envelope fa-2x"></i></div>
                     <div class="col-10"><a class="no-deco text-dark"
-                            href="mailto:info@avenragardenhotel.com">info@avenragardenhotel.com</a></div>
+                            href="mailto:<?php echo cmsGetSingle("email","contact");?>"><?php echo cmsGetSingle("email","contact");?></a></div>
                 </div>
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-award fa-2x"></i></div>
@@ -75,7 +76,7 @@ include_once "navigation.php";
             </div>
             <div class="col-12 col-md-6">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2038000268385!2d79.8532200146439!3d7.217579194789506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2eec1cf287c89%3A0xe14018d2425ce2f2!2sAvenra%20Garden%20Hotel!5e0!3m2!1sen!2slk!4v1594030144860!5m2!1sen!2slk"
+                    src="<?php echo cmsGetSingle("googleMapSrc","contact");?>"
                     width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
@@ -85,13 +86,13 @@ include_once "navigation.php";
 <div class="container">
     <section class="map section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
             <h2 class="heading text-color-purple">Write Us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
         </div>
         <div class="row mt-5">
             <div class="col-md-6 mb-md-0  mb-3">
-                <div class="contact-image"></div>
+                <div class="contact-image" style="background-image: url('<?php echo cmsGetSingle("writeUsImage","contact");?>')"></div>
             </div>
             <div class="col-md-6">
                 <form action="admin/Message/addController.php" method= "POST">
@@ -124,9 +125,9 @@ include_once "navigation.php";
 <div class="container bg-white">
     <section class="map section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
             <h2 class="heading text-color-purple">Review Us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
         </div>
         
         <div class="row mt-3 text-warning justify-content-center">
@@ -155,9 +156,9 @@ include_once "navigation.php";
 <div class="container">
     <section class="reviews section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
             <h2 class="heading text-color-purple">customer reviews</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
         </div>
         <div class="row mt-5">
             <?php
