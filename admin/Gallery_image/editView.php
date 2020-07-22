@@ -2,7 +2,7 @@
 include_once '../headerHTML.php';
 include_once '../config.php'; 
 
-$userSql="select * from user where id='$_GET[id]'";
+$userSql="select * from gallery_image where id='$_GET[id]'";
 $userResult=mysqli_query($connection,$userSql);
 $userData=mysqli_fetch_assoc($userResult);
 
@@ -25,12 +25,12 @@ $userData=mysqli_fetch_assoc($userResult);
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type" placeholder="Type" value="<?php echo $userData['status'];?>">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type" placeholder="Type" value="<?php echo $userData['type'];?>">
                 </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Location Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="locatin_name" name="locatin_name" placeholder="Location Name" value="<?php echo $userData['location_name'];?>">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="locatin_name" name="locatin_name" placeholder="Location Name" value="<?php echo $userData['locatin_name'];?>">
                 </div>
 
                 <div class="form-group row">
