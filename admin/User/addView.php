@@ -16,22 +16,22 @@ include_once '../config.php';
                 <input type="hidden" id="id" name="id" value="<?php if(isset($_GET['id'])){ echo $_GET['id'];}?>">
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">First Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="firstName" name="firstName" placeholder="First Name">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="first_name" name="first_name" placeholder="First Name">
                 </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Last Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="lastName" name="lastName" placeholder="Last Name">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="last_name" name="last_name" placeholder="Last Name">
                 </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">User Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="userName" name="userName" placeholder="User Name">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="username" name="username" placeholder="User Name">
                 </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Password</label>
-                    <input type="password" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="pass" name="pass" placeholder="Password">
+                    <input type="password" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="password" name="password" placeholder="Password">
                 </div>
 
                 <div class="form-group row">
@@ -40,8 +40,13 @@ include_once '../config.php';
                 </div>
 
                 <div class="form-group row">
+                    <label for="name" class="col-3 col-md-2 col-xl-2">Status</label>
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="status" name="status" placeholder="Status">
+                </div>
+
+                <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Image</label>
-                    <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="imageU" name="imageU">
+                    <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="image" name="image">
                 </div>
 
                 <div class="form-group row d-flex">

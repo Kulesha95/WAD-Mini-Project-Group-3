@@ -2,7 +2,7 @@
 include_once '../headerHTML.php';
 include_once '../config.php'; 
 
-$userSql="select * from firstName where id='$_GET[id]'";
+$userSql="select * from user where id='$_GET[id]'";
 $userResult=mysqli_query($connection,$userSql);
 $userData=mysqli_fetch_assoc($userResult);
 
@@ -20,29 +20,33 @@ $userData=mysqli_fetch_assoc($userResult);
                 <input type="hidden" id="id" name="id" value="<?php echo $_GET['id'];?>">
                  <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">First Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="firstName" name="firstName" placeholder="First Name" value="<?php echo $userData['firstName'];?>">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="first_name" name="first_name" placeholder="First Name" value="<?php echo $userData['first_name'];?>">
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Last Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="lastName" name="lastName" placeholder="Last Name" value="<?php echo $userData['lastName'];?>">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="last_name" name="last_name" placeholder="Last Name" value="<?php echo $userData['last_name'];?>">
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">User Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="userName" name="userName" placeholder="User Name" value="<?php echo $userData['userName'];?>">
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="username" name="username" placeholder="User Name" value="<?php echo $userData['username'];?>">
                 </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Password</label>
-                    <input type="password" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="pass" name="pass" placeholder="Password" value="<?php echo $userData['pass'];?>">
+                    <input type="password" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="password" name="password" placeholder="Password" value="<?php echo $userData['password'];?>">
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Email</label>
                     <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="email" name="email" placeholder="Email" value="<?php echo $userData['email'];?>">
                 </div>
+                <div class="form-group row">
+                    <label for="name" class="col-3 col-md-2 col-xl-2">Status</label>
+                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="status" name="status" placeholder="Status" value="<?php echo $userData['status'];?>">
+                </div>
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Image</label>
-                    <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="imageU" name="imageU" value="<?php echo $userData['imageU'];?>">
+                    <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="image" name="image" value="<?php echo $userData['image'];?>">
                 </div>
 
                 <div class="form-group row d-flex">

@@ -16,30 +16,32 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
-                            <th>UId</th>
+                            <th>Id</th>
                             <th>FirstName</th>
                             <th>LastName</th>
                             <th>UserName</th>
                             <th>Password</th>
                             <th>Email</th>
+                            <th>Status</th>
                             <th>Image</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                     	<?php
-                    $listSql='select * from firstName';
+                    $listSql='select * from user';
                     $listResult=mysqli_query($connection,$listSql);
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>            
                         <tr>
                             <td><?php echo $listRow['id'];?></td>
-                            <td><?php echo $listRow['firstName'];?></td>
-                            <td><?php echo $listRow['lastname'];?></td>
+                            <td><?php echo $listRow['first_name'];?></td>
+                            <td><?php echo $listRow['last_name'];?></td>
                             <td><?php echo $listRow['username'];?></td>
-                            <td><?php echo $listRow['pass'];?></td>
+                            <td><?php echo $listRow['password'];?></td>
                             <td><?php echo $listRow['email'];?></td>
-                            <td><?php echo $listRow['imageU'];?></td>
+                            <td><?php echo $listRow['status'];?></td>
+                            <td><?php echo $listRow['image'];?></td>
 
                             <td>
                                 <div class="btn-group" role="group">
