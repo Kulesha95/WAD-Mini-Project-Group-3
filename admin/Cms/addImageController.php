@@ -1,5 +1,6 @@
 <?php
 include_once "../config.php";
+include_once "../function.php";
 $groupCountSql = "SELECT distinct `group_code` FROM cms WHERE `group_code` LIKE '$_POST[group_code]%' AND `page`='$_POST[page]' GROUP BY `group_code`";
 $groupCountResult = mysqli_query($connection, $groupCountSql);
 $groupCode = $_POST['group_code'] . (mysqli_num_rows($groupCountResult) + 1);
