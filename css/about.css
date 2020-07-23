@@ -4,14 +4,14 @@
 	background-color: #F8F8F8;
 	}
 
-.about-image{
-      background-image: url(../img/about-cover2.jpg);
+.about_image{
+      
       height: 320px !important;
       width: 100%;
       background-size: cover;
   }
 
-  #about1,#about2,#about_vision,#about_mission {
+  #about_description,#about_vision,#about_mission {
   	text-align: justify;
   }
 
@@ -53,10 +53,11 @@
 }
 
 .about_image_2{
-      background-image: url(../img/about-cover3.jpg);
+      
       height: 400px !important;
       width: 100%;
       background-size: cover;
+
   }
 
 .text-color-purple{
