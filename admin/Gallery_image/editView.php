@@ -2,9 +2,9 @@
 include_once '../headerHTML.php';
 include_once '../config.php'; 
 
-$userSql="select * from gallery_image where id='$_GET[id]'";
-$userResult=mysqli_query($connection,$userSql);
-$userData=mysqli_fetch_assoc($userResult);
+$gallerySql="select * from gallery_image where id='$_GET[id]'";
+$galleryResult=mysqli_query($connection,$gallerySql);
+$galleryData=mysqli_fetch_assoc($galleryResult);
 
 ?>
 <div class="container jumbotron bg-white shadow mt-4 col-11">
@@ -23,9 +23,18 @@ $userData=mysqli_fetch_assoc($userResult);
                     <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="path" name="path" value="<?php echo $userData['path'];?>">
                 </div>
 
-                <div class="form-group row">
+               <!-- <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
                     <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type" placeholder="Type" value="<?php echo $userData['type'];?>">
+                </div>-->
+                <div class="form-group row">
+                    <label for="name" class="col-3 col-md-2 col-xl-1">Type</label>
+                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="type" name="type" value="<?php echo $amenityData['type'];?>">
+                        <option value="" Selected Disabled>Select Type</option>
+                        <option value="Connectivity" <?php if($galleryData['type']=="Interior"){echo "selected";}?>>Exterior</option>
+                        <option value="Services" <?php if($galleryData['type']=="Exterior"){echo "selected";}?>>Interior</option>
+                        <option value="Extras" <?php if($galleryData['type']=="Places Near By"){echo "selected";}?>>Places Near By</option>
+                    </select>
                 </div>
 
                 <div class="form-group row">

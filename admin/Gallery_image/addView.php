@@ -19,10 +19,19 @@ include_once '../config.php';
                     <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="path" name="path">
                 </div>
 
-                <div class="form-group row">
+                <!--<div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
                     <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type" placeholder="Type">
-                </div>
+                </div>-->
+                <div class="form-group row">
+                    <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
+                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type">
+                        <option value="" selected disabled>Select Type</option>
+                        <option value="Connectivity">Interior</option>
+                        <option value="Services">Exterior</option>
+                        <option value="Extras">Places Near By</option>
+                    </select>
+                </div>    
 
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-2">Location Name</label>
