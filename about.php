@@ -1,4 +1,6 @@
 <?php
+include_once "admin/config.php";
+include_once "admin/function.php";
 include_once "headerHTML.php";
 include_once "navigation.php";
 ?>
@@ -15,35 +17,23 @@ include_once "navigation.php";
             </div>
         </section>
         <div>
-            <div class="about-image mb-5"></div>
+            <div class="mb-5">
+                <div class="about_image" style="background-image: url('<?php echo cmsGetSingle("aboutImage1","about");?>')"></div>
+            </div>
         </div>
         <div>
             <section class="index section-gap">
                 <div>
-                    <p id="about1">
-                        Avenra Hotels is a public quoted company which entered the leisure industry with a commitment to
-                        build and manage a chain of distinctive hotels and resorts that are benchmarked against the most
-                        coveted in the world. Avenra intends to provide the most exceptional and memorable hospitality
-                        in Sri Lanka by exceeding guest expectations and by creating a travel experience like no other.
-                    </p>
-                    <p id="about2">
-                        Avenra currently owns three properties in Sri Lanka.Avenra Colombo is a 90 room hotel situated
-                        in the heart of Colombo. Ceremoniously opened in 2014, Avenra Negombo is a 5 star resort in the
-                        West Coast of Sri Lanka comprising of 150 rooms with luxury amenities. The Steuart by Avenra is
-                        the latest luxury Boutique Business Hotel comprising of 50 rooms, situated on eight floors
-                        capturing the mystery of Galle, embedded by history dating back to 1835.
-                    </p>
+                    <p id="about_description"><?php echo cmsGetSingle("description", "about"); ?></p>
                 </div>
                 <div class="mt-5">
                     <h5><b>VISION</b></h5>
-                    <p id="about_vision">Our vision is to be the ultimate hospitality brand in Sri Lanka.</p>
+                    <p id="about_vision"><?php echo cmsGetSingle("vision", "about"); ?></p>
 
                 </div>
                 <div class="mt-5">
                     <h5><b>MISSION</b></h5>
-                    <p id="about_mission">Our mission is to own and manage hotels and resorts in Sri Lanka where we can
-                        deliver exceptional hospitality by going beyond the call of duty and extending a personalized,
-                        friendly and professional service at every given opportunity.</p>
+                    <p id="about_mission"><?php echo cmsGetSingle("mission", "about"); ?></p>
                 </div>
             </section>
             <hr>
@@ -131,7 +121,7 @@ include_once "navigation.php";
                         </p>
                     </div>
                     <div class="col-md-6 mt-3">
-                        <div class="about_image_2"></div>
+                        <div class="about_image_2" style="background-image: url('<?php echo cmsGetSingle("aboutImage2","about");?>')">></div>
                     </div>
                 </div>
             </section>
