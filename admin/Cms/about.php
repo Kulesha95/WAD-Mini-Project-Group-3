@@ -51,11 +51,67 @@ include_once '../function.php';
                                     class="fas fa-save mr-2"></i>Save</button>
                         </div>
                     </form>
+                    <hr>
+                    <form action="addController.php" method="POST" class="m-3" enctype="multipart/form-data">
+                        <input type="hidden" name="page" id="page" value="about">
+                        <input type="hidden" name="group_code" id="group_code" value="icon_area">
+                        <input type="hidden" name="type" id="type" value="multiple">
+                        <div class="form-group row">
+                            <label for="icon" class="col-4 col-md-2">Icon</label>
+                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="icon"
+                                name="icon" placeholder="Icon">
+                        </div>
+                        <div class="form-group row">
+                            <label for="line1" class="col-4 col-md-2">Line 1</label>
+                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="line1"
+                                name="line1" placeholder="Line 1">
+                        </div>
+                        <div class="form-group row">
+                            <label for="line2" class="col-4 col-md-2">Line 2</label>
+                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="line2"
+                                name="line2" placeholder="Line 2">
+                        </div>
+                        <div class="form-group row d-flex">
+                            <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i
+                                    class="fas fa-save mr-2"></i>Save</button>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <?php $groupCodes =cmsGroupCodes("icon","about");
+                        foreach($groupCodes as $groupCode) {
+                            ?>
+                            <div class="col-12 col-md-4 mx-auto mt-4">
+                                <div class="card">
+                                    <div class="card-border d-flex">
+                                        <a href="deleteController.php?id=<?php echo cmsGetMultipleId("icon","about",$groupCode)?>" class="text-dark no-deco ml-auto"><i class="fas fa-times"></i></a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <span class="fa-stack fa-4x text-dark mx-auto">
+                                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                                <i class="<?php echo cmsGetMultiple("icon","about",$groupCode);?> fa-stack-1x text-light"></i>
+                                            </span>
+                                        </div>
+                                        <div class="row">
+                                            <h2 class="mx-auto"><?php echo cmsGetMultiple("line1","about",$groupCode);?></h2>
+                                        </div>
+                                        <div class="row">
+                                            <h3 class="mx-auto"><?php echo cmsGetMultiple("line2","about",$groupCode);?></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <?php
+                        }
+                        ?>
+                    </div>
+                    
                 </div>
                 <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="image-tab">
                     <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
                         <input type="hidden" name="page" id="page" value="about">
-                        <input type="hidden" name="group_code" id="group_code" value="about_details">
+                        <input type="hidden" name="group_code" id="group_code" value="about_images">
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="aboutImage1">
                         <div class="form-group row">
@@ -72,7 +128,7 @@ include_once '../function.php';
                     </form>
                     <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
                         <input type="hidden" name="page" id="page" value="about">
-                        <input type="hidden" name="group_code" id="group_code" value="about_details">
+                        <input type="hidden" name="group_code" id="group_code" value="about_images">
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="aboutImage2">
                         <div class="form-group row">
