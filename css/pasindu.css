@@ -5,14 +5,14 @@ body{
 }
 
 .banner{
-	background: url(../img/cover3.jpg) no-repeat center;
+	background: url(../img/cover8.jpg) no-repeat center;
 	background-size: cover;
 	height: 100vh;
 }
 
 header{
 	padding: 60px 30px ;
-	background-color: rgba(	0,255,255,0.6);
+	background-color: rgba(209, 96, 240,0.6);
 }
 
 .logo{
@@ -20,14 +20,32 @@ header{
 	display: inline-block;
 }
 
+
+
 .title-color{
 	text-transform: uppercase;
-	color: 
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+	margin-right: 60px;
 }
 
 .search-my{
 	float: right;
-	border: 3px #000 solid;
+	color: white;
+		font-family: "Times New Roman", Times, serif;
+	/*border: 3px #000 solid;*/
+	text-transform: uppercase;
+
+}
+
+#navbarSupportedContent{
+	background-color: #e1f5e9;
+}
+
+#happy{
+	text-align: center;
+	float: right;
+
 }
 
 .search1{
@@ -260,9 +278,12 @@ h3, #para1{
 	margin-right: 10px;
 }
 */
-
+#secfooter{
+	background-color: #5c1275;
+}
 #footersec{
-	background-color: 	#1f1f1f;
+	/*background-color: 	#1f1f1f;*/
+	/*background-color: #5c1275;*/
 }
 #footerhead{
 	color: #fcfcfc;
@@ -270,7 +291,7 @@ h3, #para1{
 }
 #secfooter{
 	color: #fcfcfc;
-	background-color: 	#1f1f1f;
+	/*background-color: 	#1f1f1f;*/
 	font-family:  Arial, Helvetica, sans-serif;
 }
 .right{
@@ -308,4 +329,47 @@ ul.quicklinks li a {
 
 ul.quicklinks li a:hover{
 	color: white;
+}
+#about{
+	margin-top: 50px;
+}
+
+#facility, #roomhead, #foodhead{
+	color: #d160f0;
+}
+
+/*#location{
+	margin-top: 50px;
+}
+#address, #tel, #em{
+	float: right;
+	font-size: 15px;
+	text-align: left;
+}
+#mob, #env{
+	margin-top: 10px;
+	margin-right: 5px;
+}
+*/
+#footermid{
+	margin-top: 50px;
+	text-decoration: none;
+	list-style: none;
+	float: left;
+}
+#tel, #em{
+	margin-top: 25px;
+}
+#add{
+	float: left;
+}
+#con1{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#con2, #con3, #con4{
+	margin-bottom: 25px;
+}
+.con0{
+	margin-left: 15px;
 }

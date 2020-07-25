@@ -6,15 +6,22 @@ include_once "navigation.php";
 <div class="banner">
 
 	<header>
-		<div class="logo">
-			<h1><i class="fas fa-hotel"></i> <span class="title-color">Avenra</span></h1>
+		<div class="logo " id="logo1" >
+			<h1><i class="fas fa-hotel"></i> <span class="title-color">Avenra  </span></h1>
+      <!-- <h5 id="happy">Where Your Happiness Exists</h5> -->
 		</div>
-		<!-- <div class="search-my">
-			<form>
+    <div>
+     <!--  <img src="img/"> -->
+
+    </div>
+  
+		<div class="search-my">
+			<!-- <form>
 				<input type="search" class="search1" placeholder="search">
 				<button type="submit" class="button1"><i class="fas fa-search"></i></button>
-			</form>
-		</div> -->
+			</form> -->
+      <h1>Hotel</h1>
+		</div>
 	</header>
 
 
@@ -134,7 +141,7 @@ include_once "navigation.php";
 
 		<div class="col-md-4 col-sm-6">
 			<i class="fas fa-utensils" id="img1"></i>
-			<h3>Restaurant</h3>
+			<h3 id="restauants">Restaurant</h3>
 			<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut .</p>
@@ -165,7 +172,7 @@ include_once "navigation.php";
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/room2.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
-    <h5>VIP Rooms</h5>
+    <h5 >VIP Rooms</h5>
    
   </div>
     </div>
@@ -412,54 +419,38 @@ include_once "navigation.php";
 	<div class="container" id="footersec">
 		<div class="row">
 	<div class="col-md-4" id="footer1">
-	<h4 id="footerhead">LATEST TWEETS</h4>
-			<div class="tweet">
+	<h4 id="footerhead">ABOUT US</h4>
+  <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+			
+
+		<!-- 	<div class="tweet">
 				<p>
 				<a href="#">@namehere</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>1 day ago
 				</p>
-			</div><!-- tweet -->
-
-			<div class="tweet">
-				<p>
-				<a href="#">@namehere</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>1 day ago
-				</p>
-			</div><!-- tweet -->
-			</div>
-
-			<div class="col-md-4" id="footer2">
-			<h4 id="footerhead">LATEST BLOG POSTS</h4>
-			<div class="blogspot">
-				<h5>Post Title</h5>
-				<div class="postinfo">
-				<a href="#">Admin</a>
-				abc.com <br> Tuesday 17th March 2020
-			</div><!-- postinfo -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. </p>
-			<a href="#" class="readmore">Read More &raquo;</a>
-			
-			
-
-		</div><!-- blogspot -->
-
-		<div class="blogspot">
-				<h5 id="footerhead">Post Title</h5>
-				<div class="postinfo">
-				<a href="#">Admin</a>
-				abc.com <br> Tuesday 17th March 2020
-			</div><!-- postinfo -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. </p>
-			<a href="#" class="readmore">Read More &raquo;</a>
-			
-			
-
-		</div><!-- blogspot -->
-		</div><!-- footercol -->
+			</div>  -->
+      
+        <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;"> -->
+        <div class="col-md-4">
+          <h4 id="footerhead">CONTACT INFO</h4>
+       <div id="con1">
+        <p id="con2">
+          <i class="fas fa-home mr-3"></i> Navala Road, Rajagiriya, Sri Lanka</p>
+        <p id="con3">
+          <i class="fas fa-envelope mr-3"></i> avenra@gmail.com</p>
+        <p id="con4">
+          <i class="fas fa-phone mr-3"></i> + 01 134 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 134 567 89</p>
+         </div>
+      
+		</div> <!-- footercol -->
 
 
 
@@ -484,16 +475,15 @@ include_once "navigation.php";
 		</div><!-- left -->
 
 		<div class="right">
-			Website By: Zam Creation
+			Website By: MIT Creation
 		</div><!-- right -->
 		
 	</div><!-- copyrights -->	
-
+</div>
 </footer>	
 
 	
-
-
+ 
 
 
 
