@@ -38,4 +38,5 @@ include_once "headerHTML.php";
 
 <?php
 include_once "footerHTML.php";
+
 ?>

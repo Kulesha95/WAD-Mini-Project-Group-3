@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,4 +36,4 @@
         </script>
     <script src="../js/admin.js"></script>
 </head>
-<body>
+<body class="h-100">
