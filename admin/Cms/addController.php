@@ -1,10 +1,12 @@
 <?php
 include_once "../config.php";
-$groupCountSql = "SELECT distinct `group_code` FROM cms WHERE `group_code` LIKE '$_POST[group_code]%' AND `page`='$_POST[page]' GROUP BY `group_code`";
+$groupCountSql = "SELECT distinct `group_code` FROM cms WHERE `group_code` LIKE '$_POST[group_code]%' AND `page`='$_POST[page]' ORDER BY `group_code` DESC LIMIT 1";
 $groupCountResult = mysqli_query($connection, $groupCountSql);
-$groupCode = $_POST['group_code'] . (mysqli_num_rows($groupCountResult) + 1);
+$groupCountData=mysqli_fetch_assoc($groupCountResult);
+$last=explode($_POST['group_code'],$groupCountData['group_code']);
+$groupCode = $_POST['group_code'] . ($last[1] + 1);
 foreach ($_POST as $key => $value) {
-    if ($key == "page" || $key == "type" || $key == "group_code") {
+    if ($key == "page" || $key == "type" || $key == "group_code" || $key == "Save") {
         continue;
     } else if ($_POST['type'] == "single") {
         $cmsSql = "SELECT * FROM `cms` WHERE `page`='$_POST[page]' AND `key`='$key'";
