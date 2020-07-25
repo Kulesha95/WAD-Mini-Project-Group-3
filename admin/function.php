@@ -56,6 +56,17 @@ function cmsGetSingle($key, $page)
     }
 }
 
+function cmsGetSingleId($key, $page)
+{
+    $cmsSql = "SELECT * FROM `cms` WHERE `page`='$page' AND `key`='$key'";
+    $cmsQuery = mysqli_query($GLOBALS['connection'], $cmsSql);
+    if ($cmsData = mysqli_fetch_assoc($cmsQuery)) {
+        return $cmsData['id'];
+    } else {
+        return "";
+    }
+}
+
 function cmsGroupCodes($key, $page)
 {
     $groupCodes = array();
@@ -77,4 +88,14 @@ function cmsGetMultiple($key, $page, $groupCode)
         return "";
     }
 }
-?>
+
+function cmsGetMultipleId($key, $page, $groupCode)
+{
+    $cmsSql = "SELECT * FROM `cms` WHERE `page`='$page' AND `key`='$key' AND `group_code`='$groupCode'";
+    $cmsQuery = mysqli_query($GLOBALS['connection'], $cmsSql);
+    if ($cmsData = mysqli_fetch_assoc($cmsQuery)) {
+        return $cmsData['id'];
+    } else {
+        return "";
+    }
+}
