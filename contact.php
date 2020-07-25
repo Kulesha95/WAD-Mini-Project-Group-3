@@ -48,7 +48,11 @@ include_once "navigation.php";
                         $ratingSql="SELECT COUNT(`id`) as rateCount,SUM(`rate`) as totalRates FROM `review`";
                         $ratingResult=mysqli_query($connection,$ratingSql);
                         $ratingData=mysqli_fetch_assoc($ratingResult);
-                        $ratingValue=$ratingData['totalRates']/$ratingData['rateCount'];
+                        if($ratingData['rateCount']=='0'){
+                            $ratingValue=0;
+                        }else{
+                            $ratingValue=$ratingData['totalRates']/$ratingData['rateCount'];
+                        }
                         echo number_format($ratingValue,2);
                     
                         for($i=1;$i<=5;$i++){
