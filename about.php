@@ -39,39 +39,21 @@ include_once "navigation.php";
             <hr>
             <section class="label section-gap">
                 <div class="row">
+                <?php $groupCodes = cmsGroupCodes("icon","about");
+                    foreach($groupCodes as $groupCode){
+                ?>
                     <div class="column col-6 col-md-3">
                         <span class="fa-stack fa-4x text-light">
                             <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fa fa-bed fa-stack-1x"></i>
+                            <i class="<?php echo cmsGetMultiple("icon","about",$groupCode);?> fa-stack-1x"></i>
                         </span>
-                        <h2>200</h2>
-                        <h3 id="about_list">Rooms</h3>
-
+                        <h2 id="about_list"><?php echo cmsGetMultiple("line1","about",$groupCode);?></h2>
+                        <h3 id="about_list"><?php echo cmsGetMultiple("line2","about",$groupCode);?></h3>
                     </div>
-                    <div class="column col-6 col-md-3">
-                        <span class="fa-stack fa-4x text-light">
-                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fa fa-bath fa-stack-1x"></i>
-                        </span>
-                        <h2>80</h2>
-                        <h3 id="about_list"> Bathrooms </h3>
-                    </div>
-                    <div class="column col-6 col-md-3 ">
-                        <span class="fa-stack fa-4x text-light">
-                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fa fa-car fa-stack-1x"></i>
-                        </span>
-                        <h2>2+</h2>
-                        <h3 id="about_list"> Parks </h3>
-                    </div>
-                    <div class="column col-6 col-md-3 ">
-                        <span class="fa-stack fa-4x text-light">
-                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                            <i class="fa fa-map-marker fa-stack-1x"></i>
-                        </span>
-                        <h2>2000+</h2>
-                        <h3 id="about_list"> Size in SQFT </h3>
-                    </div>
+                <?php
+                    }
+                    ?>
+                    
                 </div>
             </section>
             <hr>
@@ -89,36 +71,42 @@ include_once "navigation.php";
 
                         <h4><b>Chairman</b></h4>
                         <ul>
-                            <li id="management_list">Mr.Nimal Fernando</li>
+                            <?php
+                            $managementSql="SELECT * FROM `staff` WHERE `type`='Chairman'";
+                            $managementResult=mysqli_query($connection,$managementSql);
+                            while($managementRow=mysqli_fetch_assoc($managementResult)){
+                            ?>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <?php
+                                }
+                                ?>
                         </ul>
                         <h4><b>Directors</b></h4>
                         <ul>
-                            <li id="management_list">Mr.Ajantha Perera</li>
-                            <li id="management_list">Ms.Dilini Silva</li>
-                            <li id="management_list">Mr.Oshan Peris</li>
-                            <li id="management_list">Mr.Roshitha Jayaweera</li>
-                            <li id="management_list">Mr.Ranjith Kahandawa</li>
-                            <li id="management_list">Ms.Keshini Rajapakse</li>
+                            <?php
+                            $managementSql="SELECT * FROM `staff` WHERE `type`='Director'";
+                            $managementResult=mysqli_query($connection,$managementSql);
+                            while($managementRow=mysqli_fetch_assoc($managementResult)){
+                            ?>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <?php
+                                }
+                                ?>
                         </ul>
                         <h4><b>Management Team</b></h4>
                         <ul>
-                            <li id="management_list"><b>Mr. Nimal Fernando Director/ CEO Avenra Hotels</b></li>
+                            <?php
+                            $managementSql="SELECT * FROM `staff` WHERE `type`='Management Team'";
+                            $managementResult=mysqli_query($connection,$managementSql);
+                            while($managementRow=mysqli_fetch_assoc($managementResult)){
+                            ?>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <p class="pl-5"><b>E-mail</b>:<?php echo $managementRow['email']?></p>
+                                <?php
+                                }
+                                ?>
                         </ul>
-                        <p class="pl-5"><b>E-mail</b>:
-                            chandana@avenrahotels.com</p>
-                        <ul>
-                            <li id="management_list"><b>Mr. Hemantha Ratnayake Director Operations Avenra Hotels</b>
-                            </li>
-                        </ul>
-                        <p class="pl-5"><b>E-mail</b>:
-                            hemantha@avenrahotels.com</p>
-                        <ul>
-                            <li id="management_list"><b>Mr. Mani Sugathapala Director Sales and Marketing </b></li>
-                        </ul>
-                        <p class="pl-5"><b>Direct</b>: +94114376100 </p>
-                        <p class="pl-5"><b>Mobile</b>: +94776890789 </p>
-                        <p class="pl-5"><b>E-mail</b>: Mani@avenrahotels.com
-                        </p>
+                        
                     </div>
                     <div class="col-md-6 mt-3">
                         <div class="about_image_2" style="background-image: url('<?php echo cmsGetSingle("aboutImage2","about");?>')">></div>

@@ -47,7 +47,7 @@ include_once '../config.php';
                         <option value="" selected disabled>Select Type</option>
                         <option value="Chairman">Chairman</option>
                         <option value="Director">Director</option> 
-                        <option value="Management">Management Team</option>                   
+                        <option value="Management Team">Management Team</option>                   
                     </select>
                 </div>
                 <div class="form-group row d-flex">

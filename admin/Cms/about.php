@@ -82,7 +82,7 @@ include_once '../function.php';
                             ?>
                             <div class="col-12 col-md-4 mx-auto mt-4">
                                 <div class="card">
-                                    <div class="card-border d-flex">
+                                    <div class="card-header d-flex">
                                         <a href="deleteController.php?id=<?php echo cmsGetMultipleId("icon","about",$groupCode)?>" class="text-dark no-deco ml-auto"><i class="fas fa-times"></i></a>
                                     </div>
                                     <div class="card-body">
