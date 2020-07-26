@@ -101,7 +101,9 @@ include_once "navigation.php";
                             while($managementRow=mysqli_fetch_assoc($managementResult)){
                             ?>
                                 <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
-                                <p class="pl-5"><b>E-mail</b>:<?php echo $managementRow['email']?></p>
+                                <p class="pl-5"><b>E-mail</b>: <?php echo $managementRow['email']?></p>
+                                <p class="pl-5"><b>Direct</b>: <?php echo $managementRow['direct']?></p>
+                                <p class="pl-5"><b>Mobile</b>: <?php echo $managementRow['mobile']?></p>
                                 <?php
                                 }
                                 ?>
