@@ -24,13 +24,11 @@ function room($id){
 function user($id){
     $userSql="select * from user where id= '$id'";
     $userResult=mysqli_query($GLOBALS['connection'],$userSql);
-    $userData=mysqli_fetch_assoc($userResult);
     if($userData=mysqli_fetch_assoc($userResult)){
-        return $userData['name'];
+        return $userData['first_name']." ".$userData['last_name'];
     }else{
         return "Guest";
     }
-    return $userData['name'];
 }
 
 function uploadFile($path, $inputName)

@@ -22,161 +22,51 @@ include_once "navigation.php";
 
 	<section id="rooms">
 		<div class="container" id="container">
-<!--room1-->
+
+	<?php 
+	$roomSql="select * from room";
+	$roomResult=mysqli_query($connection,$roomSql);
+	$i=0;
+	while($roomRow=mysqli_fetch_assoc($roomResult)){
+		$i++;	
+		if($i%2==1){
+			$orderFirstDiv=1;
+			$orderSecondDiv=2;
+		}else{
+			$orderFirstDiv=2;
+			$orderSecondDiv=1;
+		}
+		$imageSql="select * from room_image WHERE room_id='$roomRow[id]' order by thumbnail desc limit 1";
+        $imageResult=mysqli_query($connection,$imageSql);
+    	$imageData=mysqli_fetch_assoc($imageResult);
+	
+	?>
         	<div class="row rowRoom">
-            	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="Deluxe Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-deluxe-ocean-view.jpg" class="img"></a>
+            	<div class="col-12 col-lg-6 order-1 order-lg-<?php echo $orderFirstDiv;?>">
+            		<a href="room-view.php?id=<?php echo $roomRow['id']?>" title="room-view.php?id=<?php echo $roomRow['name']?>"><img src="<?php echo $imageData['path']?>" class="img"></a>
             	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-2">
+            	<div class="col-12 col-lg-6 order-2 order-lg-<?php echo $orderSecondDiv;?>">
             		<div class="content">
                 		<div class="name">
-                			<h3><a href="#" title="Deluxe Ocean View" class="stayType" onclick="window.location='room-view.php'">Deluxe Ocean View</a></h3></div><hr>
+                			<h3><a href="room-view.php?id=<?php echo $roomRow['id']?>" title="room-view.php?id=<?php echo $roomRow['name']?>" class="stayType" ><?php echo $roomRow['name']?></a></h3></div><hr>
                 		<div class="description">
                     		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  39 sqm.</li>
-                        		<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 1 child or 3 adults</li>
-                        		<li><b>Bed Type(s):</b>  King or twin beds</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Available</li>
+                        		<li><b>Room Size:</b>  <?php echo $roomRow['size']?> sqm.</li>
+                        		<li><b>View:</b>   <?php echo $roomRow['view']?></li>
+                        		<li><b>Ideal For:</b>   <?php echo $roomRow['ideal_for']?></li>
+                        		<li><b>Bed Type(s):</b>   <?php echo $roomRow['bed_type']?></li>
+                        		<li><b>Inter-connecting Rooms:</b>   <?php echo $roomRow['inter_connections']?></li>
                     		</ul>
                			</div>
                			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View" onclick="window.location='room-view.php'">View</a>
+                        	<a class="btn btnRoom" href="room-view.php?id=<?php echo $roomRow['id']?>" title="room-view.php?id=<?php echo $roomRow['name']?>">View</a>
                     	</div>
                		</div>
            		</div>
        		</div>
        		<br><br>
+		<?php } ?>
 
-<!--room2-->
-        	<div class="row rowRoom">
-				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Deluxe Ocean View Horizon" onclick="window.location='room-view.php'"><img src="img/thumb-deluxe-ocean-horizon.jpg" class="img"></a>
-            	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-1" >
-            		<div class="content">
-                		<div class="name">
-                			<h3><a href="#" title="Deluxe Ocean View Horizon" class="stayType" onclick="window.location='room-view.php'">Deluxe Ocean View Horizon</a></h3>
-                		</div><hr>
-                		<div class="description">
-                    		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  39 sqm.</li>
-                        	 	<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 1 child or 3 adults</li>
-                        		<li><b>Bed Type(s):</b>  King or twin beds</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Available</li>
-                    		</ul>
-               			</div>
-               			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Deluxe Ocean View Horizon" onclick="window.location='room-view.php'">View</a>
-                    	</div>
-               		</div>
-            	</div>
-        	</div>
-        	<br><br>
-<!--room3-->
-        	<div class="row rowRoom">
-            	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="Grand Deluxe Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-grand-deluxe-ocean-view.jpg" class="img"></a>
-            	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-2">
-            		<div class="content">
-                		<div class="name">
-                			<h3><a href="#" title="Grand Deluxe Ocean View" class="stayType" onclick="window.location='room-view.php'">Grand Deluxe Ocean View</a></h3>
-                		</div><hr>
-                		<div class="description">
-                    		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  57 sqm.</li>
-                        		<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 1 child or 3 adults</li>
-                        		<li><b>Bed Type(s):</b>  King bed</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Available</li>
-                    		</ul>
-               			</div>
-               			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Grand Deluxe Ocean View" onclick="window.location='room-view.php'">View</a>
-                    	</div>
-               		</div>
-            	</div>
-        	</div>
-        	<br><br>
-<!--suite1-->
-        	<div class="row rowRoom">
-				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Junior Suite Ocean View" onclick="window.location='room-view.php'"><img src="img/thumb-junior-suite-ocean-view.jpg" class="img"></a>
-            	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-1">
-            		<div class="content">
-                		<div class="name">
-                			<h3><a href="#" title="Junior Suite Ocean View" class="stayType" onclick="window.location='room-view.php'">Junior Suite Ocean View</a></h3>
-                		</div><hr>
-                		<div class="description">
-                    		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  57 sqm.</li>
-                        		<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 1 child or 3 adults</li>
-                        		<li><b>Bed Type(s):</b>  King bed</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Not Available</li>
-                    		</ul>
-               			</div>
-               			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Junior Suite Ocean View" onclick="window.location='room-view.php'">View</a>
-                    	</div>
-               		</div>
-            	</div>
-            </div>
-        	<br><br>
-<!--suite2-->
-        	<div class="row rowRoom">
-            	<div class="col-12 col-lg-6 order-1 order-lg-1">
-            		<a href="#" title="One Bedroom Suite" onclick="window.location='room-view.php'"><img src="img/thumb-one-bedroom-suite.jpg" class="img"></a>
-            	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-2">
-            		<div class="content">
-                		<div class="name">
-                			<h3><a href="#" title="One Bedroom Suite" class="stayType" onclick="window.location='room-view.php'">One Bedroom Suite</a></h3>
-                		</div><hr>
-                		<div class="description">
-                    		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  95 sqm.</li>
-                        		<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 1 child or 3 adults</li>
-                        		<li><b>Bed Type(s):</b>  King bed</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Not Available</li>
-                    		</ul>
-               			</div>
-               			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View One Bedroom Suite" onclick="window.location='room-view.php'">View</a>
-                    	</div>
-               		</div>
-            	</div>
-			</div>
-        	<br><br>
-<!--suite3-->
-        	<div class="row rowRoom">
-				<div class="col-12 col-lg-6 order-1 order-lg-2">
-            		<a href="#" title="Presidential Suite" onclick="window.location='room-view.php'"><img src="img/thumb-presidential-suite.jpg" class="img"></a>
-            	</div>
-            	<div class="col-12 col-lg-6 order-2 order-lg-1">
-            		<div class="content">
-                		<div class="name">
-                			<h3><a href="#" title="Presidential Suite" class="stayType" onclick="window.location='room-view.php'">Presidential Suite</a></h3>
-                		</div><hr>
-                		<div class="description">
-                    		<ul class="descriptUL">
-                        		<li><b>Room Size:</b>  360 sqm.</li>
-                        		<li><b>View:</b>  Ocean view</li>
-                        		<li><b>Ideal For:</b>  2 adults and 2 children or 4 adults</li>
-                        		<li><b>Bed Type(s):</b>  King bed,Twin beds</li>
-                        		<li><b>Inter-connecting Rooms:</b>  Not Available</li>
-                    		</ul>
-               			</div>
-               			<div class="button">
-                        	<a class="btn btnRoom" href="#" title="View Presidential Suite" onclick="window.location='room-view.php'">View</a>
-                    	</div>
-               		</div>
-            	</div>
-            </div>
 		</div>
 	</section>
 </div>

@@ -1,36 +1,36 @@
 <?php
 session_start();
+include_once "admin/config.php";
+include_once "admin/function.php";
 include_once "headerHTML.php";
 include_once "navigation.php";
+$roomSql="select * from room WHERE id='$_GET[id]'";
+$roomResult=mysqli_query($connection,$roomSql);
+$roomData=mysqli_fetch_assoc($roomResult);
 ?>
 <div class="container" id="customContainer">
 	<section class="main-banner">
 		<div class="row justify-content-center">
 			<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
-			<h2 class="heading text-color-purple">Deluxe Ocean View</h2>
+			<h2 class="heading text-color-purple"><?php echo $roomData['name']?></h2>
 			<span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
 		</div>
 		<div class="row"  style="padding-top:20px">
-			<div id="customImg" class="carousel slide " data-ride="carousel">
+			<div id="carouselExampleIndicators" class="carousel slide customImg" data-ride="carousel">
 				<div class="carousel-inner" style="height:500px">
-					<div class="carousel-item active">
-						<img src="img/deluxe-ocean-view_king-bed.jpg" style="width:100%;height:500px;object-fit:cover">
+					<?php
+					 $roomImageSql="select * from room_image WHERE room_id='$_GET[id]'";
+                	$roomImageResult=mysqli_query($connection,$roomImageSql);
+					$i=0;
+                	while($roomImageData=mysqli_fetch_assoc($roomImageResult)){
+						$i++;
+					?>
+					<div class="carousel-item <?php if($i==1){echo "active";}?>">
+						<img src="<?php echo $roomImageData['path']?>" style="width:100%;height:500px;object-fit:cover">
 					</div>
-					<div class="carousel-item">
-						<img  src="img/deluxe-ocean-view_king-bed-view.jpg" style="width:100%;height:500px;object-fit:cover">
-					</div>
-					<div class="carousel-item ">
-						<img src="img/deluxe-ocean-view_living-area.jpg" style="width:100%;height:500px;object-fit:cover">
-					</div>
-					<div class="carousel-item ">
-						<img  src="img/deluxe-ocean-view_twin-bed-view.jpg" style="width:100%;height:500px;object-fit:cover">
-					</div>
-					<div class="carousel-item">
-						<img src="img/deluxe-ocean-view_bathroom-1.jpg" style="width:100%;height:500px;object-fit:cover">
-					</div>
-					<div class="carousel-item">
-						<img src="img/deluxe-ocean-view_bathroom-2.jpg" style="width:100%;height:500px;object-fit:cover">
-					</div>
+					<?php
+					}
+					?>
 				</div>
     
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -45,8 +45,8 @@ include_once "navigation.php";
 		</div>
 		<div class="row contentRow">
 			<article class="content">
-                <p class="view">King or twin beds <span> | </span> 39 sqm. <span> | </span> Ocean view</p>
-                <p class="descriptionRoom">Enter an oasis of tranquillity, leave the cares of the world behind. Our Deluxe Ocean View featuring a private balcony, 40-inch LED TV and free Wi-Fi have been designed for you to ease the mind.</p>
+                <p class="view"><?php echo $roomData['bed_type']?> <span> | </span> <?php echo $roomData['size']?> sqm. <span> | </span> <?php echo $roomData['view']?></p>
+                <p class="descriptionRoom"><?Php echo nl2br($roomData['description'])?></p>
 				<form id="bookForm" action="admin/booking/addController.php" method="POST">
 					<div class="row">
 						<div class="col-md-3">
@@ -59,12 +59,12 @@ include_once "navigation.php";
 						</div>
 						<div class="col-md-3">
 							<div class="button">
-                        		<a class="btn btnBook" href="#">Book Now</a>
+                        		<button class="btn btnBook" type="submit">Book Now</button>
                     		</div>
 						</div>
 					</div>
 					<input type="hidden" name="room_id" value="<?php echo $_GET['id']?>">
-					<input type="hidden" name="user_id" value="<?php echo $_SESSION['id']?>">
+					<input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']?>">
 				</form>
             </article>
 		</div>
@@ -75,22 +75,22 @@ include_once "navigation.php";
 					<div class="col-6 col-md-3">
 						<div class="icon size"><i class="fas fa-ruler" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
                         <h4 class="head4">Room Size</h4>
-                        <p class="pHighlight">39 sqm.</p>
+                        <p class="pHighlight"><?php echo $roomData['size']?> sqm.</p>
 					</div>
 					<div class="col-6 col-md-3">
 						<div class="icon bed"><i class="fas fa-bed" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
                         <h4 class="head4">Bed Type(s)</h4>
-                        <p class="pHighlight">King or twin beds</p>
+                        <p class="pHighlight"><?php echo $roomData['bed_type']?></p>
 					</div>
 					<div class="col-6 col-md-3">
 						<div class="icon adultskid"><i class="fas fa-user-friends" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
                         <h4 class="head4">Ideal For</h4>
-                        <p class="pHighlight">2 adults and 1 child or 3 adults</p>
+                        <p class="pHighlight"><?php echo $roomData['ideal_for']?></p>
 					</div>
 					<div class="col-6 col-md-3">
 						<div class="icon view"><i class="fas fa-water" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
                         <h4 class="head4">View</h4>
-                        <p class="pHighlight">Ocean view</p>
+                        <p class="pHighlight"><?php echo $roomData['view']?></p>
 					</div>
 				</div>
 			</div>
@@ -103,34 +103,88 @@ include_once "navigation.php";
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-md-3 colFeatures">
+				<div class="col-md-4 colFeatures">
                     <h4 class="head4">Overview</h4>
-                    <ul class="custom">
-                        <li>39 sqm.</li>
-                        <li>Ocean view</li>
-                        <li>Balcony</li>
-                        <li>Ideal for 2 adults and 1 child or 3 adults</li>
+                    <ul class=custom>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="fas fa-ruler mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomData['size']?> sqm.</div>
+							</div>
+						</li>
+                        <li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="fas fa-water mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomData['view']?></div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="fas fa-user-friends mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomData['ideal_for']?></div>
+							</div>
+						</li>
+						<?php 
+						$roomFeatureOverviewSql="select * from room_has_feature as rhf inner join feature as f on rhf.feature_id=f.id where rhf.room_id='$_GET[id]' and type='Overview'";
+						$roomFeatureOverviewResult=mysqli_query($connection,$roomFeatureOverviewSql);
+						while($roomFeatureOverviewData=mysqli_fetch_assoc($roomFeatureOverviewResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomFeatureOverviewData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomFeatureOverviewData['feature']?></div>
+							</div>
+						</li>
+						<?php	
+						}
+						?>
+                        
+    
+                        
                     </ul>
                 </div>
-                <div class="col-md-3 colFeatures">
+                <div class="col-md-4 colFeatures">
                     <h4 class="head4">Bedroom</h4>
                     <ul class="custom">
-                        <li>King or twin beds</li>
-                        <li>Work space</li>
-                        <li>Safety box</li>
-                        <li>Individual climate control</li>
-                        <li>Mini-bar</li>
+                        <li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="fas fa-bed mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomData['bed_type']?></div>
+							</div>
+						</li>
+						<?php 
+						$roomFeatureBedroomSql="select * from room_has_feature as rhf inner join feature as f on rhf.feature_id=f.id where rhf.room_id='$_GET[id]' and type='Bedroom'";
+						$roomFeatureBedroomResult=mysqli_query($connection,$roomFeatureBedroomSql);
+						while($roomFeatureBedroomData=mysqli_fetch_assoc($roomFeatureBedroomResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomFeatureBedroomData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomFeatureBedroomData['feature']?></div>
+							</div>
+						</li>
+						<?php	
+						}
+						?>
                     </ul>
                 </div>
-                <div class="col-md-3 colFeatures">
+                <div class="col-md-4 colFeatures">
                     <h4 class="head4">Bathroom</h4>
                        <ul class="custom">
-                            <li>Shower</li>
-                            <li>Bathrobes and slippers</li>
-                            <li>Complimentary toiletries</li>
-                            <li>Hair-dryer</li>
-                            <li>Shaving point</li>
-                            <li>Towels</li>
+                            <?php 
+						$roomFeatureBathroomSql="select * from room_has_feature as rhf inner join feature as f on rhf.feature_id=f.id where rhf.room_id='$_GET[id]' and type='Bathroom'";
+						$roomFeatureBathroomResult=mysqli_query($connection,$roomFeatureBathroomSql);
+						while($roomFeatureBathroomData=mysqli_fetch_assoc($roomFeatureBathroomResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomFeatureBathroomData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomFeatureBathroomData['feature']?></div>
+							</div>
+						</li>
+						<?php	
+						}
+						?>
                         </ul>
                  </div>
 			</div>
@@ -143,31 +197,61 @@ include_once "navigation.php";
 				<h3 class="head3">Amenities</h3>
 			</div><br>
 			<div class="row">
-				<div class="col-md-3 colFeatures">
+				<div class="col-md-4 colFeatures">
                     <h4 class="head4">Connectivity</h4>
                     <ul class="custom">
-                        <li>Free Wi-Fi</li>
-                        <li>Telephone</li>
-                        <li>Radio</li>
-                        <li>Multimedia connectivity panel</li>
-                        <li>LED TV</li>
+                        <?php 
+						$roomAmenityConnectivitySql="select * from room_has_amenity as rha inner join amenity as a on rha.amenity_id=a.id where rha.room_id='$_GET[id]' and type='Connectivity'";
+						$roomAmenityConnectivityResult=mysqli_query($connection,$roomAmenityConnectivitySql);
+						while($roomAmenityConnectivityData=mysqli_fetch_assoc($roomAmenityConnectivityResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomAmenityConnectivityData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomAmenityConnectivityData['amenity']?></div>
+							</div>
+						</li>
+						<?php	
+						}
+						?>
                     </ul>
                 </div>
-                <div class="col-md-3 colFeatures">
+                <div class="col-md-4 colFeatures">
                     <h4 class="head4">Services</h4>
                     <ul class="custom">
-                        <li>Complimentary bottled water replenished daily</li>
-                        <li>Daily cleaning service</li>
-                        <li>In-room dining</li>
+                        <?php 
+						$roomAmenityServicesSql="select * from room_has_amenity as rha inner join amenity as a on rha.amenity_id=a.id where rha.room_id='$_GET[id]' and type='Services'";
+						$roomAmenityServicesResult=mysqli_query($connection,$roomAmenityServicesSql);
+						while($roomAmenityServicesData=mysqli_fetch_assoc($roomAmenityServicesResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomAmenityServicesData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomAmenityServicesData['amenity']?></div>
+							</div>
+						</li>
+						<?php	
+						}
+						?>
                     </ul>
                 </div>
-                <div class="col-md-3 colFeatures">
+                <div class="col-md-4 colFeatures">
                     <h4 class="head4">Extras</h4>
                     <ul class="custom">
-                        <li>230V electrical sockets</li>
-                        <li>Ironing facilities</li>
-                        <li>Tea and coffee making facilities</li>
-                        <li>Connecting rooms (on-request)</li>
+                        <?php 
+						$roomAmenityExtrasSql="select * from room_has_amenity as rha inner join amenity as a on rha.amenity_id=a.id where rha.room_id='$_GET[id]' and type='Extras'";
+						$roomAmenityExtrasResult=mysqli_query($connection,$roomAmenityExtrasSql);
+						while($roomAmenityExtrasData=mysqli_fetch_assoc($roomAmenityExtrasResult)){
+						?>
+						<li>
+							<div class="row">
+								<div class="col-1 col-md-2"><i class="<?php echo $roomAmenityExtrasData['icon']?> mr-3 text-secondary"></i></div>
+								<div class="col-11 col-md-10"><?php echo $roomAmenityExtrasData['amenity']?></div>
+							</div>
+						</li>
+						<?php
+						}
+						?>	
                     </ul>
                 </div>
 			</div>		

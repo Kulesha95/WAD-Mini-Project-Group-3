@@ -33,6 +33,7 @@ include_once '../config.php';
                     ?>
                     <div class="col-12 col-md-4 p-3">
                     <img src="../../<?php echo $roomData['path']?>" class"img-fluid" style="height:30vh; width:100%;object-fit:cover">
+                    <a class="btn btn-danger btn-sm" href="roomImageDeleteController.php?id=<?php echo $roomData['id'];?>&roomId=<?php echo $_GET['id']?>" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fas fa-trash-alt mr-2"></i>Delete</a>
                     </div>
                     <?php
                 }
