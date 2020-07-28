@@ -1,8 +1,8 @@
 
 #about_body{
 
-	background-color: #F8F8F8;
-	}
+  background-color: #F8F8F8;
+  }
 
 .about_image{
       
@@ -12,7 +12,7 @@
   }
 
   #about_description,#about_vision,#about_mission {
-  	text-align: justify;
+    text-align: justify;
   }
 
 .column {
@@ -24,7 +24,7 @@
 
 
 .row:after {
-	
+  
   content: "";
   display: table;
   clear: both;
@@ -32,24 +32,24 @@
 }
     
 .heading{
-	color: purple;
-	font-family: serif;
+  color: purple;
+  font-family: serif;
 }
 .icon-background {
     color: #4400A9;
 }
 
 .label{
-	text-align: center;
+  text-align: center;
 }
 
 #about_list{
-	color: #4400A9;
-	font-family: "Lucida Console", Courier, monospace;
+  color: #4400A9;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 #management_list{
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .about_image_2{
@@ -61,5 +61,5 @@
   }
 
 .text-color-purple{
-	color: purple;
+  color: #4400A9;
 }

@@ -57,18 +57,19 @@ include_once '../function.php';
                         <input type="hidden" name="group_code" id="group_code" value="icon_area">
                         <input type="hidden" name="type" id="type" value="multiple">
                         <div class="form-group row">
-                            <label for="icon" class="col-4 col-md-2">Icon</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="icon"
+                            <label for="icon" class="col-3 col-md-2 col-xl-1">Icon</label>
+                            <input type="text" class="form-control form-control-sm col-6 col-md-8 col-xl-10" id="icon"
                                 name="icon" placeholder="Icon">
+                            <a href="https://fontawesome.com/icons?d=gallery" class="btn btn-primary btn-sm ml-auto col-3 col-md-2 col-xl-1" type="button" target="_blank">Cheat Sheet</a>
                         </div>
                         <div class="form-group row">
-                            <label for="line1" class="col-4 col-md-2">Line 1</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="line1"
+                            <label for="line1" class="col-3 col-md-2 col-xl-1">Line 1</label>
+                            <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="line1"
                                 name="line1" placeholder="Line 1">
                         </div>
                         <div class="form-group row">
-                            <label for="line2" class="col-4 col-md-2">Line 2</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="line2"
+                            <label for="line2" class="col-3 col-md-2 col-xl-1">Line 2</label>
+                            <input type="text" class="form-control form-control-sm col-8 col-md-10 col-xl-11" id="line2"
                                 name="line2" placeholder="Line 2">
                         </div>
                         <div class="form-group row d-flex">
