@@ -12,7 +12,7 @@ images[4] = 'img/gallery/inside5.jpg';
 
 //change image
 function changeImg(){
-	document.slideauto.src = images[i];
+	// document.slideauto.src = images[i];
 
 	if(i < images.length - 1){
 		i++;

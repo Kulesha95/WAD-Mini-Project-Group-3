@@ -43,10 +43,51 @@ $roomData=mysqli_fetch_assoc($roomResult);
 				</a>
 			</div>
 		</div>
+		
 		<div class="row contentRow">
 			<article class="content">
                 <p class="view"><?php echo $roomData['bed_type']?> <span> | </span> <?php echo $roomData['size']?> sqm. <span> | </span> <?php echo $roomData['view']?></p>
                 <p class="descriptionRoom"><?Php echo nl2br($roomData['description'])?></p>
+				<div class="container col-3 col-md-8 mx-auto section-gap">
+        <div class="row bg-purple p-3">
+            <div class="col-2 d-flex">
+                <h1 class="text-light text-center mx-auto my-auto" id="previous" onClick="previousMonthCalender()"><i
+                        class="fas fa-chevron-left"></i>
+                </h1>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <h1 class="text-light text-center mx-auto" id="month"></h1>
+                </div>
+                <div class="row">
+                    <h3 class="text-light text-center mx-auto" id="year"></h3>
+                </div>
+            </div>
+            <div class="col-2 d-flex">
+                <h1 class="text-light text-center mx-auto my-auto" id="next" onClick="nextMonthCalender()"><i
+                        class="fas fa-chevron-right"></i></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table-borderless">
+                <table class="table calender-table">
+                    <thead class="header-load">
+                        <tr>
+                            <th class="date-sunday">SUN</th>
+                            <th class="date-weekday">MON</th>
+                            <th class="date-weekday">TUE</th>
+                            <th class="date-weekday">WED</th>
+                            <th class="date-weekday">THU</th>
+                            <th class="date-weekday">FRI</th>
+                            <th class="date-saturday">SAT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dates">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 				<form id="bookForm" action="admin/booking/addController.php" method="POST">
 					<div class="row">
 						<div class="col-md-3">

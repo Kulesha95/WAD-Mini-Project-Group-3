@@ -22,12 +22,17 @@
 
     <!-- Fontawesome Icons Link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <!--jquery ui-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
 
     <!-- Contact CSS -->
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 	<link rel="stylesheet" type="text/css" href="css/pasindu.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
     <!-- Accomodation CSS-->
@@ -40,6 +45,8 @@
     <script src="js/room-view.js"></script>
     <!--gallery js -->
     <script src="js/gallery.js"></script>
+    <!--calendar js -->
+    <script src="js/calendar.js"></script>
     
 
 

@@ -1,0 +1,31 @@
+.bg-purple {
+            background-color: #4400A9;
+        }
+
+        .date-weekday {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bg-booked {
+            padding-top: 1px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: #4400A9 2px solid;
+            background-color: #4400A9;
+            color: beige;
+        }
+
+        .date-saturday {
+            color: gray !important;
+        }
+
+        .date-sunday {
+            color: red !important;
+        }
+
+        .calender-table td,.calender-table th{
+            text-align: center;
+            font-weight: bold;
+        }
