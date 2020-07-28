@@ -29,20 +29,20 @@ include_once '../function.php';
                         <input type="hidden" name="group_code" id="group_code" value="about_details">
                         <input type="hidden" name="type" id="type" value="single">
                         <div class="form-group row">
-                            <label for="description" class="col-4 col-md-2">Description</label>
-                            <textarea class="form-control form-control-sm col-8 col-md-10" id="description"
+                            <label for="description" class="col-3 col-md-2 col-xl-1">About</label>
+                            <textarea class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="description"
                                 name="description" placeholder="Description"><?php echo cmsGetSingle("description", "about"); ?>
                             </textarea>
                         </div>
                         <div class="form-group row">
-                            <label for="vision" class="col-4 col-md-2">Vision</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="vision"
+                            <label for="vision" class="col-3 col-md-2 col-xl-1">Vision</label>
+                            <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="vision"
                                 name="vision" placeholder="Vision"
                                 value="<?php echo cmsGetSingle("vision", "about"); ?>">
                         </div>
                         <div class="form-group row">
-                            <label for="mission" class="col-4 col-md-2">Mission</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10" id="mission"
+                            <label for="mission" class="col-3 col-md-2 col-xl-1">Mission</label>
+                            <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="mission"
                                 name="mission" placeholder="Mission"
                                 value="<?php echo cmsGetSingle("mission", "about"); ?>">
                         </div>
@@ -52,7 +52,7 @@ include_once '../function.php';
                         </div>
                     </form>
                     <hr>
-                    <form action="addController.php" method="POST" class="m-3" enctype="multipart/form-data">
+                    <form action="addController.php" method="POST" class="m-4" enctype="multipart/form-data">
                         <input type="hidden" name="page" id="page" value="about">
                         <input type="hidden" name="group_code" id="group_code" value="icon_area">
                         <input type="hidden" name="type" id="type" value="multiple">
@@ -69,7 +69,7 @@ include_once '../function.php';
                         </div>
                         <div class="form-group row">
                             <label for="line2" class="col-3 col-md-2 col-xl-1">Line 2</label>
-                            <input type="text" class="form-control form-control-sm col-8 col-md-10 col-xl-11" id="line2"
+                            <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="line2"
                                 name="line2" placeholder="Line 2">
                         </div>
                         <div class="form-group row d-flex">
@@ -116,8 +116,8 @@ include_once '../function.php';
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="aboutImage1">
                         <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Start</label>
-                            <div class="custom-file col-8 col-md-10">
+                            <label for="number" class="col-3 col-md-2 col-xl-1">Start</label>
+                            <div class="custom-file col-9 col-md-10 col-xl-11">
                                 <input type="file" class="custom-file-input" id="image" name="image">
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
@@ -133,8 +133,8 @@ include_once '../function.php';
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="aboutImage2">
                         <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Middle</label>
-                            <div class="custom-file col-8 col-md-10">
+                            <label for="number" class="col-3 col-md-2 col-xl-1">Middle</label>
+                            <div class="custom-file col-9 col-md-10 col-xl-11">
                                 <input type="file" class="custom-file-input" id="image" name="image">
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
