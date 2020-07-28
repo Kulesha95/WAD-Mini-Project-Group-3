@@ -34,7 +34,7 @@
                             <td><?php echo $listRow['name'];?></td>
                             <td><?php echo $listRow['description'];?></td>
                             <td><?php echo $listRow['price'];?></td>
-                            <td><?php echo $listRow['image'];?></td>
+                            <td><a href="../../<?php echo $listRow['image'];?>" target="_blank"><img src="../../<?php echo $listRow['image'];?>" alt="Image" class="img-fluid" style="width:100px;"></a></td>
                              <td><?php echo $listRow['type'];?></td>
                             <td>
                                 <div class="btn-group" role="group">

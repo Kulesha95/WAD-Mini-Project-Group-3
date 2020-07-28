@@ -20,35 +20,42 @@ $menuData=mysqli_fetch_assoc($menuResult);
                 <input type="hidden" id="id" name="id" value="<?php echo $_GET['id'];?>">
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Food Name</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="name" name="name" placeholder="Food Name" value="<?php echo $menuData['name'];?>">
+                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="name"
+                        name="name" placeholder="Food Name" value="<?php echo $menuData['name'];?>">
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Description</label>
-                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description" name="description" placeholder="Description"><?php echo $menuData['description'];?></textarea>
+                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description"
+                        name="description" placeholder="Description"><?php echo $menuData['description'];?></textarea>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Price</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price" name="price" placeholder="price" value="<?php echo $menuData['price'];?>">
+                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price"
+                        name="price" placeholder="price" value="<?php echo $menuData['price'];?>">
                 </div>
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Image</label>
-                   <div class="file-upload-wrapper form-control form-control-sm col-8 col-md-9 col-xl-10">
-                    <input type="file" id="input-file-now"  id="image" placeholder="add image" value="<?php echo $menuData['image'];?>"/>
-                </div>
+                    <label for="name" class="col-4 col-md-4 col-xl-2">Image</label>
+                    <div class="custom-file mb-3 col-8 col-md-8 col-xl-10">
+                        <input type="file" class="custom-file-input" id="image" name="image">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
                 </div>
 
-                
+
                 <div class="form-group row">
                     <label for="name" class="col-4 col-md-3 col-xl-2">Type</label>
-                    <select class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="type" name="type" value="<?php echo $menuData['type'];?>">
+                    <select class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="type" name="type"
+                        value="<?php echo $menuData['type'];?>">
                         <option value="" Selected Disabled>Select</option>
-                        <option value="Breakfast" <?php if($menuData['type']=="Breakfast"){echo "selected";}?>>Breakfast</option>
+                        <option value="Breakfast" <?php if($menuData['type']=="Breakfast"){echo "selected";}?>>Breakfast
+                        </option>
                         <option value="Lunch" <?php if($menuData['type']=="Lunch"){echo "selected";}?>>Lunch</option>
                         <option value="Dinner" <?php if($menuData['type']=="Dinner"){echo "selected";}?>>Dinner</option>
                     </select>
                 </div>
                 <div class="form-group row d-flex">
-                    <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i class="fas fa-edit mr-2"></i>Edit</button>
+                    <button name="Edit" value="Edit" type="submit" class="btn btn-primary btn-sm ml-auto"><i
+                            class="fas fa-edit mr-2"></i>Edit</button>
                 </div>
             </form>
         </div>
