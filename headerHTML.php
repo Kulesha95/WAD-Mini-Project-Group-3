@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     
-    
+    <title>Document</title>    
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,35 +20,41 @@
 
     <!-- Fontawesome Icons Link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-    <!--jquery ui-->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
 
     <!-- Contact CSS -->
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-	<link rel="stylesheet" type="text/css" href="css/pasindu.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
+
+    <!-- Index CSS -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- About CSS -->
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <!--gallery JS -->
+    <script src="js/gallery.js"></script>
+
     <!-- Accomodation CSS-->
     <link rel="stylesheet" type="text/css" href="css/accomodation.css">
     <!--Accomodation JS-->
     <script src="js/accomodation.js"></script>
+
     <!-- Room-view CSS-->
     <link rel="stylesheet" type="text/css" href="css/room-view.css">
     <!--Room-view JS-->
     <script src="js/room-view.js"></script>
-    <!--gallery js -->
-    <script src="js/gallery.js"></script>
-    <!--calendar js -->
-    <script src="js/calendar.js"></script>
+
+    <!--jquery UI-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
     
-
-
-
+    <!--calendar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <!--calendar JS -->
+    <script src="js/calendar.js"></script>
 </head>
-
 <body>
