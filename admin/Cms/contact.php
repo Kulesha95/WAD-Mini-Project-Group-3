@@ -1,4 +1,4 @@
-<?php
+?php
 include_once '../headerHTML.php';
 include_once '../config.php';
 include_once '../function.php';
@@ -77,7 +77,7 @@ include_once '../function.php';
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="writeUsImage">
                         <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Number</label>
+                            <label for="number" class="col-4 col-md-2">Write Us Image</label>
                             <div class="custom-file col-8 col-md-10">
                                 <input type="file" class="custom-file-input" id="image" name="image">
                                 <label class="custom-file-label" for="image">Choose file</label>
