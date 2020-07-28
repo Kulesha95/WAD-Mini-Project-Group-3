@@ -26,9 +26,10 @@ include_once '../config.php';
                     <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price" name="price" placeholder="Price">
                 </div>
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Image</label>
-                   <div class="file-upload-wrapper form-control form-control-sm col-8 col-md-9 col-xl-10">
-                    <input type="file" id="input-file-now"  id="image" placeholder="add image" />
+                    <label for="name" class="col-4 col-md-4 col-xl-2">Image</label>
+                    <div class="custom-file mb-3 col-8 col-md-8 col-xl-10">
+                        <input type="file" class="custom-file-input" id="image" name="image">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
                 </div>
                 
