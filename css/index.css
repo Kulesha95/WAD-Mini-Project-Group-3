@@ -102,6 +102,10 @@ header {
   height: 750px;
 }
 
+.food-carousel {
+  height: 500px !important;
+}
+
 .animated-text {
   color: #f6e9e7;
   position: absolute;
