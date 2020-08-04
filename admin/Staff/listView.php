@@ -7,8 +7,8 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Staff List</h4>
+                <i class="fas fa-user-tie mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Staffs List</h4>
             </div>
         </div>
         <div class="card-body">
@@ -16,7 +16,6 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Id</th>
                             <th>Title</th>
                             <th>First Name</th>
                             <th>Last Name</th>
@@ -35,7 +34,6 @@
                     while($listRowStaff=mysqli_fetch_assoc($listResultStaff)){
                 ?>            
                         <tr>
-                            <td><?php echo $listRowStaff['id'];?></td>
                             <td><?php echo $listRowStaff['title'];?></td>
                             <td><?php echo $listRowStaff['first_name'];?></td>
                             <td><?php echo $listRowStaff['last_name'];?></td>

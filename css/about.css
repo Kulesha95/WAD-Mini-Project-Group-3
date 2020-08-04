@@ -6,7 +6,7 @@
 
 .about_image{
       
-      height: 320px !important;
+      height: 500px !important;
       width: 100%;
       background-size: cover;
   }
@@ -32,7 +32,7 @@
 }
     
 .heading{
-  color: purple;
+  color: #4400A9;
   font-family: serif;
 }
 .icon-background {

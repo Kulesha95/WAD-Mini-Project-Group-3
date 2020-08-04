@@ -7,7 +7,7 @@ include_once "navigation.php";
 
 <!-- HTML code goes here -->
 <body >
-	
+    
  <div class="container bg-white">
         <section class="about_details section-gap">
             <div class="row justify-content-center">
@@ -24,7 +24,7 @@ include_once "navigation.php";
         <div>
             <section class="index section-gap">
                 <div>
-                    <p id="about_description"><?php echo cmsGetSingle("description", "about"); ?></p>
+                    <p id="about_description"><?php echo nl2br(cmsGetSingle("description", "about")); ?></p>
                 </div>
                 <div class="mt-5">
                     <h5><b>VISION</b></h5>
@@ -76,7 +76,7 @@ include_once "navigation.php";
                             $managementResult=mysqli_query($connection,$managementSql);
                             while($managementRow=mysqli_fetch_assoc($managementResult)){
                             ?>
-                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?> - <?php echo $managementRow['designation']?></li>
                                 <?php
                                 }
                                 ?>
@@ -88,7 +88,7 @@ include_once "navigation.php";
                             $managementResult=mysqli_query($connection,$managementSql);
                             while($managementRow=mysqli_fetch_assoc($managementResult)){
                             ?>
-                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?> - <?php echo $managementRow['designation']?></li>
                                 <?php
                                 }
                                 ?>
@@ -100,7 +100,7 @@ include_once "navigation.php";
                             $managementResult=mysqli_query($connection,$managementSql);
                             while($managementRow=mysqli_fetch_assoc($managementResult)){
                             ?>
-                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?></li>
+                                <li id="management_list"><?php echo $managementRow['first_name']." ".$managementRow['last_name']?> - <?php echo $managementRow['designation']?></li>
                                 <p class="pl-5"><b>E-mail</b>: <?php echo $managementRow['email']?></p>
                                 <p class="pl-5"><b>Direct</b>: <?php echo $managementRow['direct']?></p>
                                 <p class="pl-5"><b>Mobile</b>: <?php echo $managementRow['mobile']?></p>
