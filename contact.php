@@ -112,21 +112,27 @@ if(isset($_SESSION['user_id'])){
             <div class="col-md-6">
                 <form action="admin/Message/addController.php" method= "POST">
                     <input type="hidden" name="user_id" id="user_id" value="<?php echo $user_id; ?>">
+                    <?php
+                    if ($user_id==0) {
+                      ?>
                     <div class="row mx-3 mt-0 mb-3">
                         <input type="text" name="name" id="name" class="form-control form-control-lg"
                             placeholder="Your Name" required>
                     </div>
                     <div class="row m-3">
-                        <input type="text" name="email" id="email" class="form-control form-control-lg"
-                            placeholder="Your E-Mail">
+                        <input type="email" name="email" id="email" class="form-control form-control-lg"
+                            placeholder="Your E-Mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
+                      <?php
+                    }
+                    ?>
                     <div class="row m-3">
                         <input type="text" name="subject" id="subject" class="form-control form-control-lg"
-                            placeholder="Your Message Subject">
+                            placeholder="Your Message Subject" required>
                     </div>
                     <div class="row m-3">
                         <textarea name="message" id="message" class="form-control form-control-lg"
-                            placeholder="Your Message" rows="6"></textarea>
+                            placeholder="Your Message" rows="6" required></textarea>
                     </div>
                     <div class="row m-3">
                         <button type="submit" class="btn bg-color-pink form-control form-control-lg"><i
