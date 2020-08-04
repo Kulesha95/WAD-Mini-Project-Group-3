@@ -7,40 +7,38 @@ include_once '../config.php';
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Add Gallery Image</h4>
+                <i class="fas fa-images mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Add Image</h4>
             </div>
         </div>
         <div class="card-body">
         	<form action="addController.php" method="POST" class="m-3" enctype="multipart/form-data">
-                <input type="hidden" id="id" name="id" value="<?php if(isset($_GET['id'])){ echo $_GET['id'];}?>">
                 <div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-2">Image</label>
-                    <input type="file" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="path" name="path">
+                    <label for="name" class="col-12 col-md-2 col-xl-2">Image</label>
+                    <div class="custom-file form-control-sm col-12 col-md-10 col-xl-10">
+                        <input type="file" class="custom-file-input" id="image" name="path" required>
+                        <label class="custom-file-label" for="image">Choose file</label>
+                    </div>
                 </div>
 
-                <!--<div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type" placeholder="Type">
-                </div>-->
                 <div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-2">Type</label>
-                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="type" name="type">
+                    <label for="name" class="col-12 col-md-2 col-xl-2">Type</label>
+                    <select class="form-control form-control-sm col-12 col-md-10 col-xl-10" id="type" name="type" required>
                         <option value="" selected disabled>Select Type</option>
-                        <option value="Connectivity">Interior</option>
-                        <option value="Services">Exterior</option>
-                        <option value="Extras">Places Near By</option>
+                        <option value="Interior">Interior</option>
+                        <option value="Exterior">Exterior</option>
+                        <option value="Places Near By">Places Near By</option>
                     </select>
                 </div>    
 
                 <div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-2">Location Name</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="locatin_name" name="locatin_name" placeholder="Location Name">
+                    <label for="name" class="col-12 col-md-2 col-xl-2">Location Name</label>
+                    <input type="text" class="form-control form-control-sm col-12 col-md-10 col-xl-10" id="locatin_name" name="locatin_name" placeholder="Location Name">
                 </div>
 
                 <div class="form-group row">
-                    <label for="name" class="col-3 col-md-2 col-xl-2">Description</label>
-                    <input type="text" class="form-control form-control-sm col-9 col-md-10 col-xl-10" id="description" name="description" placeholder="Description">
+                    <label for="name" class="col-12 col-md-2 col-xl-2">Description</label>
+                    <input type="text" class="form-control form-control-sm col-12 col-md-10 col-xl-10" id="description" name="description" placeholder="Description">
                 </div>
 
                 <div class="form-group row d-flex">
@@ -49,7 +47,14 @@ include_once '../config.php';
             </form>
         </div>        
     </div>
-</div>        
+</div>  
+<script>
+// Display the selected file name in the file input box
+$(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>      
 <?php
     include_once '../footerHTML.php';
 ?>        

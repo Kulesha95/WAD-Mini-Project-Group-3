@@ -7,8 +7,8 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Gallery Images List</h4>
+                <i class="fas fa-images mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Images List</h4>
             </div>
         </div>
         <div class="card-body">
@@ -16,7 +16,6 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Id</th>
                             <th>Image</th>
                             <th>Type</th>
                             <th>Location Name</th>
@@ -31,10 +30,9 @@
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>            
                         <tr>
-                            <td><?php echo $listRow['id'];?></td>
-                            <td><?php echo $listRow['path'];?></td>
+                        <td><a href="../../<?php echo $listRow['path'];?>" target="_blank"><img src="../../<?php echo $listRow['path'];?>" alt="Image" class="img-fluid" style="width:100px;"></a></td>
                             <td><?php echo $listRow['type'];?></td>
-                            <td><?php echo $listRow['locatin_name'];?></td>
+                            <td><?php echo $listRow['location_name'];?></td>
                             <td><?php echo $listRow['description'];?></td>
 
                             <td>
