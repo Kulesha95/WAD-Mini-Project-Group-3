@@ -19,9 +19,8 @@
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Message</th>
                             <th>Subject</th>
-                            <th>User</th>
+                            <th>Message</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -32,11 +31,29 @@
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>            
                         <tr>
-                            <td><?php echo $listRow['name'];?></td>
-                            <td><?php echo $listRow['email'];?></td>
-                            <td><?php echo $listRow['message'];?></td>
+                            <td><?php
+                            if ($listRow['user_id']>0) {
+                                ?>
+                                <img class="rounded-circle profile-picture"
+                                    src="../../<?php echo userImage($listRow['user_id']);?>"
+                                    alt="User Profile Picture"><br>
+                                <?php
+                                echo user($listRow['user_id']);
+                            }else{
+                                echo $listRow['name']." (Guest)";
+                            }
+                             ?></td>
+                            <td><?php
+                            if ($listRow['user_id']>0) {
+                                ?>
+                                <?php
+                                echo userEmail($listRow['user_id']);
+                            }else{
+                                echo $listRow['email'];
+                            }
+                             ?></td>
                             <td><?php echo $listRow['subject'];?></td>
-                            <td><?php echo user($listRow['user_id']);?></td>
+                            <td><?php echo $listRow['message'];?></td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-danger btn-sm" href="deleteController.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fas fa-trash-alt mr-2"></i>Delete</a>

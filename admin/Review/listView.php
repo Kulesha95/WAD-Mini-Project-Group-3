@@ -3,7 +3,7 @@
     include_once '../headerHTML.php';
     include_once "../function.php";
 ?>
-<!-- List down all contact messages -->
+<!-- List down all reviews -->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">
@@ -17,11 +17,11 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
+                            <th>User</th>
                             <th>Rate</th>
                             <th>Review</th>
                             <th>Date</th>
                             <th>Time</th>
-                            <th>User</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -32,6 +32,12 @@
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>
                         <tr>
+                            <td>
+                                <img class="rounded-circle profile-picture"
+                                    src="../../<?php echo userImage($listRow['user_id']);?>"
+                                    alt="User Profile Picture"><br>
+                                <?php echo user($listRow['user_id']);?>
+                            </td>
                             <td width="120px;">
                                 <div class="text-warning">
                                     <?php
@@ -55,7 +61,6 @@
                             <td><?php echo $listRow['review'];?></td>
                             <td><?php echo $listRow['date'];?></td>
                             <td><?php echo $listRow['time'];?></td>
-                            <td><?php echo user($listRow['user_id']);?></td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-danger btn-sm"
