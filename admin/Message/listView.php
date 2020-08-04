@@ -3,6 +3,7 @@
     include_once '../headerHTML.php';
     include_once "../function.php";
 ?>
+<!-- List down all contact messages -->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">
@@ -38,7 +39,6 @@
                             <td><?php echo user($listRow['user_id']);?></td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <!-- <a class="btn btn-primary btn-sm" href="editView.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to edit this record?')"><i class="fas fa-edit mr-2"></i>Edit</a> -->
                                     <a class="btn btn-danger btn-sm" href="deleteController.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fas fa-trash-alt mr-2"></i>Delete</a>
                                 </div>
                             </td>

@@ -3,6 +3,7 @@
     include_once '../headerHTML.php';
     include_once "../function.php";
 ?>
+<!-- List down all contact messages -->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">
@@ -25,25 +26,46 @@
                         </tr>
                     </thead>
                     <tbody>
-                <?php
+                        <?php
                     $listSql='select * from `review`';
                     $listResult=mysqli_query($connection,$listSql);
                     while($listRow=mysqli_fetch_assoc($listResult)){
-                ?>            
+                ?>
                         <tr>
-                            <td><?php echo $listRow['rate'];?></td>
+                            <td width="120px;">
+                                <div class="text-warning">
+                                    <?php
+                                //  Display stars according to the rating value  
+                                   $ratingValue=$listRow['rate'];   
+                                   for($i=1;$i<=5;$i++){
+                                        if($ratingValue-$i>=0){
+                                            ?>
+                                    <i class="fas fa-star"></i>
+
+                                    <?php
+                                        }else{
+                                            ?>
+                                    <i class="far fa-star"></i>
+                                    <?php
+                                        }
+                                    }
+                                   ?>
+                                </div>
+                            </td>
                             <td><?php echo $listRow['review'];?></td>
                             <td><?php echo $listRow['date'];?></td>
                             <td><?php echo $listRow['time'];?></td>
                             <td><?php echo user($listRow['user_id']);?></td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <!-- <a class="btn btn-primary btn-sm" href="editView.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to edit this record?')"><i class="fas fa-edit mr-2"></i>Edit</a> -->
-                                    <a class="btn btn-danger btn-sm" href="deleteController.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fas fa-trash-alt mr-2"></i>Delete</a>
+                                    <a class="btn btn-danger btn-sm"
+                                        href="deleteController.php?id=<?php echo $listRow['id'];?>"
+                                        onclick="return confirm('Are you sure you want to delete this record?')"><i
+                                            class="fas fa-trash-alt mr-2"></i>Delete</a>
                                 </div>
                             </td>
                         </tr>
-                <?php } ?>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

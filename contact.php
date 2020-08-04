@@ -1,27 +1,28 @@
 <?php
-session_start();
 include_once "admin/config.php";
 include_once "admin/function.php";
+include_once "headerHTML.php";
+include_once "navigation.php";
+// Get logged in user
 $user_id = 0;
 if(isset($_SESSION['user_id'])){
     $user_id= $_SESSION['user_id'];
 }
-include_once "headerHTML.php";
-include_once "navigation.php";
 ?>
 
+<!-- Contact message area start -->
 <div class="container bg-white">
     <section class="contact-details section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__</span>
             <h2 class="heading text-color-purple">contact us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__</span>
         </div>
         <div class="row mt-5">
             <div class="col-12 col-md-6 mb-3">
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-phone-alt fa-2x"></i></div>
-                    <div class="col-10"><a class="no-deco text-dark" href="<?php echo cmsGetSingle("contactNumber","contact");?>"><?php echo cmsGetSingle("contactNumber","contact");?></a></div>
+                    <div class="col-10"><a class="no-deco text-dark" href="tel:<?php echo trim(explode("/",cmsGetSingle("contactNumber","contact"))[0]);?>"><?php echo cmsGetSingle("contactNumber","contact");?></a></div>
                 </div>
                 <div class="row contact-detail-item">
                     <div class="col-2 text-color-purple"><i class="fas fa-map-marker-alt fa-2x"></i></div>
@@ -45,26 +46,33 @@ include_once "navigation.php";
                     <div class="col-10 text-warning">
                         <h5 class="mb-2 text-dark">Ratings</h5>
                         <?php
+                        // Get the ratings count and sum of rating values
                         $ratingSql="SELECT COUNT(`id`) as rateCount,SUM(`rate`) as totalRates FROM `review`";
                         $ratingResult=mysqli_query($connection,$ratingSql);
                         $ratingData=mysqli_fetch_assoc($ratingResult);
+                        // If there is no ratings set rating value to 0
                         if($ratingData['rateCount']=='0'){
                             $ratingValue=0;
                         }else{
                             $ratingValue=$ratingData['totalRates']/$ratingData['rateCount'];
                         }
+                        // Display rating value
                         echo number_format($ratingValue,2);
                     
+                        // Display stars according to the rating value
                         for($i=1;$i<=5;$i++){
+                            // If rating value is greater than current star value display full star
                             if($ratingValue-$i>=0){
                                 ?>
                                 <i class="fas fa-star"></i>
 
                                 <?php
-                            }else if(fmod($ratingValue,1)){
+                            // If rating value has decimal place greater than 0.5  display half star
+                            }else if(fmod($ratingValue-$i+1,1)>=0.5){
                                 ?>
                                 <i class="fas fa-star-half-alt"></i>
                                 <?php
+                            // Else display non cooured star
                             }else{
                                 ?>
                                 <i class="far fa-star"></i>
@@ -87,12 +95,15 @@ include_once "navigation.php";
         </div>
     </section>
 </div>
+<!-- Contact message area end -->
+
+<!-- Send message area start -->
 <div class="container">
     <section class="map section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__</span>
             <h2 class="heading text-color-purple">Write Us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__</span>
         </div>
         <div class="row mt-5">
             <div class="col-md-6 mb-md-0  mb-3">
@@ -126,12 +137,15 @@ include_once "navigation.php";
         </div>
     </section>
 </div>
+<!-- Send message area end -->
+
+<!-- Rating area start -->
 <div class="container bg-white">
     <section class="map section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__</span>
             <h2 class="heading text-color-purple">Review Us</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__</span>
         </div>
         
         <div class="row mt-3 text-warning justify-content-center">
@@ -157,22 +171,22 @@ include_once "navigation.php";
        
     </section>
 </div>
+<!-- Rating area end -->
+
+<!-- Customer review area start -->
 <div class="container">
     <section class="reviews section-gap">
         <div class="row justify-content-center">
-            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__</span>
             <h2 class="heading text-color-purple">customer reviews</h2>
-            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
+            <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__</span>
         </div>
         <div class="row mt-5">
             <?php
+            // Get reviews and load in to the cards
             $reviewSql="SELECT * FROM `review`";
             $reviewResult=mysqli_query($connection,$reviewSql);
-            while($reviewRow=mysqli_fetch_assoc($reviewResult)){
-                $userSql="SELECT * FROM `user` WHERE `id`='$reviewRow[user_id]'";
-                $userResult=mysqli_query($connection,$userSql);
-                $userData=mysqli_fetch_assoc($userResult);
-                
+            while($reviewRow=mysqli_fetch_assoc($reviewResult)){                
             ?>
             <div class="col-md-4 review-card-container" id="review-card-container">
                 <div class="card shadow review-card-before">
@@ -180,18 +194,19 @@ include_once "navigation.php";
                         <div class="row">
                             <div class="profile-picture-container">
                                 <img class="rounded-circle profile-picture"
-                                    src="<?php echo $userData['image'];?>"
+                                    src="<?php echo userImage($reviewRow['user_id']);?>"
                                     alt="User Profile Picture">
                             </div>
                             <div class="col-8">
                                 <div class="row">
-                                    <span><?php echo $userData['first_name']." ".$userData['last_name'];?></span>
+                                    <span><?php echo user($reviewRow['user_id']);?></span>
                                 </div>
                                 <div class="row">
                                     <span class="text-secondary">Satisfied Customer</span>
                                 </div>
                                 <div class="row text-warning mt-1">
                                    <?php
+                                //  Display stars according to the rating value  
                                    $ratingValue=$reviewRow['rate'];   
                                    for($i=1;$i<=5;$i++){
                                         if($ratingValue-$i>=0){
@@ -199,14 +214,9 @@ include_once "navigation.php";
                                             <i class="fas fa-star"></i>
 
                                             <?php
-                                        }else if(fmod($ratingValue,1)){
-                                            ?>
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <?php
                                         }else{
                                             ?>
                                             <i class="far fa-star"></i>
-
                                             <?php
                                         }
                                     }
@@ -228,6 +238,7 @@ include_once "navigation.php";
         </div>
     </section>
 </div>
+<!-- Customer review area end -->
 
 <?php
 include_once "footerHTML.php";
