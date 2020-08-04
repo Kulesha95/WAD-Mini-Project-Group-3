@@ -8,9 +8,9 @@ include_once "admin/function.php";
 <!-- Facilities And Services Details Start -->
 <div class="container section-gap" id="divfas">
     <div class="row justify-content-center">
-        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
-        <h2 class="heading text-color-purple">Facilities & Services</h2>
-        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
+        <h2 class="heading text-color-purple text-center">Facilities & Services</h2>
+        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
     </div>
     <div class="row mt-5">
         <?php $groupCodes = cmsGroupCodes("icon", "home");
@@ -34,9 +34,9 @@ foreach ($groupCodes as $groupCode) {
 <!-- Room Types Area Start -->
 <section id="rooms" class="container">
     <div class="row justify-content-center">
-        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
         <h2 class="heading text-color-purple">Rooms & Suits</h2>
-        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
     </div>
 
     <p class="col-md-12 text-justify" id="para1"><?php echo nl2br(cmsGetSingle("roomDescription", "home")); ?></p>
@@ -46,34 +46,26 @@ foreach ($groupCodes as $groupCode) {
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="<?php echo cmsGetSingle("vipRoomsImage", "home"); ?>" alt="First slide">
+                <img class="d-block w-100" src="<?php echo cmsGetSingle("singleRoomsImage", "home"); ?>" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-light">VIP Rooms</h1>
+                    <h1 class="text-light">Single Rooms</h1>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?php echo cmsGetSingle("familyRoomsImage", "home"); ?>"
+                <img class="d-block w-100" src="<?php echo cmsGetSingle("doubleRoomsImage", "home"); ?>"
                     alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-light">Family Rooms</h1>
-                </div>
-            </div>
-            <div class="carousel-item ">
-                <img class="d-block w-100" src="<?php echo cmsGetSingle("bachelorRoomsImage", "home"); ?>"
-                    alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-light">Bachelor Rooms</h1>
-                </div>
-            </div>
-            <div class="carousel-item ">
-                <img class="d-block w-100" src="<?php echo cmsGetSingle("doubleRoomsImage", "home"); ?>"
-                    alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
                     <h1 class="text-light">Double Rooms</h1>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="<?php echo cmsGetSingle("tripleRoomsImage", "home"); ?>"
+                    alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-light">Triple Rooms</h1>
                 </div>
             </div>
         </div>
@@ -93,9 +85,9 @@ foreach ($groupCodes as $groupCode) {
 <!-- Restaurent Menu Area Start -->
 <section class="container clearfix section-gap" id="foodsection">
     <div class="row justify-content-center">
-        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
+        <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">______</span>
         <h2 class="heading text-color-purple">Restaurent Menu</h2>
-        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
+        <span class="justify-content-between text-color-purple ml-3 d-none d-md-block">______</span>
     </div>
 
     <div class="row mt-5">
@@ -121,7 +113,7 @@ foreach ($groupCodes as $groupCode) {
                     ?>
                 </ol>
 
-                <div class="carousel-inner">
+                <div class="carousel-inner food-carousel">
                     <?php
                     $count=1;
                     while($breakfastRow=mysqli_fetch_assoc($breakfastResult)){
@@ -173,7 +165,7 @@ foreach ($groupCodes as $groupCode) {
                     }
                     ?>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner food-carousel">
                 <?php
                     $count=1;
                     while($lunchRow=mysqli_fetch_assoc($lunchResult)){
@@ -223,7 +215,7 @@ foreach ($groupCodes as $groupCode) {
                     ?>
                 </ol>
 
-                <div class="carousel-inner">
+                <div class="carousel-inner food-carousel">
                 <?php
                     $count=1;
                     while($dinnerRow=mysqli_fetch_assoc($dinnerResult)){

@@ -1,9 +1,10 @@
 <?php
+session_start();
 include_once "admin/config.php";
 include_once "admin/function.php";
 ?>
 
-<!-- NAvigation Area Start -->
+<!-- Navigation Area Start -->
 <div class="banner" style="background: url(<?php echo cmsGetSingle("bannerImage","home")?>) no-repeat center;">
     <header class="d-flex">
         <div class="logo my-auto mx-auto" id="logo1">
