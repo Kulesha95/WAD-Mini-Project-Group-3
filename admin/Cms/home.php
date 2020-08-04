@@ -129,7 +129,7 @@ foreach ($groupCodes as $groupCode) {
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Banner Image</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
@@ -143,47 +143,11 @@ foreach ($groupCodes as $groupCode) {
                         <input type="hidden" name="page" id="page" value="home">
                         <input type="hidden" name="group_code" id="group_code" value="rooms">
                         <input type="hidden" name="type" id="type" value="single">
-                        <input type="hidden" name="key" id="key" value="vipRoomsImage">
+                        <input type="hidden" name="key" id="key" value="singleRoomsImage">
                         <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">VIP Rooms Image</label>
+                            <label for="number" class="col-4 col-md-2">Single Rooms Image</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
-                                <label class="custom-file-label" for="image">Choose file</label>
-                            </div>
-                        </div>
-                        <div class="form-group row d-flex">
-                            <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i
-                                    class="fas fa-save mr-2"></i>Save</button>
-                        </div>
-                    </form>
-                    <hr>
-                    <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
-                        <input type="hidden" name="page" id="page" value="home">
-                        <input type="hidden" name="group_code" id="group_code" value="rooms">
-                        <input type="hidden" name="type" id="type" value="single">
-                        <input type="hidden" name="key" id="key" value="familyRoomsImage">
-                        <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Family Rooms Image</label>
-                            <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
-                                <label class="custom-file-label" for="image">Choose file</label>
-                            </div>
-                        </div>
-                        <div class="form-group row d-flex">
-                            <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i
-                                    class="fas fa-save mr-2"></i>Save</button>
-                        </div>
-                    </form>
-                    <hr>
-                    <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
-                        <input type="hidden" name="page" id="page" value="home">
-                        <input type="hidden" name="group_code" id="group_code" value="rooms">
-                        <input type="hidden" name="type" id="type" value="single">
-                        <input type="hidden" name="key" id="key" value="bachelorRoomsImage">
-                        <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Bachelor Rooms Image</label>
-                            <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
@@ -199,9 +163,9 @@ foreach ($groupCodes as $groupCode) {
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="doubleRoomsImage">
                         <div class="form-group row">
-                            <label for="number" class="col-4 col-md-2">Double Room Image</label>
+                            <label for="number" class="col-4 col-md-2">Double Rooms Image</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
@@ -213,13 +177,31 @@ foreach ($groupCodes as $groupCode) {
                     <hr>
                     <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
                         <input type="hidden" name="page" id="page" value="home">
+                        <input type="hidden" name="group_code" id="group_code" value="rooms">
+                        <input type="hidden" name="type" id="type" value="single">
+                        <input type="hidden" name="key" id="key" value="tripleRoomsImage">
+                        <div class="form-group row">
+                            <label for="number" class="col-4 col-md-2">Triple Rooms Image</label>
+                            <div class="custom-file col-8 col-md-10">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
+                                <label class="custom-file-label" for="image">Choose file</label>
+                            </div>
+                        </div>
+                        <div class="form-group row d-flex">
+                            <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i
+                                    class="fas fa-save mr-2"></i>Save</button>
+                        </div>
+                    </form>                   
+                    <hr>
+                    <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
+                        <input type="hidden" name="page" id="page" value="home">
                         <input type="hidden" name="group_code" id="group_code" value="quote">
                         <input type="hidden" name="type" id="type" value="single">
                         <input type="hidden" name="key" id="key" value="quoteImage">
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Quote Image</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
@@ -237,7 +219,7 @@ foreach ($groupCodes as $groupCode) {
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Logo</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
@@ -253,6 +235,7 @@ foreach ($groupCodes as $groupCode) {
     </div>
 </div>
 <script>
+// Display selected file name in the file input
 $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);

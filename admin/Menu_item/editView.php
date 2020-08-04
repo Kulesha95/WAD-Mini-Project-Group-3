@@ -1,3 +1,4 @@
+
 <?php 
 include_once '../headerHTML.php';
 include_once '../config.php'; 
@@ -11,7 +12,7 @@ $menuData=mysqli_fetch_assoc($menuResult);
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
+                <i class="fas fa-hamburger mx-2 my-auto fa-2x"></i>
                 <h4 class="ml-2 my-auto">Edit Menu Item</h4>
             </div>
         </div>
@@ -19,23 +20,23 @@ $menuData=mysqli_fetch_assoc($menuResult);
             <form action="editController.php" method="POST" class="m-3" enctype="multipart/form-data">
                 <input type="hidden" id="id" name="id" value="<?php echo $_GET['id'];?>">
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Food Name</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="name"
-                        name="name" placeholder="Food Name" value="<?php echo $menuData['name'];?>">
+                    <label for="name" class="col-12 col-md-3 col-xl-2">Food Name</label>
+                    <input type="text" class="form-control form-control-sm col-12 col-md-9 col-xl-10" id="name"
+                        name="name" placeholder="Food Name" value="<?php echo $menuData['name'];?>" required>
                 </div>
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Description</label>
-                    <textarea class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="description"
-                        name="description" placeholder="Description"><?php echo $menuData['description'];?></textarea>
+                    <label for="name" class="col-12 col-md-3 col-xl-2">Description</label>
+                    <textarea class="form-control form-control-sm col-12 col-md-9 col-xl-10" id="description"
+                        name="description" placeholder="Description" required><?php echo $menuData['description'];?></textarea>
                 </div>
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Price</label>
-                    <input type="text" class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="price"
-                        name="price" placeholder="price" value="<?php echo $menuData['price'];?>">
+                    <label for="name" class="col-12 col-md-3 col-xl-2">Price</label>
+                    <input type="text" class="form-control form-control-sm col-12 col-md-9 col-xl-10" id="price"
+                        name="price" placeholder="price" value="<?php echo $menuData['price'];?>" required>
                 </div>
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-4 col-xl-2">Image</label>
-                    <div class="custom-file mb-3 col-8 col-md-8 col-xl-10">
+                    <label for="name" class="col-12 col-md-3 col-xl-2">Image</label>
+                    <div class="custom-file mb-3 col-12 col-md-9 col-xl-10">
                         <input type="file" class="custom-file-input" id="image" name="image">
                         <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
@@ -43,9 +44,9 @@ $menuData=mysqli_fetch_assoc($menuResult);
 
 
                 <div class="form-group row">
-                    <label for="name" class="col-4 col-md-3 col-xl-2">Type</label>
-                    <select class="form-control form-control-sm col-8 col-md-9 col-xl-10" id="type" name="type"
-                        value="<?php echo $menuData['type'];?>">
+                    <label for="name" class="col-12 col-md-3 col-xl-2">Type</label>
+                    <select class="form-control form-control-sm col-12 col-md-9 col-xl-10" id="type" name="type"
+                        value="<?php echo $menuData['type'];?>" required>
                         <option value="" Selected Disabled>Select</option>
                         <option value="Breakfast" <?php if($menuData['type']=="Breakfast"){echo "selected";}?>>Breakfast
                         </option>

@@ -7,8 +7,8 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Menu List</h4>
+                <i class="fas fa-hamburger mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Menu Items List</h4>
             </div>
         </div>
         <div class="card-body">
@@ -35,7 +35,7 @@
                             <td><?php echo $listRow['description'];?></td>
                             <td><?php echo $listRow['price'];?></td>
                             <td><a href="../../<?php echo $listRow['image'];?>" target="_blank"><img src="../../<?php echo $listRow['image'];?>" alt="Image" class="img-fluid" style="width:100px;"></a></td>
-                             <td><?php echo $listRow['type'];?></td>
+                            <td><?php echo $listRow['type'];?></td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-primary btn-sm" href="editView.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to edit this record?')"><i class="fas fa-edit mr-2"></i>Edit</a>
