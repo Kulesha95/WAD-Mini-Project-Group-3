@@ -19,10 +19,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Fontawesome Icons Link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
     <!-- Contact CSS -->
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
     <!-- Contact JS -->
     <script src="js/contact.js"></script>
 
