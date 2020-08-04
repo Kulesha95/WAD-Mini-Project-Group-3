@@ -46,6 +46,17 @@ function userImage($id){
     }
 }
 
+// Find the user related to the id and return his email. If user not found return empty string
+function userEmail($id){
+    $userSql="select * from user where id= '$id'";
+    $userResult=mysqli_query($GLOBALS['connection'],$userSql);
+    if($userData=mysqli_fetch_assoc($userResult)){
+        return $userData['email'];
+    }else{
+        return "";
+    }
+}
+
 // File upload function
 function uploadFile($path, $inputName)
 {
