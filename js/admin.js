@@ -49,13 +49,12 @@ function clockUpdate() {
         timeStyle: "medium",
         dateStyle: "full"
       });
-    var options = { hour12: true, hour: '2-digit', minute: '2-digit'  };
     var date= new Date();
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
-    $('#date').html(date.getFullYear()+"-"+monthNames[date.getMonth()]+"-"+date.getDate());
-    $('#time').html(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+    $('#date').html(date.getFullYear()+"-"+monthNames[date.getMonth()]+"-"+("0"+date.getDate()).slice(-2));
+    $('#time').html(("0"+date.getHours()).slice(-2)+":"+("0"+date.getMinutes()).slice(-2)+":"+("0"+date.getSeconds()).slice(-2));
 }
 
 jQuery(document).ready(function() {

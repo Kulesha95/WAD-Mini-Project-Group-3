@@ -11,7 +11,7 @@ $bookingData=mysqli_fetch_assoc($bookingResult);
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
+                <i class="fas fa-hotel mx-2 my-auto fa-2x"></i>
                 <h4 class="ml-2 my-auto">Edit Booking</h4>
             </div>
         </div>
@@ -19,17 +19,18 @@ $bookingData=mysqli_fetch_assoc($bookingResult);
             <form action="editController.php" method="POST" class="m-3" enctype="multipart/form-data">
                 <input type="hidden" id="id" name="id" value="<?php echo $_GET['id'];?>">
                 <input type="hidden" id="user_id" name="user_id" value="<?php echo $bookingData['user_id'];?>">
+                <input type="hidden" id="room_id" name="room_id" value="<?php echo $bookingData['room_id'];?>">
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">From</label>
-                    <input type="date" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="from" name="from" placeholder="Date From" value="<?php echo $bookingData['from'];?>">
+                    <input type="date" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="from" name="from" placeholder="Date From" value="<?php echo $bookingData['from'];?>" required>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">To</label>
-                    <input type="date" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="to" name="to" placeholder="Date To" value="<?php echo $bookingData['to'];?>">
+                    <input type="date" class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="to" name="to" placeholder="Date To" value="<?php echo $bookingData['to'];?>" required>
                 </div>
                 <div class="form-group row">
                     <label for="name" class="col-3 col-md-2 col-xl-1">Room</label>
-                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="room" name="room">
+                    <select class="form-control form-control-sm col-9 col-md-10 col-xl-11" id="room" name="room" required>
                         <option value="" Selected Disabled>Select Room</option>
                         <?php
                         $listSql='select * from room';

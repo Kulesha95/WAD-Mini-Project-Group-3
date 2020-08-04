@@ -15,7 +15,7 @@ include_once "navigation.php";
 		<div style="padding-top:20px"><img src="<?php echo cmsGetSingle("accomodationImage", "accomodation"); ?>" style="width:100%;height:300px;object-fit:cover"></div>
 		<article class="roomArticle">
             <div class="col-12 column-count-2">
-                <p><?php echo nl2br(cmsGetSingle("description", "accomodation")); ?> </p>
+                <p class="text-justify"><?php echo nl2br(cmsGetSingle("description", "accomodation")); ?> </p>
             </div>
         </article>
 	</section>

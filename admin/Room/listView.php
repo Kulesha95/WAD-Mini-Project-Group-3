@@ -7,8 +7,8 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Room List</h4>
+                <i class="fas fa-bed mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Rooms List</h4>
             </div>
         </div>
         <div class="card-body">
@@ -16,7 +16,6 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Id</th>
                             <th>Room Name</th>
                             <th>Description</th>
                             <th>Room Size</th>
@@ -34,7 +33,6 @@
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>            
                         <tr>
-                            <td><?php echo $listRow['id'];?></td>
                             <td><?php echo $listRow['name'];?></td>
                             <td><?php echo $listRow['description'];?></td>
                             <td><?php echo $listRow['size'];?></td>

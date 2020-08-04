@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once "admin/config.php";
 include_once "admin/function.php";
 include_once "headerHTML.php";
@@ -92,11 +91,11 @@ $roomData=mysqli_fetch_assoc($roomResult);
 					<div class="row">
 						<div class="col-md-3">
 							 <label for="name" style="font-size:23px;">From:</label>
-                    		<input type="date" id="from" name="from" placeholder="From">			
+                    		<input class="form-control" type="date" id="from" name="from" placeholder="From" required>			
 						</div>
 						<div class="col-md-3">
 							<label for="name" style="font-size:23px;">To:</label>
-                    		<input type="date" id="to" name="to" placeholder="To">
+                    		<input class="form-control" type="date" id="to" name="to" placeholder="To" required>
 						</div>
 						<div class="col-md-3">
 							<div class="button">
@@ -104,7 +103,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
                     		</div>
 						</div>
 					</div>
-					<input type="hidden" name="room_id" value="<?php echo $_GET['id']?>">
+					<input type="hidden" name="room_id" id="room_id" value="<?php echo $_GET['id']?>">
 					<input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']?>">
 				</form>
             </article>

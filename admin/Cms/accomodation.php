@@ -31,8 +31,8 @@ include_once '../function.php';
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Description</label>
                             <textarea class="form-control form-control-sm col-8 col-md-10" id="description"
-                                name="description" placeholder="Description">
-                                <?php echo nl2br(cmsGetSingle("description", "accomodation")); ?></textarea>
+                                name="description"
+                                placeholder="Description"><?php echo cmsGetSingle("description", "accomodation"); ?></textarea>
                         </div>
                         <div class="form-group row d-flex">
                             <button name="Save" value="Save" type="submit" class="btn btn-primary btn-sm ml-auto"><i
@@ -49,7 +49,7 @@ include_once '../function.php';
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Main Image</label>
                             <div class="custom-file col-8 col-md-10">
-                                <input type="file" class="custom-file-input" id="image" name="image">
+                                <input type="file" class="custom-file-input" id="image" name="image" required>
                                 <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>

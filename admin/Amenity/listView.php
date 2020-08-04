@@ -7,8 +7,8 @@
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Amenity List</h4>
+                <i class="fas fa-wifi mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Amenities List</h4>
             </div>
         </div>
         <div class="card-body">
@@ -16,10 +16,9 @@
                 <table class="table table-striped table-bordered table-hover table-sm">
                     <thead class="thead-dark">
                         <tr>
-                            <th>Id</th>
                             <th>Amenity</th>
-                            <th>Type</th>
                             <th>Icon</th>
+                            <th>Type</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -30,10 +29,9 @@
                     while($listRow=mysqli_fetch_assoc($listResult)){
                 ?>            
                         <tr>
-                            <td><?php echo $listRow['id'];?></td>
                             <td><?php echo $listRow['amenity'];?></td>
+                            <td class="text-center"><i class="<?php echo $listRow['icon'];?>"></i></td>
                             <td><?php echo $listRow['type'];?></td>
-                            <td><?php echo $listRow['icon'];?></td>
                             <td>
                                 <div class="btn-group" role="group">
                                     <a class="btn btn-primary btn-sm" href="editView.php?id=<?php echo $listRow['id'];?>" onclick="return confirm('Are you sure you want to edit this record?')"><i class="fas fa-edit mr-2"></i>Edit</a>

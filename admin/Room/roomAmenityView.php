@@ -6,8 +6,8 @@ include_once '../config.php';
     <div class="card">
         <div class="card-header bg-white">
             <div class="row">
-                <i class="fas fa-info-circle mx-2 my-auto fa-2x"></i>
-                <h4 class="ml-2 my-auto">Room Amenity Management</h4>
+                <i class="fas fa-wifi mx-2 my-auto fa-2x"></i>
+                <h4 class="ml-2 my-auto">Room Amenities</h4>
             </div>
         </div>
         <div class="card-body">

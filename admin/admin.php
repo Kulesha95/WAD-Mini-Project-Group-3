@@ -24,7 +24,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Amenity/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Amenity List</a>
+                            style="padding-right: 10px;"></i>View Amenities List</a>
                 </li>
             </ul>
         </li>
@@ -35,7 +35,7 @@ include_once "headerHTML.php";
             <ul class="collapse list-unstyled" id="bookingMenu">
                 <li class="nav-item">
                     <a class="nav-link" href="Booking/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Booking List</a>
+                            style="padding-right: 10px;"></i>View Bookings List</a>
                 </li>
             </ul>
         </li>
@@ -50,7 +50,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Feature/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Feature List</a>
+                            style="padding-right: 10px;"></i>View Features List</a>
                 </li>
             </ul>
         </li>
@@ -65,7 +65,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Gallery_image/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Gallery Image List</a>
+                            style="padding-right: 10px;"></i>View Gallery Images List</a>
                 </li>
             </ul>
         </li>
@@ -80,7 +80,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Menu_item/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Menu Item List</a>
+                            style="padding-right: 10px;"></i>View Menu Items List</a>
                 </li>
             </ul>
         </li>
@@ -91,7 +91,7 @@ include_once "headerHTML.php";
             <ul class="collapse list-unstyled" id="messageMenu">
                 <li class="nav-item">
                     <a class="nav-link" href="Message/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Message List</a>
+                            style="padding-right: 10px;"></i>View Messages List</a>
                 </li>
             </ul>
         </li>
@@ -102,7 +102,7 @@ include_once "headerHTML.php";
             <ul class="collapse list-unstyled" id="reviewMenu">
                 <li class="nav-item">
                     <a class="nav-link" href="Review/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Review List</a>
+                            style="padding-right: 10px;"></i>View Reviews List</a>
                 </li>
             </ul>
         </li>
@@ -117,7 +117,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Room/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Room List</a>
+                            style="padding-right: 10px;"></i>View Rooms List</a>
                 </li>
             </ul>
         </li>
@@ -132,7 +132,7 @@ include_once "headerHTML.php";
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Staff/listView.php" target="iframeDisplay"><i class="fas fa-list"
-                            style="padding-right: 10px;"></i>View Staff List</a>
+                            style="padding-right: 10px;"></i>View Staffs List</a>
                 </li>
             </ul>
         </li>
@@ -142,12 +142,8 @@ include_once "headerHTML.php";
                     class="fas fa-user has-tree"></i>&nbsp;&nbsp;&nbsp;User</a>
             <ul class="collapse list-unstyled" id="userMenu">
                 <li class="nav-item">
-                    <a class="nav-link" href="User/addView.php" target="iframeDisplay"><i class="fas fa-user"
-                            style="padding-right: 10px;"></i>Add User</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="User/listView.php" target="iframeDisplay"><i class="fas fa-user"
-                            style="padding-right: 10px;"></i>View User List</a>
+                    <a class="nav-link" href="User/listView.php" target="iframeDisplay"><i class="fas fa-list"
+                            style="padding-right: 10px;"></i>View Users List</a>
                 </li>
             </ul>
         </li>
