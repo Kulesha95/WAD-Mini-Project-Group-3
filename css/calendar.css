@@ -1,31 +1,32 @@
 .bg-purple {
-            background-color: #4400A9;
-        }
+  background-color: #6a1b9a;
+}
 
-        .date-weekday {
-            text-align: center;
-            font-weight: bold;
-        }
+.date-weekday {
+  text-align: center;
+  font-weight: bold;
+}
 
-        .bg-booked {
-            padding-top: 1px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: #4400A9 2px solid;
-            background-color: #4400A9;
-            color: beige;
-        }
+.bg-booked {
+  padding-top: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #6a1b9a 2px solid;
+  background-color: #6a1b9a;
+  color: white!important;
+}
 
-        .date-saturday {
-            color: gray !important;
-        }
+.date-saturday {
+  color: gray;
+}
 
-        .date-sunday {
-            color: red !important;
-        }
+.date-sunday {
+  color: red;
+}
 
-        .calender-table td,.calender-table th{
-            text-align: center;
-            font-weight: bold;
-        }
+.calender-table td,
+.calender-table th {
+  text-align: center;
+  font-weight: bold;
+}

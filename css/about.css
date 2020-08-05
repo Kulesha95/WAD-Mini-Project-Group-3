@@ -1,65 +1,60 @@
-
-#about_body{
-
-  background-color: #F8F8F8;
-  }
-
-.about_image{
-      
-      height: 500px !important;
-      width: 100%;
-      background-size: cover;
-  }
-
-  #about_description,#about_vision,#about_mission {
-    text-align: justify;
-  }
-
-.column {
-  float:left ;
-  width: 25%;
-  padding:35px;
-  height: 250px; 
+#about_body {
+  background-color: #f8f8f8;
 }
 
+.about_image {
+  height: 500px !important;
+  width: 100%;
+  background-size: cover;
+}
+
+#about_description,
+#about_vision,
+#about_mission {
+  text-align: justify;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 35px;
+  height: 250px;
+}
 
 .row:after {
-  
   content: "";
   display: table;
   clear: both;
-  align-items: center; 
+  align-items: center;
 }
-    
-.heading{
-  color: #4400A9;
+
+.heading {
+  color: #6a1b9a;
   font-family: serif;
 }
 .icon-background {
-    color: #4400A9;
+  color: #6a1b9a;
 }
 
-.label{
+.label {
   text-align: center;
 }
 
-#about_list{
-  color: #4400A9;
+#about_list {
+  color: #6a1b9a;
   font-family: "Lucida Console", Courier, monospace;
 }
 
-#management_list{
+#management_list {
   font-size: 20px;
 }
 
-.about_image_2{
-      
-      height: 400px !important;
-      width: 100%;
-      background-size: cover;
+.about_image_2 {
+  height: 400px !important;
+  width: 100%;
+  background-size: cover;
+}
 
-  }
-
-.text-color-purple{
-  color: #4400A9;
+.text-color-purple {
+  color: #6a1b9a;
 }

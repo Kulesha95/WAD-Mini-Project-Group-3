@@ -74,13 +74,15 @@ CREATE TABLE `booking` (
   KEY `fk_booking_room1_idx` (`room_id`),
   CONSTRAINT `fk_booking_room1` FOREIGN KEY (`room_id`) REFERENCES `room` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_booking_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `booking`
 --
 
 /*!40000 ALTER TABLE `booking` DISABLE KEYS */;
+INSERT INTO `booking` (`id`,`from`,`to`,`reserved_date`,`reserved_time`,`user_id`,`room_id`,`status`) VALUES 
+ (1,'2020-08-08','2020-08-10','2020-08-04','13:57:36',3,1,0);
 /*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 
 
@@ -139,7 +141,7 @@ INSERT INTO `cms` (`id`,`key`,`value`,`group_code`,`page`) VALUES
  (33,'email','info@avenragardenhotel.com','contact_details1','contact'),
  (34,'googleMapSrc','https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2038000268385!2d79.8532200146439!3d7.217579194789506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2eec1cf287c89%3A0xe14018d2425ce2f2!2sAvenra%20Garden%20Hotel!5e0!3m2!1sen!2slk!4v1594030144860!5m2!1sen!2slk','contact_details1','contact'),
  (35,'writeUsImage','img/Cms/gardens00120200803112002.jpg','contact_details2','contact'),
- (36,'description','Whether you book one of our Deluxe Rooms or our choice of Suites, feel free to make yourself at home.\r\nAll of our rooms and suites feature ample space to live, work and play in, with a private terrace to take in the most mesmerising sunrises and sunsets. Subtle accents to the décor showcase modern Sri Lankan architecture, with its colonial influences, contemporary clean lines and a calming colour palette in light blue that pays homage to the seascape. The floor-to-ceiling windows let in an abundance of natural daylight and look out onto incredible views of the bay.','accomodation_details1','accomodation'),
+ (36,'description','Whether you book one of our Deluxe Rooms or our choice of Suites, feel free to make yourself at home.\r\nAll of our rooms and suites feature ample space to live, work and play in, with a private terrace to take in the most mesmerising sunrises and sunsets. Subtle accents to the dÃ©cor showcase modern Sri Lankan architecture, with its colonial influences, contemporary clean lines and a calming colour palette in light blue that pays homage to the seascape. The floor-to-ceiling windows let in an abundance of natural daylight and look out onto incredible views of the bay.','accomodation_details1','accomodation'),
  (37,'accomodationImage','img/Cms/15299644320200803124130.jpg','accomodation_details2','accomodation'),
  (38,'description','We, Avenra Group, Filled with hospitality, warmth of the sunny climate and the cool of the sea breeze provide you a very unique experience to your money making your holiday a dreamlike. If you are planning a wedding, a corporate function, a meeting or any other social function, we are equipped to serve you with most elegant and state of the art facilities whilst enhancing your image and desire.\r\n\r\n-Mr. Danesh De Silva, Owner & Founder of Avenra Group-','about_details1','about'),
  (39,'vision','Our vision is to be the ultimate hospitality brand in Sri Lanka.','about_details1','about'),
@@ -284,13 +286,16 @@ CREATE TABLE `message` (
   PRIMARY KEY (`id`),
   KEY `fk_message_user1_idx` (`user_id`),
   CONSTRAINT `fk_message_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `message`
 --
 
 /*!40000 ALTER TABLE `message` DISABLE KEYS */;
+INSERT INTO `message` (`id`,`name`,`email`,`subject`,`message`,`user_id`) VALUES 
+ (1,'Nimal Perera','nimal_perera@gmail.com','About Packages','Do you have any special packages for small groups?',NULL),
+ (2,'Anuradha Panagoda','anuradha@gmail.com','Thank You.!','Thank you for the friendly and valuable service you have been provided.',3);
 /*!40000 ALTER TABLE `message` ENABLE KEYS */;
 
 
@@ -549,9 +554,9 @@ CREATE TABLE `user` (
 
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id`,`first_name`,`last_name`,`image`,`username`,`password`,`email`,`status`) VALUES 
- (3,'Anuradha','Panagoda','img/photo20200803112157.png','anuradha','anuradha','anuradha@gmail.com',1),
- (4,'Lahiru','Gunarathne','img/photo(1)20200803112730.png','lahiru','lahiru','lahiru@gmail.com',1),
- (5,'Mahesh','Abeyratne','img/photo(2)20200803112803.png','mahesh','mahesh','mahesh@gmail.com',1);
+ (3,'Anuradha','Panagoda','img/User/photo20200803112157.png','anuradha','anuradha','anuradha@gmail.com',1),
+ (4,'Lahiru','Gunarathne','img/User/photo(1)20200803112730.png','lahiru','lahiru','lahiru@gmail.com',1),
+ (5,'Mahesh','Abeyratne','img/User/photo(2)20200803112803.png','mahesh','mahesh','mahesh@gmail.com',1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 

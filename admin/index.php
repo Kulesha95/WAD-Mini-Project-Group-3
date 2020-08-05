@@ -3,7 +3,7 @@ include_once "headerHTML.php";
 ?>
 
 <div class="container-fluid background-color-purple h-100 d-flex" style="background-image: url('https://www.avenrahotels.com/images/2019/03/15/carousel_5.jpg')">
-    <div class="card col-12 col-md-6 col-lg-5 mx-auto my-auto shadow" style="background-color:rgba(68,0,169,0.5); border: solid #4400A9 5px; border-radius:30px;">
+    <div class="card col-12 col-md-6 col-lg-5 mx-auto my-auto shadow" style="background-color:rgba(106,27,154,0.5); border: solid #6a1b9a 5px; border-radius:30px;">
         <div class="card-body">
             <div class="row my-3">
                 <h3 class="mx-auto text-light">Welcome To Avenra Garden</h53>

@@ -3,14 +3,14 @@ body {
   padding: 0;
 }
 
-.banner {  
+.banner {
   background-size: cover;
   height: 700px;
 }
 
 header {
   height: 100px !important;
-  background-color: rgba(68, 0, 169, 0.6);
+  background-color: rgba(106, 27, 154, 0.6);
 }
 
 .title-color {
@@ -27,7 +27,7 @@ header {
 }
 
 #navbarSupportedContent {
-  background-color: #4400a9;
+  background-color: #6a1b9a;
 }
 
 #happy {
@@ -48,7 +48,7 @@ header {
 }
 
 .nav1 {
-  background-color: #4400a9;
+  background-color: #6a1b9a;
 }
 
 .navbar {
@@ -86,15 +86,15 @@ header {
 @media (max-width: 992px) {
   .navbar-toggler {
     margin: 10px 0px 10px 30px;
-    background-color: #4400a9;
+    background-color: #6a1b9a;
     border-color: #4dffff;
   }
   .navbar-light {
-    background-color: #4400a9;
+    background-color: #6a1b9a;
   }
   .navbar-nav li a {
     text-align: center;
-    background-color: #4400a9;
+    background-color: #6a1b9a;
   }
 }
 
@@ -202,9 +202,6 @@ h3,
   margin-top: 20px;
 }
 
-#imgfood1 {
-  margin-bottom: 40px;
-}
 #foodpara {
   margin-top: 30px;
 }
@@ -255,7 +252,7 @@ h3,
 }
 
 #secfooter {
-  background-color: #4400a9;
+  background-color: #6a1b9a;
 }
 
 #footerhead {
@@ -341,7 +338,7 @@ ul.quicklinks li a:hover {
 }
 
 .carousel-indicators li {
-  background-color: #4400a9 !important;
+  background-color: #6a1b9a !important;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -355,4 +352,11 @@ ul.quicklinks li a:hover {
 .no-deco:hover {
   text-decoration: none !important;
   color: white;
+}
+
+.imgfood1 {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }

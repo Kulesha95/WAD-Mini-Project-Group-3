@@ -113,22 +113,22 @@ $roomData=mysqli_fetch_assoc($roomResult);
 			<div class="hotel-highlight center">
 				<div class="row">
 					<div class="col-6 col-md-3">
-						<div class="icon size"><i class="fas fa-ruler" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
+						<div class="icon size"><i class="fas fa-ruler" style="font-size:50px;color:#6a1b9a;margin-left:0"></i></div>
                         <h4 class="head4">Room Size</h4>
                         <p class="pHighlight"><?php echo $roomData['size']?> sqm.</p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon bed"><i class="fas fa-bed" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
+						<div class="icon bed"><i class="fas fa-bed" style="font-size:50px;color:#6a1b9a;margin-left:0"></i></div>
                         <h4 class="head4">Bed Type(s)</h4>
                         <p class="pHighlight"><?php echo $roomData['bed_type']?></p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon adultskid"><i class="fas fa-user-friends" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
+						<div class="icon adultskid"><i class="fas fa-user-friends" style="font-size:50px;color:#6a1b9a;margin-left:0"></i></div>
                         <h4 class="head4">Ideal For</h4>
                         <p class="pHighlight"><?php echo $roomData['ideal_for']?></p>
 					</div>
 					<div class="col-6 col-md-3">
-						<div class="icon view"><i class="fas fa-water" style="font-size:50px;color:#4400A9;margin-left:0"></i></div>
+						<div class="icon view"><i class="fas fa-water" style="font-size:50px;color:#6a1b9a;margin-left:0"></i></div>
                         <h4 class="head4">View</h4>
                         <p class="pHighlight"><?php echo $roomData['view']?></p>
 					</div>

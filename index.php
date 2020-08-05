@@ -119,7 +119,7 @@ foreach ($groupCodes as $groupCode) {
                     while($breakfastRow=mysqli_fetch_assoc($breakfastResult)){
                         ?>
                     <div class="carousel-item <?php if($count==1){echo "active";}?>">
-                        <img class="d-block w-100" src="<?php echo $breakfastRow['image']?>" alt="First slide"
+                        <img class="d-block w-100 imgfood1" src="<?php echo $breakfastRow['image']?>" alt="First slide"
                             id="imgfood1">
                         <h4><?php echo $breakfastRow['name']?></h4>
                         <p id="foodpara"><?php echo $breakfastRow['description']?></p>
@@ -171,7 +171,7 @@ foreach ($groupCodes as $groupCode) {
                     while($lunchRow=mysqli_fetch_assoc($lunchResult)){
                         ?>
                     <div class="carousel-item <?php if($count==1){echo "active";}?>">
-                        <img class="d-block w-100" src="<?php echo $lunchRow['image']?>" alt="First slide"
+                        <img class="d-block w-100 imgfood1" src="<?php echo $lunchRow['image']?>" alt="First slide"
                             id="imgfood1">
                         <h4><?php echo $lunchRow['name']?></h4>
                         <p id="foodpara"><?php echo $lunchRow['description']?></p>
@@ -221,7 +221,7 @@ foreach ($groupCodes as $groupCode) {
                     while($dinnerRow=mysqli_fetch_assoc($dinnerResult)){
                         ?>
                     <div class="carousel-item <?php if($count==1){echo "active";}?>">
-                        <img class="d-block w-100" src="<?php echo $dinnerRow['image']?>" alt="First slide"
+                        <img class="d-block w-100 imgfood1" src="<?php echo $dinnerRow['image']?>" alt="First slide"
                             id="imgfood1">
                         <h4><?php echo $dinnerRow['name']?></h4>
                         <p id="foodpara"><?php echo $dinnerRow['description']?></p>
