@@ -23,10 +23,14 @@ include_once '../function.php';
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
+            <!-- Page settings -->
                 <div class="tab-pane fade show active" id="setting" role="tabpanel" aria-labelledby="setting-tab">
                     <form action="addController.php" method="POST" class="m-3" enctype="multipart/form-data">
+                        <!-- Page name -->
                         <input type="hidden" name="page" id="page" value="accomodation">
+                        <!-- Group code for multiple insertion filters -->
                         <input type="hidden" name="group_code" id="group_code" value="accomodation_details">
+                        <!-- Settings save mode -->
                         <input type="hidden" name="type" id="type" value="single">
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Description</label>
@@ -40,11 +44,16 @@ include_once '../function.php';
                         </div>
                     </form>
                 </div>
+                <!-- Page images settings -->
                 <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="image-tab">
                     <form action="addImageController.php" method="POST" class="m-3" enctype="multipart/form-data">
+                        <!-- Page name -->
                         <input type="hidden" name="page" id="page" value="accomodation">
+                        <!-- Group code for multiple insertion filters -->
                         <input type="hidden" name="group_code" id="group_code" value="accomodation_details">
+                         <!-- Settings save mode -->
                         <input type="hidden" name="type" id="type" value="single">
+                         <!-- Key for save the settings in to the database -->
                         <input type="hidden" name="key" id="key" value="accomodationImage">
                         <div class="form-group row">
                             <label for="number" class="col-4 col-md-2">Main Image</label>
@@ -64,6 +73,7 @@ include_once '../function.php';
     </div>
 </div>
 <script>
+// Display the selected file name in the file input box
 $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);

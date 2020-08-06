@@ -1,7 +1,7 @@
 <?php 
 include_once '../headerHTML.php';
 include_once '../config.php'; 
-
+// get feature details
 $featureSql="select * from feature where id='$_GET[id]'";
 $featureResult=mysqli_query($connection,$featureSql);
 $featureData=mysqli_fetch_assoc($featureResult);

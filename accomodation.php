@@ -5,6 +5,7 @@ include_once "headerHTML.php";
 include_once "navigation.php";
 
 ?>
+<!-- Accomodation page start -->
 <div class="container">
 	<section id="roomDesc">
 		<div class="row justify-content-center">
@@ -24,6 +25,7 @@ include_once "navigation.php";
 		<div class="container" id="container">
 
 	<?php 
+	// get room details
 	$roomSql="select * from room";
 	$roomResult=mysqli_query($connection,$roomSql);
 	$i=0;
@@ -41,6 +43,7 @@ include_once "navigation.php";
     	$imageData=mysqli_fetch_assoc($imageResult);
 	
 	?>
+			<!--display room details-->
         	<div class="row rowRoom">
             	<div class="col-12 col-lg-6 order-1 order-lg-<?php echo $orderFirstDiv;?>">
             		<a href="room-view.php?id=<?php echo $roomRow['id']?>" title="room-view.php?id=<?php echo $roomRow['name']?>"><img src="<?php echo $imageData['path']?>" class="img"></a>
@@ -70,6 +73,7 @@ include_once "navigation.php";
 		</div>
 	</section>
 </div>
+<!-- Accomodation page end -->
 <?php
 include_once "footerHTML.php";
 ?>

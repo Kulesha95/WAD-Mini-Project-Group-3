@@ -1,7 +1,7 @@
 <?php 
 include_once '../headerHTML.php';
 include_once '../config.php'; 
-
+// get booking details
 $bookingSql="select * from booking where id='$_GET[id]'";
 $bookingResult=mysqli_query($connection,$bookingSql);
 $bookingData=mysqli_fetch_assoc($bookingResult);

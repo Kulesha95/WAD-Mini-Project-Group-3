@@ -1,7 +1,7 @@
 <?php 
 include_once '../headerHTML.php';
 include_once '../config.php'; 
-
+// get amenity details
 $amenitySql="select * from amenity where id='$_GET[id]'";
 $amenityResult=mysqli_query($connection,$amenitySql);
 $amenityData=mysqli_fetch_assoc($amenityResult);

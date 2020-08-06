@@ -1,7 +1,7 @@
 <?php
 
     include_once "../config.php";
-
+// get amenity details
      $amenitySql="select * from amenity";
     $amenityResult=mysqli_query($connection,$amenitySql);
     while($amenityData=mysqli_fetch_assoc($amenityResult)){

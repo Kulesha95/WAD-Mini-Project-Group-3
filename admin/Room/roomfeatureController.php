@@ -1,7 +1,7 @@
 <?php
 
     include_once "../config.php";
-
+// get feature details
      $featureSql="select * from feature";
     $featureResult=mysqli_query($connection,$featureSql);
     while($featureData=mysqli_fetch_assoc($featureResult)){

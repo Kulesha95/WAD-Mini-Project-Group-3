@@ -3,21 +3,26 @@ include_once "admin/config.php";
 include_once "admin/function.php";
 include_once "headerHTML.php";
 include_once "navigation.php";
+// get room details
 $roomSql="select * from room WHERE id='$_GET[id]'";
 $roomResult=mysqli_query($connection,$roomSql);
 $roomData=mysqli_fetch_assoc($roomResult);
 ?>
+<!--room-view page start-->
 <div class="container" id="customContainer">
 	<section class="main-banner">
 		<div class="row justify-content-center">
+			<!--display room name-->
 			<span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
 			<h2 class="heading text-color-purple"><?php echo $roomData['name']?></h2>
 			<span class="justify-content-between text-color-purple ml-3 d-none d-md-block">__________________</span>
 		</div>
 		<div class="row"  style="padding-top:20px">
+		<!--room image slide show start-->
 			<div id="carouselExampleIndicators" class="carousel slide customImg" data-ride="carousel">
 				<div class="carousel-inner" style="height:500px">
 					<?php
+					// get room images
 					 $roomImageSql="select * from room_image WHERE room_id='$_GET[id]'";
                 	$roomImageResult=mysqli_query($connection,$roomImageSql);
 					$i=0;
@@ -41,6 +46,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+			<!--room image slide show end-->
 		</div>
 		
 		<div class="row contentRow">
@@ -48,6 +54,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 <p class="view"><?php echo $roomData['bed_type']?> <span> | </span> <?php echo $roomData['size']?> sqm. <span> | </span> <?php echo $roomData['view']?></p>
                 <p class="descriptionRoom"><?Php echo nl2br($roomData['description'])?></p>
 				<div class="container col-3 col-md-8 mx-auto section-gap">
+				<!--calendar added-->
         <div class="row bg-purple p-3">
             <div class="col-2 d-flex">
                 <h1 class="text-light text-center mx-auto my-auto" id="previous" onClick="previousMonthCalender()"><i
@@ -86,6 +93,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
                 </table>
             </div>
         </div>
+		<!--calendar end-->
     </div>
 				<form id="bookForm" action="admin/booking/addController.php" method="POST">
 					<div class="row">
@@ -298,7 +306,7 @@ $roomData=mysqli_fetch_assoc($roomResult);
 		</section>
 
 </div>
-
+<!--room-view page end-->
 
 
 <?php
