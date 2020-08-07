@@ -7,6 +7,7 @@ $galleryResult=mysqli_query($connection,$gallerySql);
 $galleryData=mysqli_fetch_assoc($galleryResult);
 
 ?>
+<!--edit data inserted to gallery-->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">

@@ -3,6 +3,7 @@ include_once "headerHTML.php";
 include_once "navigation.php";
 include_once "admin/config.php";
 ?>
+<!--Gallery page start -->
 <div class="container bg-white">
 
     <section class="gallery_details section-gap1 ">
@@ -15,7 +16,7 @@ include_once "admin/config.php";
 
 
 
-    <!-- section 1 inside hotel -->
+    <!-- section 1 pgotos inside hotel -->
     <div class="row">
 
         <?php
@@ -38,7 +39,7 @@ include_once "admin/config.php";
     </div>
 
 
-    <!-- section2 outside hotel -->
+    <!-- section2 photos outside hotel -->
     <section class="gallery_details section-gap1 ">
         <div class="row justify-content-center">
             <span class="justify-content-between text-color-purple mr-3 d-none d-md-block">__________________</span>
@@ -96,7 +97,7 @@ include_once "admin/config.php";
 </div>
 
 
-
+<!--gallery page ends -->
 <?php
 include_once "footerHTML.php";
 ?>

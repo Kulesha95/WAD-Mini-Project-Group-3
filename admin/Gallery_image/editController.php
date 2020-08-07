@@ -1,6 +1,7 @@
 <?php 
 include_once '../config.php';
 include_once '../function.php';
+//edit enterd gallery images
 if (isset($_FILES['path']) && $_FILES['path']['size'] > 0) {
     $path=uploadFile("img/gallery","path");    
     $updateCode=",`path`='$path'";

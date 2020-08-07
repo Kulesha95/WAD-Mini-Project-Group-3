@@ -3,6 +3,7 @@
     include_once '../headerHTML.php';
     include_once "../function.php";
 ?>
+<!--List down all gallery data -->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">
@@ -28,7 +29,7 @@
                     $listSql='select * from gallery_image';
                     $listResult=mysqli_query($connection,$listSql);
                     while($listRow=mysqli_fetch_assoc($listResult)){
-                ?>            
+                        ?>            
                         <tr>
                         <td><a href="../../<?php echo $listRow['path'];?>" target="_blank"><img src="../../<?php echo $listRow['path'];?>" alt="Image" class="img-fluid" style="width:100px;"></a></td>
                             <td><?php echo $listRow['type'];?></td>
