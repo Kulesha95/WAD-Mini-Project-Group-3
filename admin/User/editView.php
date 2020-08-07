@@ -7,6 +7,7 @@ $userResult=mysqli_query($connection,$userSql);
 $userData=mysqli_fetch_assoc($userResult);
 
 ?>
+<!--display updated user info-->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">

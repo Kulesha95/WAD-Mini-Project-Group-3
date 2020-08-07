@@ -1,6 +1,7 @@
 <?php 
 include_once '../config.php';
 include_once '../function.php';
+//edit user info
 if (isset($_FILES['image']) && $_FILES['image']['size'] > 0) {
     $profilepic=uploadFile("img/User","image");    
     $updateCode=",`image`='$profilepic'";

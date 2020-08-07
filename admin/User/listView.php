@@ -3,6 +3,7 @@
     include_once '../headerHTML.php';
     include_once "../function.php";
 ?>
+<!--list the entered data-->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">

@@ -2,7 +2,7 @@
 include_once '../headerHTML.php';
 include_once '../config.php'; 
 ?>
-
+<!--add user info section-->
 <div class="container jumbotron bg-white shadow mt-4 col-11">
     <div class="card">
         <div class="card-header bg-white">
